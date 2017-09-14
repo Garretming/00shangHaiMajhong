@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红中麻将</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="红中麻将">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>红中麻将</strong></h4>
+        <div>
+            <p class="lead">一、红中麻将</p>
+            <p>红中麻将打法简单、节奏快速、极易胡牌</p>
+
+            <p class="lead">二、牌数</p>
+            <p>红中麻将，共108张：筒、索、万、不带东、南、西、北风、中、发、白</p>
+
+            <p class="lead">三、摸牌</p>
+            <p>游戏开始，庄家得14张牌，闲家得13张，庄家从牌中选1张丢出。其它3家有权要那张丢出的牌，只能胡、碰、杠，胡比碰杠优先，不能吃</p>
+
+            <p class="lead">四、胡牌规则</p>
+            <p>1、<img src="images/zhuanzhuan/zhuanzhuan1.png"/></p>
+            <p>2、<img src="images/zhuanzhuan/zhuanzhuan2.png"/></p>
+            <p>3、<img src="images/zhuanzhuan/zhuanzhuan3.png"/></p>
+            <p>4、<img src="images/zhuanzhuan/zhuanzhuan4.png"/></p>
+            <p>5、<img src="images/zhuanzhuan/zhuanzhuan5.png"/></p>
+            <p>6、<img src="images/zhuanzhuan/zhuanzhuan6.png"/></p>
+
+            <p class="lead">五、关于杠</p>
+            <p>1、明杠<br/>
+                &emsp;&nbsp;&nbsp;A、手上有3张相同的牌，其他玩家打了第4张相同的牌即可开杠。举例：手上有3个一万，其他玩家打了个一万，则可开杠，如果没有流局，则放杠者出分。<br/>
+                &emsp;&nbsp;&nbsp;B、碰牌之后，自己又摸了1张相同的牌即可开杠，举例：碰了一万，自摸个一万，则可开杠
+            </p>
+            <p>2、暗杠<br/>
+                &emsp;&nbsp;&nbsp;手上抓了四张相同的牌，就是暗杠
+            </p>
+
+            <p class="lead">六、庄家分配：庄闲输赢多一分</p>
+            <p>1、第一局由创建房间者为庄家</p>
+            <p>2、以后谁胡牌，下局谁做庄</p>
+            <p>3、如果出现通炮情况，则下轮由放炮玩家当庄家</p>
+
+            <p class="lead">七、积分规则</p>
+            <p>1、自摸<br/>
+                &emsp;&nbsp;&nbsp;每人输2分，胡牌玩家赢6分，如庄家自摸，闲家每人输3分
+            </p>
+            <p>2、小胡接炮<br/>
+                &emsp;&nbsp;&nbsp;点炮方输1分，胡牌玩家赢1分，如点炮方为庄家，则庄家多输1分，如接炮方为庄家，点炮的闲家多输1分
+            </p>
+            <p>3、开杠<br/>
+                &emsp;&nbsp;&nbsp;A、暗杠相当于自摸，每人出2分<br/>
+                &emsp;&nbsp;&nbsp;B、碰牌之后，再抓上1个所碰的牌开杠，每人出1分<br/>
+                &emsp;&nbsp;&nbsp;C、手抓了3个相同的牌，然后有人打了1个相同的牌，开杠的话，放杠者出3分
+            </p>
+            <p><strong class="text-danger">注：杠牌后如果流局依然算杠分</strong></p>
+
+            <p class="lead">八、特殊规则</p>
+            <p>1、通炮：即几个玩家可胡同一张牌，此牌即为通炮</p>
+            <p>2、漏胡：如果玩家漏掉炮胡，则该玩家摸牌前禁止炮胡，摸牌后正常；只对该玩家漏胡，其他玩家正常</p>
+
+            <p class="lead">九、红中赖子</p>
+            <p>红中特殊规则:<br/>
+                &emsp;&nbsp;&nbsp;1、除了万，条，筒, 多了红中(共计112张牌)<br/>
+                &emsp;&nbsp;&nbsp;2、红中在手中可以做万能牌使用<br/>
+                &emsp;&nbsp;&nbsp;3、红中不能碰，不能杠<br/>
+                &emsp;&nbsp;&nbsp;4、红中不能和其他牌组合碰杠。比如：1万1万红中，别人打1万，是不能杠一万的<br/>
+                &emsp;&nbsp;&nbsp;5、起手4个红中可以直接胡
+            </p>
+
+            <p class="lead">十、抓鸟</p>
+            <p>
+                &emsp;&nbsp;&nbsp;1、一码全中：即只抓一张牌，根据牌面的数字中几个鸟，如抓到8筒，即中8个鸟，抓到红中则中9个鸟<br/>
+                &emsp;&nbsp;&nbsp;2、正常抓鸟：在胡牌后进行，由胡牌方进行（一炮多响时由点炮玩家进行），此时从牌堆上取创建房间时选得鸟牌张数，其中包含159（勾选红中赖子玩法时，抓鸟抓出红中算1）牌的个数既为中鸟个数，例如自摸中鸟1个，则最终赢得分数为6+3=9分<br/>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

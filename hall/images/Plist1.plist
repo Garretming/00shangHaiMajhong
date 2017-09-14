@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,394},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,788},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1182},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>5.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1576},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>6.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1970},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>7.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,2364},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+			<key>8.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,2758},{362,394}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{362,394}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist1.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist1.png</string>
+			<key>size</key>
+			<string>{512,4096}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>512</integer>
+			<key>height</key>
+			<integer>4096</integer>
+		</dict>
+	</dict>
+</plist>

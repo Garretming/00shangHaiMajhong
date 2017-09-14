@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>炸金花</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="炸金花">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>炸金花组局</strong></h4>
+        <div>
+            <p class="lead">一、游戏内逻辑</p>
+            <p>
+                &emsp;&nbsp;&nbsp;庄家：第一局是房主坐庄。以后每局庄家由上一局庄家的逆时针的下家担任。<br/>
+                &emsp;&nbsp;&nbsp;看牌：查看自己三张牌的花色和点数。<br/>
+                &emsp;&nbsp;&nbsp;明注：看牌后下注，看牌后下注的积分是暗牌2倍。<br/>
+                &emsp;&nbsp;&nbsp;暗注：不看牌投入的积分。<br/>
+                &emsp;&nbsp;&nbsp;底注 ：指游戏开始后每位玩家先投入游戏场规定数目的积分。  <br/>
+                &emsp;&nbsp;&nbsp;加注 ：在上家投入的基础上增加投入注，加注采用固定加注倍数。 <br/>
+                &emsp;&nbsp;&nbsp;弃牌：指玩家自动弃权,本局认输并且已投入的积分无法收回。<br/>
+                &emsp;&nbsp;&nbsp;跟注：玩家选择跟是指和前面玩家投入同样数量级的值，既暗注（不看牌）或明注（已看牌）。达到设定的上限不能继续投入<br/>
+                &emsp;&nbsp;&nbsp;比牌 ：达到X轮次/以上或手数封顶时，拿自己的牌与游戏中玩家的牌比大小，两人以上玩家游戏时比牌可以选择对手。<br/>
+                &emsp;&nbsp;&nbsp;火拼 ：达到X轮次/以上或手数封顶时，投下固定大注额，额度比底注和加注最大值要大。<br/>
+            </p>
+
+            <p class="lead">二、详细规则</p>
+            <p>
+            <p>1 、牌型<br/>
+                &emsp;&nbsp;&nbsp;使用一副扑克牌，去掉大小王，共52张牌。每人三张牌比大小。<br/>
+                &emsp;&nbsp;&nbsp;豹子：三张点相同的牌，如AAA、222。<br/>
+                &emsp;&nbsp;&nbsp;顺金：花色相同的顺子，如黑桃456、红桃789。<br/>
+                &emsp;&nbsp;&nbsp;金花：花色相同，非顺子，如黑桃368，方片945。 <br/>
+                &emsp;&nbsp;&nbsp;顺子：花色不同的顺子，如黑桃5红桃6方片7。 <br/>
+                &emsp;&nbsp;&nbsp;对子：两张点相同的牌，如223，334。 <br/>
+                &emsp;&nbsp;&nbsp;散牌：三张牌不组成任何类型的牌。 <br/>
+                &emsp;&nbsp;&nbsp;特殊：花色不同的235。 </p>
+            <p>2、大小规则<br/>
+                &emsp;&nbsp;&nbsp;1. 豹子>顺金>金花>顺子>对子>散牌；特殊>豹子。特殊<散牌。<br/>
+                &emsp;&nbsp;&nbsp;2．牌点中，2为最小，A为最大。从大到小依次为：A、K、Q、J、10、9、8、7、6、5、4、3、2。<br/>
+                &emsp;&nbsp;&nbsp;3. 同种牌型，按牌型中的大小顺序按照从大到小依次比点，大小若相同，开牌者输。 顺子AKQ>KQJ……432>A23<br/>
+                &emsp;&nbsp;&nbsp;注：KA2不是顺子。<br/>
+                &emsp;&nbsp;&nbsp;4. 当豹子存在时，“花色不同235”>“豹子” 即豹子存在时，若花色不同235也存在，花色不同235赢。 注：与豹子同时存在的不同花色235最大。<br/>
+                &emsp;&nbsp;&nbsp;5. 相同牌，主动比牌时，发起比牌者输<br/>
+                &emsp;&nbsp;&nbsp;开始游戏：玩家可发起解散，2人即1人同意、3人即2人同意或5分钟倒计时等即可解散成功，否则解散失败<br/></p>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

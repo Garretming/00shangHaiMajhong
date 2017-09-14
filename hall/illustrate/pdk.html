@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跑得快</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="跑得快">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>跑得快</strong></h4>
+        <div>
+            <p class="lead">一、游戏人数</p>
+            <p>
+
+                &emsp;&nbsp;&nbsp;3人<br/>
+
+            </p>
+
+            <p class="lead">二、游戏牌数</p>
+            <p>
+                &emsp;&nbsp;&nbsp;一副牌去掉大小王、去掉一个A、去掉3个2，共剩48张牌，每人16张牌，一手牌中只有1个2，3个A
+            </p>
+
+            <p class="lead">三、出牌顺序</p>
+            <p>
+                &emsp;&nbsp;&nbsp;每把(每把10局/20局)首盘游戏由第一个拿到黑桃3的玩家先出牌，可以出任意的牌型，(若勾选了先出黑桃3，打出的牌中必须包含黑桃3)，然后其他玩家依次出牌(要的起的情况下，必须要出牌)。第二盘开始赢家先出(不需要黑桃3)<br/>
+
+            </p>
+
+            <p class="lead">四、牌型与规则</p>
+            &emsp;&nbsp;&nbsp;1、单张:任意门张单牌
+            <p>
+                &emsp;&nbsp;&nbsp;2、顺子:任意5张或者5张以上点数相连的牌。特殊:2是最大的单牌，不能当顺子出<br/>
+                &emsp;&nbsp;&nbsp;3、对子:可以打单对，如:44<br/>
+                &emsp;&nbsp;&nbsp;4、连对:2对或2对以上点数相连的牌，如:5566<br/>
+                &emsp;&nbsp;&nbsp;5、三带二:点数相同的3张牌+一对牌或者点数相同的3张牌+2张不同的单牌，如:55577或者55567<br/>
+                &emsp;&nbsp;&nbsp;6、三带一:打到最后剩4张牌的时候才可以3带1<br/>
+                &emsp;&nbsp;&nbsp;7、没打完的情况下，不可以出3张点数相同的牌!最后剩3张牌的时候可以不带<br/>
+                &emsp;&nbsp;&nbsp;8、飞机:两顺或以上+数量相同的对牌，如:555666 + 99JJ。也可以带4张单牌，如:555666+78910<br/>
+                &emsp;&nbsp;&nbsp;9、在有牌情况下，出555666必须带4张牌，除非牌不够不带或者带少牌<br/>
+                &emsp;&nbsp;&nbsp;10、炸弹:4张点数相同的牌，如6666, 7777<br/>
+                &emsp;&nbsp;&nbsp;11、关门:有一家牌已经出完，另一家或者两家1张牌都没出，此时的状态称为关门<br/>
+                &emsp;&nbsp;&nbsp;12、牌型的比较点数大小，从大到小依次为:2, A, K, Q, J, 10, 9, 8, 7, 6, 5,4,3<br/>
+                &emsp;&nbsp;&nbsp;13、下家报单时，必须出最大单牌<br/>
+                &emsp;&nbsp;&nbsp;14、若最后的牌数构成牌型（包括一个对子、单牌），则必须全部出<br/>
+
+            </p>
+
+            <p class="lead">五、积分规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;1、一张牌1分（未赢玩家，剩余的牌，一张牌扣1分）<br/>
+                &emsp;&nbsp;&nbsp;2、1个炸10分，收其他两家<br/>
+                &emsp;&nbsp;&nbsp;注：<br/>
+                &emsp;&nbsp;&nbsp;A、若炸弹被炸，只算最大的那个炸弹分，即：A玩家出炸3，B玩家出炸4，C玩家出炸6，则只算C玩家一个炸6的分，其他玩家的炸3与4不叠加<br/>
+                &emsp;&nbsp;&nbsp;B、在A基础上，若C玩家继续出1个炸，其他玩家没炸出，则C玩家算2个炸的分<br/>
+                &emsp;&nbsp;&nbsp;C、算炸弹得分的玩家，无论是输赢玩家，都得分<br/>
+                &emsp;&nbsp;&nbsp;3、报单不出不进（即报单未赢的玩家，不需要扣剩余牌分，只需扣炸弹分）<br/>
+                &emsp;&nbsp;&nbsp;4、关门:被关门者剩余牌的张数*2(和炸弹可累加)<br/>
+
+
+            </p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

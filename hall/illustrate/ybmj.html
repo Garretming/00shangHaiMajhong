@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宜宾麻将</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="宜宾麻将">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>宜宾麻将</strong></h4>
+        <div>
+            <p class="lead">一、游戏规则</p>
+            <p>
+            <p>&emsp;&nbsp;&nbsp;1.只有筒、条、万3种花色，共108张牌。</p>
+			<p>&emsp;&nbsp;&nbsp;2.必须要打缺（打掉一种花色）之后才能胡牌，即胡牌时不能有三种花色，否则为花猪。</p>
+			<p>&emsp;&nbsp;&nbsp;3.过手胡（过水不胡）：如果某一回合中，有人点炮，该玩家在第一次没有胡，则其他玩家就不能胡（自摸除外）。当该玩家有动牌（即碰、杠、摸牌）后。该回合过手胡限制解除。</p>
+           <p class="lead">二、游戏术语</p>
+			<P>&emsp;&nbsp;&nbsp;1.飘：牌局开始前玩家选择“飘”或“不飘”来决定加倍与否。</p>
+			<P>&emsp;&nbsp;&nbsp;2.本金：牌局开始时，庄家在尾家摸完牌后，将接下来的那张牌翻开，番出的着张牌叫本金。</p>
+			<P>&emsp;&nbsp;&nbsp;3.听用：本金的前后两张牌称为“听用”，“听用：牌可以代替其他任意牌。</p>
+			<P>&emsp;&nbsp;&nbsp;4.飞：听用牌可以代替其他牌进行碰的操作，称为“飞”。</p>
+			<P>&emsp;&nbsp;&nbsp;5.提：“飞”牌后，若摸到碰牌中的非听用牌，则可进行“提”的操作，用摸到的牌吧听用牌提出来。</p>
+			<P>&emsp;&nbsp;&nbsp;6.根：四张相同的牌不杠出来，为一根。</p>
+			<P>&emsp;&nbsp;&nbsp;7.血战：指一家胡牌后不结束，为胡牌的玩家继续打，直到有三家胡或余下的玩家流局。</p>
+			<P>&emsp;&nbsp;&nbsp;8.查大叫：流局时，检查玩家是否下叫，未下叫的玩家（花猪除外）要赔付下叫的玩家最大可能番。</P>
+		 <p class="lead">三、胡牌类型</p>
+			<P>&emsp;&nbsp;&nbsp;1.平胡（1番）：四坎牌加一对将。</p>
+			<P>&emsp;&nbsp;&nbsp;2.对对胡（3番）：四副刻子加一对将。</p>
+			<P>&emsp;&nbsp;&nbsp;3.清一色（3番）：全部是一种花色的平胡。</p>
+			<P>&emsp;&nbsp;&nbsp;4.七对（3番）：玩家手牌都是两张一对的，没有碰和杠。</p>
+			<P>&emsp;&nbsp;&nbsp;5.龙七对（4番）：牌型为七对，但玩家手中有四张一样的牌（没有杠出）。</p>
+			<P>&emsp;&nbsp;&nbsp;6.请对（6番）：清一色+对对胡。</p>
+			<P>&emsp;&nbsp;&nbsp;7.清七对（6番）：清一色+七对。</p>
+			<P>&emsp;&nbsp;&nbsp;8.清龙七对（7番）：清一色+龙七对。</p>
+		<p class="lead">四、另加番</p>
+			<p>&emsp;&nbsp;&nbsp;【根】：+1番，有四张一样的牌，不杠出来。<br/><br/>
+				&emsp;&nbsp;&nbsp;【杠】：+1番，杠出后的牌。<br/><br/>
+				&emsp;&nbsp;&nbsp;【杠上花】：+1番，玩家杠牌后，补的牌恰好胡牌。<br/><br/>
+				&emsp;&nbsp;&nbsp;【杠上炮】：+1番，玩家杠牌后，补牌后打出一张牌，打出的牌被其他玩家胡牌，胡牌的人加1番。<br/><br/>
+				&emsp;&nbsp;&nbsp;【抢杠胡】：+1番，玩家面下杠时，其他玩家可以抢杠胡。<br/><br/>
+				&emsp;&nbsp;&nbsp;【金钩钓】：+1番，在【对对胡】一类的牌型中，下叫的牌为将牌，且其余的牌已经碰、杠出，此时胡牌。<br/><br/>
+				&emsp;&nbsp;&nbsp;【金钩炮】：+1番，在【对对胡】一类的牌型中，下叫的牌为将牌，且其余牌已经碰、杠出，此时点炮，胡牌的人加1番。<br/><br/>
+				&emsp;&nbsp;&nbsp;【无听用】：+2番，胡牌时，牌中无听用。<br/><br/>
+				&emsp;&nbsp;&nbsp;【本金】：+1番，玩家手中有3张本金或与听用组成3张本金的组合。<br/><br/>
+				&emsp;&nbsp;&nbsp;【接本金】：+1番，在【本金】的基础上，玩家手中的本金和听用组成4张本金的组合，不另加根的番数。<br/><br/>
+				&emsp;&nbsp;&nbsp;【天胡】：+1番，庄家放完牌以后胡牌。<br/><br/>
+				&emsp;&nbsp;&nbsp;【地胡】;+1番，闲家原手牌即下叫，庄家打出一张牌后点炮，该闲家胡牌。</p>
+		<p class="lead">五、胡牌说明</p>
+		<P> &emsp;&nbsp;&nbsp;基本输（赢）=底金*倍数，一炮多响按玩家各自一对一计算金币。如果结束其中一方飘，为底金*倍数*2；若两方都飘，为底金*倍数*4.点炮收取点炮玩家的积分（一炮多响一对一结算）；自摸收取未胡牌玩家积分。</p>
+		</div>
+    </div>
+</div>
+</body>
+</html>

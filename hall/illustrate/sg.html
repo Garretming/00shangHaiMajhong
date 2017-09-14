@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三公</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="三公">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>三公扑克牌规则</strong></h4>
+        <div>
+            <p class="lead">1 、游戏简介：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;三公使用扑克牌中的52张牌，大小王除外，三公游戏主要流行于港澳台和广东等地。游戏简单，激烈，有很大的运气成分，流传非常广泛。<br/>
+            </p>
+
+            <p class="lead">2、选择庄家：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;满人开始后抢庄，点过抢庄的人有机会成为庄家，在玩家中选择财富最多的玩家为庄，若财富相同则随机分配庄家。如果都没人抢庄，随机选择一个玩家进行坐庄。<br/>
+            </p>
+
+            <p class="lead">3、加倍：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;确定庄家后，闲家加倍，选择倍数后再发牌，选择的倍数将影响输赢结果的大小，所有比牌均是庄家与闲家比牌。<br/>
+                &emsp;&nbsp;&nbsp;倍数选择：1倍、5倍、10倍、50倍<br/>
+            </p>
+            <p class="lead">4、游戏规则：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;三公游戏中，玩家人数为2—6人，游戏开始后系统会给每位玩家发送三张牌，然后每个闲家与庄家比较牌的大小，并根据牌型判断每位玩家的输赢以及计算。<br/>
+                &emsp;&nbsp;&nbsp;三公游戏使用一副扑克牌中的52张牌（大小王除外），其中牌张A－9之间的这些牌为点数牌，牌张10为数字牌＝0点牌，牌张J、Q、K、为公牌。系统给每位玩家发完三张牌后，每种牌型都有自己的规定牌型倍数。在比较牌型大小后，会根据牌型系数来计算每位玩家的输赢是多少倍数。<br/>
+            </p>
+
+            <p class="lead">5、基本棋牌型以及牌型系数：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;公牌：牌张J、Q、K、为公牌<br/>
+                &emsp;&nbsp;&nbsp;点数牌：公牌不计点数，10不算点数也不是公牌。牌A--9对应1--9点，把三张牌的点数全部相加，取个位的数作为本方的点数。<br/>
+                &emsp;&nbsp;&nbsp;三公的胜负判断主要以牌A--9之间的这些牌来计算点数，以及公牌的组合来决定输赢。牌10不算点数也不是公牌。牌A--9对应1--9点，把三张牌的点数全部相加，取个位的数作为本方的点数。如果有一方手里的三张牌都是公牌（如：JQK，JJQ等），则为“三公”。<br/>
+            </p>
+            <p class="lead">6、牌型说明与举例</p>
+            <p>
+                &emsp;&nbsp;&nbsp;大三公：相同的三张公仔牌 ＝ 大三公牌型9倍分，如：KKK、QQQ、JJJ<br/>
+                &emsp;&nbsp;&nbsp;小三公：相同的三张数字牌 ＝ 小三公牌型7倍分，如：101010、999、222、AAA<br/>
+                &emsp;&nbsp;&nbsp;混三公：公仔牌的不同组合 ＝ 混三公牌型5倍分，如：KQJ、QQJ、JJK<br/>
+                &emsp;&nbsp;&nbsp;特点数：任意8点、9点的牌型3倍分，如：K108、A25、K27、432<br/>
+                &emsp;&nbsp;&nbsp;单牌：任意0－7点的牌型1倍分，如：QJ10、A38、678、K107<br/>
+            </p>
+            <p class="lead">7、比牌规则：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;在三公游戏中的单张牌比较：公仔牌 ＞ 数字牌、（ K ＞ Q ＞ J ＞ 10 ＞ 9 ＞ …… ＞ 3 ＞ 2 ＞ A ）。花色的比较为：黑桃>红桃>梅花>方块<br/>
+                &emsp;&nbsp;&nbsp;其他组成的牌型比较规则如下<br/>
+                &emsp;&nbsp;&nbsp;①、牌型：大三公 ＞ 小三公 ＞ 混三公 ＞ 点数大小 （点数比较：9>8>7>6>5>4>3>2>1>0）<br/>
+                &emsp;&nbsp;&nbsp;②、大三公： KKK ＞ QQQ ＞ JJJ<br/>
+                &emsp;&nbsp;&nbsp;③、小三公：101010 ＞ 999 ＞ 888 ＞ …… ＞ 333 ＞ 222 ＞ AAA<br/>
+                &emsp;&nbsp;&nbsp;④、混三公：如果大家都是混三公，则先比较玩家最大的那张公牌的大小，如果还是相同，则比较玩家最大公牌的花色。<br/>
+                &emsp;&nbsp;&nbsp;⑤、点数牌的比较： 9 > 8 > …… > 2 > 1 > 0<br/>
+                &emsp;&nbsp;&nbsp;如果玩家都是点数牌，并且点数相等的情况下则先比较玩家的公牌数（如 J Q 9>J 10 9）如果公牌数还是一样则比较最大的那张单牌的的大小，（如K Q 9>J Q 9）如果大小还相同则比较最大牌的花色，（如：一方是：黑桃2、方块3、方块4（即9点），另一方是：红桃3、梅花4、方块2（即9点），梅花4>方块4，所以后者胜。）<br/>
+            </p>
+
+            <p class="lead">8、分数与输赢计算：</p>
+            <p>
+            <p>①、每位闲家开牌后分别与庄家比牌，比牌胜者获得自己相应牌型系数的正分，比牌失败者获得对手玩家相应牌型系数的负分，再乘相应房间的底注就是玩家最后的游戏输赢分数。</p>
+            <p>②、举例说明：</p>
+            <p>房间底注是1<br/>
+                &emsp;&nbsp;&nbsp;· 庄家A: 牌型为大三公，KKK牌型系数为：9<br/>
+                &emsp;&nbsp;&nbsp;· 闲家B: 牌型为大三公，QQQ牌型系数为：9<br/>
+                &emsp;&nbsp;&nbsp;· 闲家C: 牌型为特点数9，QQ9 牌型系数为：3<br/>
+                &emsp;&nbsp;&nbsp;· 玩家D: 牌型为特点数8，KK8 牌型系数为：3<br/>
+            </p>
+            <p>玩家比牌则A庄家与闲家B,C,D进行比牌，A与B比牌胜利获得 +9分；A玩家与C、D玩家比牌胜利各获得＋9分。各位玩家的得分分别为：<br/>
+                &emsp;&nbsp;&nbsp;· 庄家A的得分：9+9+9＝27<br/>
+                &emsp;&nbsp;&nbsp;· 玩家B的得分：-9<br/>
+                &emsp;&nbsp;&nbsp;· 玩家C的得分：-9<br/>
+                &emsp;&nbsp;&nbsp;· 玩家D的得分：-9<br/>
+            </p>
+            <p>最后的得分：<br/>
+                &emsp;&nbsp;&nbsp;· 庄家A：9×3＝27分<br/>
+                &emsp;&nbsp;&nbsp;· 闲家B：-9×1＝-9分<br/>
+                &emsp;&nbsp;&nbsp;· 闲家C：-9×1＝-9分<br/>
+                &emsp;&nbsp;&nbsp;· 闲家D：-9×1＝-9分<br/>
+            </p>
+
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>炸金花</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="炸金花">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+			<h4 class="text-center"><strong>营口麻将</strong></h4>
+			<div>
+				<p class="lead">一、基本规则</p>
+				<p>1、三门齐：有万牌、有条牌、有饼牌才能胡牌。</p>
+				<p>2、有幺九（会不顶幺九）：胡牌时至少有一张幺九牌（例如胡一四万可以单胡一万）。</p>
+				<p>3、有平胡：胡牌时至少有一横或一杠，或有东南西北风、中发白其中一对。</p>
+				
+				<p class="lead">二、牌数</p>
+				<p>共136张：筒、索、万、东、南、西、北、中、发、白</p>
+				
+				<p class="lead">三、摸牌规则</p>
+				<p>游戏开始，庄家得14张牌，闲家得13张牌。庄家从牌中选1张丢出，闲家有权要那张丢出的牌。</p>
+
+				<p class="lead">四、胡牌类型</p>
+				<p>1、飘胡。</p>
+				<p>2、清一色</p>
+
+				<p class="lead">五、胡牌的方式</p>
+				<p>1、会牌。（抓牌后翻开一张如果是五万则六万是混，如果东风则南风是会，如果红中则发财是会）：会牌可以代替其他牌。但必须和其他牌组成顺子、横、或掌、不能单独成牌（例如不能用三个会牌做横和顺，不能用两张会牌做掌）。在手里没有幺九的情况下，会牌不能算幺九，只能胡幺九。会牌不可以打出只能在手里。</p>
+				<p>2、杠牌：四张相同的牌为杠牌，打出来是明杠，单独番数*2。在自己手里属于暗杠番数*4.杠牌的番数胡牌的分开计算。</p>
+				<p>3、旋风杠：开牌是如果玩家手里有东南西北风每个一张或者中发白每个一张的时候则可以亮，东南西北算暗杠，中发白算明杠。</p>
+				<p>4、可以抢杠胡，算杠牌玩家点炮</p>
+				<p>5、抢胡；同时胡牌时，大牌先胡（如清一色，飘胡），胡牌牌型相同的情况下按玩家顺序胡牌。</p>
+				<p>6、穷胡：胡牌时候手牌中没有会牌。</p>
+
+				
+				<p class="lead">五、杠分规则</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明杠：1、手牌中有一组刻牌，别人打出来第四张，杠牌属于明杠，2、或碰牌后有抓上一张碰牌。3、或起手中发白各一张。每人2分。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暗杠：1、手牌中有一组刻牌，自己摸到第四张牌属于暗杠。2、或起手东南西北分个一张。每人出4分</p>
+				<p>注:</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)可以过手杠，且算分</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)流局荒杠，不算杠分</p>
+				
+				<p class="lead">六、计分规则</p>
+				<p>自摸各收其他三家分。</p>
+				<p>放炮者包庄，包付另两个输家，放炮者的番数为原有番数加上另外两个输家番数之和。</p>
+				<p>底分为1，即平胡为1</p>
+				<p>牌型分：清一色翻倍，飘胡翻倍。</p>
+			
+        </div>
+    </div>
+</div>
+</body>
+</html>

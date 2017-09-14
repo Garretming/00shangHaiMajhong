@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斗地主</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="斗地主">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>斗地主</strong></h4>
+        <div>
+            <p class="lead">一、发牌</p>
+            <p>&emsp;&nbsp;&nbsp;一副牌54张，3张为底，剩余牌依次分发给3家，每家17张牌，底牌在确认地主后所有玩家均可看</p>
+
+            <p class="lead">二、叫牌、确认地主</p>
+            <p>
+                &emsp;&nbsp;&nbsp;开房第一局由房主叫地主，之后由赢的玩家叫地主，若出现农民赢，则随机一个农民。叫地主倍数为X1或X3，抢地主抢到X4或X12倍的玩家直接为地主。如果所有玩家选择了“不叫”，则牌局不变，重新发牌<br/>
+                &emsp;&nbsp;&nbsp;将三张底牌交给地主，并亮出底牌让所有人都能看到。地主首先出牌，然后按顺序依次出牌，轮到用户跟牌时，用户可以选择“不出”或出比上一个玩家大的牌。某一玩家出完牌时结束本局
+            </p>
+
+            <p class="lead">三、牌型</p>
+            <p>
+                &emsp;&nbsp;&nbsp;火箭：即双王（大王和小王），最大的牌<br/>
+                &emsp;&nbsp;&nbsp;炸弹：4张相同数字的牌（如:四张7）<br/>
+                &emsp;&nbsp;&nbsp;单牌：单个牌（如红桃5）<br/>
+                &emsp;&nbsp;&nbsp;对牌：数值相同的两张牌（如梅花4+方块4）<br/>
+                &emsp;&nbsp;&nbsp;三张牌：数值相同的三张牌（如三个J）<br/>
+                &emsp;&nbsp;&nbsp;三带一：数值相同的三张牌十一张单牌或一对牌。例如：333+6或444+99<br/>
+                &emsp;&nbsp;&nbsp;单顺：五张或更多的连续单牌（如：45678或78910JQK）。不包括2点和双王<br/>
+                &emsp;&nbsp;&nbsp;双顺：三对或更多的连续对牌（如：334455、7788991010JJ）。不包括2点和双王<br/>
+                &emsp;&nbsp;&nbsp;三顺：二个或更多的连续三张牌（如：333444、555666777888）。不包括2点和双王<br/>
+                &emsp;&nbsp;&nbsp;飞机带翅膀：三顺+同数量的单牌（或同数量的对牌），如：444555+79或333444555+7799JJ<br/>
+                &emsp;&nbsp;&nbsp;四带二：四张牌+两手牌。（注意：四带二不是炸弹），如：5555+3+8或4444+55
+            </p>
+
+            <p class="lead">四、牌型大小</p>
+            <p>
+                &emsp;&nbsp;&nbsp;火箭最大，可以打任意其他的牌<br/>
+                &emsp;&nbsp;&nbsp;炸弹比火箭小，比其他牌大。都是炸弹时按牌的分值比大小<br/>
+                &emsp;&nbsp;&nbsp;除火箭和炸弹外，其他牌必须要牌型相同且总张数相同才能比大小<br/>
+                &emsp;&nbsp;&nbsp;单牌按分值比大小，依次是大王>小王>2>A>K>Q>J>10>9>8>7>6>5>4>3，不分花色<br/>
+                &emsp;&nbsp;&nbsp;对牌、三张牌都按分值比大小<br/>
+                &emsp;&nbsp;&nbsp;顺牌按最大的一张牌的分值来比大小<br/>
+                &emsp;&nbsp;&nbsp;飞机带翅膀和四带二按其中的三顺和四张部分来比，带的牌不影响大小
+            </p>
+
+            <p class="lead">五、胜负</p>
+            <p>&emsp;&nbsp;&nbsp;地主、农民中任意一家先出完所有的牌谁获胜</p>
+
+            <p class="lead">六、算分规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;底分1<br/>
+                &emsp;&nbsp;&nbsp;“抢地主”×2<br/>
+                &emsp;&nbsp;&nbsp;炸弹翻倍
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广东麻将</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="广东麻将">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>广东麻将-推倒胡</strong></h4>
+        <div>
+            <p class="lead">一、麻将规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;推倒胡不许吃牌只许自模，打法简单节奏快速，无大胡
+            </p>
+
+            <p class="lead">二、牌数</p>
+            <p>
+                &emsp;&nbsp;&nbsp;本游戏提供带风玩法，带风为136张
+            </p>
+
+            <p class="lead">三、玩法</p>
+            <p>
+                &emsp;&nbsp;&nbsp;不许吃牌，可以碰牌、杠牌，不许吃胡只能自摸
+            </p>
+
+            <p class="lead">四、鬼牌</p>
+            <p>&emsp;&nbsp;&nbsp;鬼牌：万能牌，可以当做任意一张牌使用，白板做鬼，不可与其他牌组合碰杠</p>
+            <p>
+                &emsp;&nbsp;&nbsp;白板做鬼：<br/>
+                &emsp;&nbsp;&nbsp;在广东地区，白板被称作棺材板，采用白板做鬼<br/>
+
+            </p>
+
+            <p class="lead">五、庄家</p>
+            <p>
+                &emsp;&nbsp;&nbsp;第一局开启房间的玩家坐庄，如果庄家胡牌则继续坐庄，如果闲家胡牌，则胡牌的玩家坐庄，流局则上一局庄家继续坐庄
+            </p>
+
+            <p class="lead">六、胡牌牌型</p>
+            <p>
+                &emsp;&nbsp;&nbsp;任意牌凑成一对再加上4组顺子(三张相连的牌)或者刻子(三张一样的牌)或者顺子与刻子混合的牌型，或七小对
+            </p>
+
+            <p class="lead">七、计分规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;1、自摸赢6分(不分有鬼或无鬼〕，输牌玩家每人输2分，买马1分1个<br/>
+                &emsp;&nbsp;&nbsp;2、摸4鬼直接胡牌赢6分，输牌玩家每人输2分，买马1分1个<br/>
+                &emsp;&nbsp;&nbsp;3、放（点）杠：如果某玩家出牌，造成了其他玩家杠牌，结算时放杠者赔给杠牌者3分，且流局算杠分<br/>
+                &emsp;&nbsp;&nbsp;4、碰杠：某玩家摸牌后开明打(碰过的牌开杠)，结算时其余三家每人赔给胡牌者1分，且流局算杠分<br/>
+                &emsp;&nbsp;&nbsp;5、暗杠：某玩家暗杠后，在结算时其余三家每人赔给杠牌者2分，且流局算杠分<br/>
+                &emsp;&nbsp;&nbsp;6、抢杠胡：只有碰杠可以被抢杠胡。在结算时，抢杠胡按自摸算。赢6分，杠牌玩家输6分，买马1分1个，如果设定抢杠胡全包，则马牌的分数也由杠牌玩家承担，如果未设定抢杠胡全包则马牌的分数由剩余3个输牌的玩家分担<br/>
+                &emsp;&nbsp;&nbsp;7、杠上开花：属于自摸，即玩家开杠（接杠、碰杠、暗杠）后，进一张牌则胡牌。若勾选杠爆全包，则接杠后的杠上开花胡牌分数让点杠者全包，包括中马分数。若没勾选，则胡牌分数由点杠者出，中马分数由三家玩家承担<br/>
+
+            </p>
+
+            <p class="lead">八、买马</p>
+            <p>
+                &emsp;&nbsp;&nbsp;1、玩家开房间时可以选择买马的数量，如选择买6马，则在牌局开始时，会从牌墙最后预留出6张牌作为马牌（小于6张牌则全买），在有人胡牌后，则将马牌翻开<br/>
+                &emsp;&nbsp;&nbsp;3、在结算计分时，只计算胡牌玩家的马，其他家的马不算，胡牌玩家的马牌对应为1、5、9、东风、红中、白板
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

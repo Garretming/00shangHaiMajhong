@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定庄斗牛</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui"/><!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />		<!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	<!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="斗牛">		<!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no" />	<!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">				<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">		<!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">			<!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />	<!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="landscape">	<!-- UC强制横屏 -- portrait|landscape-->
+    <meta name="browsermode" content="application">		<!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">				<!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="landscape">		<!-- QQ强制横屏 -->
+    <meta name="x5-fullscreen" content="true">			<!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">			<!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="xuezhan">
+        <br/>
+        <h4 class="text-center"><strong>定庄斗牛</strong></h4>
+        <div>
+            <p class="lead">一、游戏庄家与倍数</p>
+            <p>定庄：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;房主为庄，一直到游戏结束，不更换庄家
+            </p>
+            <p>倍数：</p>
+            <p>
+                &emsp;&nbsp;&nbsp;系统发5张牌，先显示前3张牌，闲家进行倍数选择，选择倍数后再显示后两张牌，选择的倍数将影响输赢结果的大小，所有比牌均是庄家与闲家比牌。倍数选择：5倍、10倍、15倍、20倍
+            </p>
+
+            <p class="lead">二、牌型介绍</p>
+            <p>
+                &emsp;&nbsp;&nbsp;五小牛：手上牌均小于5点，且总和小于10点<br/>
+                &emsp;&nbsp;&nbsp;五花牛：手上全为JQK<br/>
+                &emsp;&nbsp;&nbsp;四炸：5张牌有4张相同<br/>
+                &emsp;&nbsp;&nbsp;牛牛：选出3张牌相加为10或20或30，剩余2张牌相加为10或20或30<br/>
+                &emsp;&nbsp;&nbsp;牛九-牛二：选出3张牌相加为10或20或30，剩余2张牌相加为9-2<br/>
+                &emsp;&nbsp;&nbsp;牛丁：选出3张牌相加为10或20或30，剩余2张牌相加为1<br/>
+                &emsp;&nbsp;&nbsp;没牛：5张牌任意3张牌相加不能成为10或20或30
+            </p>
+
+            <p class="lead">三、牌型大小</p>
+            <p>（1）牌型：<br/>
+                &emsp;&nbsp;&nbsp;五小牛>五花牛>四炸>牛牛>牛九>牛八>牛七>牛六>牛五>牛四>牛三>牛二>牛丁>没牛
+            </p>
+            <p>（2）点数：<br/>
+                &emsp;&nbsp;&nbsp;K>Q>J>10>9>8>7>6>5>4>3>2>A
+            </p>
+            <p>（3）相同牌型：<br/>
+                &emsp;&nbsp;&nbsp;庄闲家牌型一样大小时，依次比最大一张牌，最大一张牌一样，则按花色比较：黑桃>红桃>梅花>方块
+            </p>
+            <p>（4）牌型倍数：<br/>
+                &emsp;&nbsp;&nbsp;五小牛8倍<br/>
+                &emsp;&nbsp;&nbsp;五花牛6倍<br/>
+                &emsp;&nbsp;&nbsp;四炸5倍<br/>
+                &emsp;&nbsp;&nbsp;牛牛4倍<br/>
+                &emsp;&nbsp;&nbsp;牛九3倍<br/>
+                &emsp;&nbsp;&nbsp;牛七、牛八2倍<br/>
+                &emsp;&nbsp;&nbsp;其他牌型均为1倍
+            </p>
+
+            <p class="lead">四、特殊牌型</p>
+            <p>
+                &emsp;&nbsp;&nbsp;（1）四炸：5张牌有4张相同，若庄闲两家都是四炸，比较4张一样牌的大小<br/>
+                &emsp;&nbsp;&nbsp;（2）五花牛：若庄闲两家都是五花牛，则比较最大一张牌的大小<br/>
+                &emsp;&nbsp;&nbsp;（3）若5张牌既符合四炸又符合五花牛，或满足五小牛和四炸，按最大牌型算
+            </p>
+
+            <p class="lead">五、结算规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;闲家赢牌金币数=(房间底注*所压倍数）*闲家牌型倍数<br/>
+                &emsp;&nbsp;&nbsp;闲家输牌金币数=(房间底注*所压倍数）*庄家牌型倍数<br/>
+                &emsp;&nbsp;&nbsp;庄家赢牌金币数=闲家输牌金币总和
+            </p>
+            <p class="lead">六、出牌规则</p>
+            <p>
+                &emsp;&nbsp;&nbsp;支持系统计算牌型出牌与玩家自选牌型出牌，若5秒内未自选牌，则默认系统牌型出牌。若玩家自选牌型，无论是否为最好的牌型，都按玩家自选的牌型大小算
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
