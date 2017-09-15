@@ -952,6 +952,8 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 	local laiziSeq = {}
 	local caishenSeq = {}
 	local baibanSeq = {}
+	--听牌数据
+	local newTingSeq = {}
 
 
 	--挑出赖子，财神，白板（白板替身的情况下）
@@ -1004,6 +1006,26 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 
 			end
 
+
+			---听牌数据 s
+			local isTing = false
+
+			for k,v in pairs(tingSeq) do
+				if data == v.card then
+					--todo
+					isTing = true
+					break
+				end
+			end
+			--加到听牌数据中
+			if isTing then
+				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				table.insert(newTingSeq, 1, cardData)
+			end
+
+
+
+
 		end
 
 	end
@@ -1048,6 +1070,11 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 		table.insert(newCardsSeq, 1, v)
 	end
 
+	--组合听牌数据到总数据中
+	for i,v in ipairs(newTingSeq) do
+		table.insert(newCardsSeq, 1, v)
+	end
+	
 	--使用3D麻将操作类显示手牌
 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
 
