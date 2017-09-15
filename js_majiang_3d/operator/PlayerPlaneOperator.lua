@@ -1027,4 +1027,26 @@ function PlayerPlaneOperator:putCard()
 end
 
 
+--@garret  显示听牌-- 暗牌
+function PlayerPlaneOperator:showTingSelectCards(plane,tingSeq,playerType)
+
+	--获取shoupai区域
+	local inhandPlane = plane:getChildByName(CHILD_NAME_INHANDPLANE)
+
+	--获取自己的手牌
+	local seatId = ZZMJ_MY_USERINFO.seat_id
+
+	
+	local cards = ZZMJ_GAMEINFO_TABLE[seatId .. ""].hand
+	
+	if inhandPlane then
+		--todo
+		-- inhandPlaneOperator:showCards(playerType,inhandPlane,cards,tingSeq)
+		inhandPlaneOperator:showTingSelectCards(playerType,inhandPlane,cards,tingSeq)
+	end
+
+
+end
+
+
 return PlayerPlaneOperator

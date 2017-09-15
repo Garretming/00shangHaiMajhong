@@ -8,18 +8,21 @@ function ZZMJController:control(controlType, value)
 	if D3_CHUPAI == 2 then
 		D3_CHUPAI = 1
 	end
-	require("js_majiang_3d.globle.ZZMJDefine")
-	if bit.band(controlType, TING_TYPE_T) > 0 then
-		require("js_majiang_3d.handle.ZZMJSendHandle"):sendTingCard(value)
-	else
-		require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
-	end
-	git clone "https://github.com/Garretming/00shangHaiMajhong.git"
+	
+	-- require("js_majiang_3d.globle.ZZMJDefine")
+	-- if bit.band(controlType, TING_TYPE_T) > 0 then
+	-- 	require("js_majiang_3d.handle.ZZMJSendHandle"):sendTingCard(value)
+	-- else
+	-- 	require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
+	-- end
 
-	git clone "https://github.com/Garretming/00shangHaiMajhong.git"
+	dump( bit.band(controlType, TING_TYPE_T),"------走到这了")
+	require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
+
 
 
 end
+
 
 function ZZMJController:showSameCard(value)
     require("js_majiang_3d.operator.GamePlaneOperator"):showSameCard(value)
@@ -132,5 +135,10 @@ function ZZMJController:didSelectOutCard(card)
 
 end
 
+
+--@garret 显示听牌  明暗牌
+-- function ZZMJController:showTingBtnAndBalcCards( value )
+-- 	require("js_majiang_3d.operator.GamePlaneOperator"):showTingSelectCards(value)
+-- end
 
 return ZZMJController

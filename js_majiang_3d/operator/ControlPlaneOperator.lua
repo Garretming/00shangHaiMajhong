@@ -417,7 +417,7 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 		oriX = oriX + box_width
 
 	end
-
+-- dump(bit.band(controlType, CONTROL_TYPE_PENG),"走到着了1")
 	if bit.band(controlType, CONTROL_TYPE_PENG) > 0 then
 		
 		-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 then     --可以杠的时候延迟碰的显示
@@ -462,17 +462,21 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 			oriX = oriX + size.width + CONTROL_BT_SPLIT
 
-			--显示选牌盒子
+			--显示明暗选择效果
+			-- self:showTingSelectCards(controlType)
+
+
+			-- --显示选牌盒子
 			-- self.select_bx:setVisible(true)
 
-			--显示可选择项目
+			-- --显示可选择项目
 			-- if #ZZMJ_CONTROL_TABLE["cardSum"] > 1 then
 			-- 	self.gang_select_bx:setVisible(true)
 			-- else
 			-- 	self.gang_select_bx:setVisible(false)
 			-- end
-
-			-- local box_width = self:showSelectBox(controlType)
+            -- -- 显示可选丢的牌
+			-- local box_width = self:showTingSelectBox(controlType)
 
 			-- self.select_bx:setPosition(cc.p(oriX + box_width / 2, self.select_bx:getSize().height / 2))
 			-- self.select_bx:setSize(cc.size(box_width, 66.92 * boxscale))
@@ -493,6 +497,278 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 end
 
+--@显示听牌可选择 --- 明暗牌
+-- function ControlPlaneOperator:showTingSelectCards()
+-- 	--通知手牌添加明暗效果
+-- 	-- ZZMJ_CONTROLLER:showTingSelectCards(ZZMJ_CONTROL_TABLE)
+	
+-- end
+
+--@garret 显示听    可丢弃选择牌
+function ControlPlaneOperator:showTingSelectBox(controlType )
+--初始化显示盒子
+	self.select_bx:setVisible(true)
+
+	self.left_chi_bt:setVisible(false)
+	self.middle_chi_bt:setVisible(false)
+	self.right_chi_bt:setVisible(false)
+	--  具体参数  ---ZZMJ_CONTROL_TABLE
+	dump(ZZMJ_CONTROL_TABLE," ZZMJ_CONTROL_TABLE 具体参数 ")
+	print(controlType,"-------r-wr-wqer-wr-qwer-")
+
+	
+	-- TING_TYPE_LEFT = 0x1000
+
+	-- dump(TING_TYPE_LEFT,"TING_TYPE_LEFT----")
+	-- dump(TING_TYPE_MIDDLE,"TING_TYPE_MIDDLE----")
+	-- dump(TING_TYPE_RIGHT,"TING_TYPE_RIGHT----")
+	local chose = ZZMJ_CONTROL_TABLE["cardSum"] ---可丢弃牌的组合数
+
+	local liang_dao = ZZMJ_CONTROL_TABLE["LiangDate"]  --亮倒的具体数据内容牌
+
+	local value = 0  --可丢弃的牌
+	local ting_values = 0  --- 丢牌后的听牌数据
+	
+
+	local cardScale = 1.5
+	local bx_width = 20
+
+
+	--遍历可丢牌组合数
+	for  i=0, chose do 
+
+		for k,v in pairs(liang_dao) do 
+
+
+
+		end
+
+
+	end
+
+
+	print("可丢弃牌的组合数" .. chose)
+
+	--- 亮倒  一种选择  (可丢弃的单牌)
+	-- if  chose == 1 then
+	-- 	--可丢弃的单牌
+	-- 	value = ZZMJ_CONTROL_TABLE["LiangDate"]["OpCard"]
+
+
+	-- 	self.left_chi_bt:setVisible(true)
+	-- 	self.left_chi_bt:removeAllChildren()
+	-- 	local bt_width = 0
+
+	-- 	--剩余手牌的听牌可能数
+	-- 	ting_values = ZZMJ_CONTROL_TABLE["LiangDate"]["huCardsSum"]
+
+	-- 		local card = nil
+	-- 		-- if i == caishenCard then
+	-- 		-- 	card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, 67)
+	-- 		-- else
+				
+	-- 		-- end
+
+	-- 		card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, i)
+
+	-- 		local size = card:getSize()
+	-- 		local scale = self.left_chi_bt:getSize().height / size.height * cardScale
+	-- 		card:setScale(scale)
+	-- 		card:setPosition(cc.p((i - value) * size.width * scale + size.width * scale / 2, self.left_chi_bt:getSize().height / 2 + 5))
+
+	-- 		-- if value == i then
+				
+	-- 		-- end
+	-- 		card:setColor(cc.c3b(140, 140, 140))
+
+	-- 		card:setEnabled(false)
+	-- 		self.left_chi_bt:addChild(card)
+
+	-- 		bt_width = bt_width + size.width * scale
+
+
+
+	-- 	local position = self.left_chi_bt:getPosition()
+	-- 	self.left_chi_bt:setPosition(cc.p(bx_width + bt_width / 2, position.y))
+	-- 	local size = self.left_chi_bt:getSize()
+	-- 	self.left_chi_bt:setSize(cc.size(bt_width, size.height))
+
+	-- 	bx_width = bx_width + bt_width + 20
+
+
+	-- end
+
+	
+
+	
+
+	-- if bit.band(controlType, TING_TYPE_MIDDLE) > 0 then
+
+	-- 	-- dump(value, "-----CHI_TYPE_MIDDLE-----")
+
+	-- 	self.middle_chi_bt:setVisible(true)
+	-- 	self.middle_chi_bt:removeAllChildren()
+
+	-- 	local bt_width = 0
+
+	-- 	--假如是白板替身
+	-- 	-- if isbaibantishen == 1 then
+
+	-- 	-- 	--获取财神牌值
+	-- 	-- 	local caishenCard = JS_CAISHEN[1]
+			
+	-- 	-- 	--假如操作牌是白板
+	-- 	-- 	if value == 67 then
+	-- 	-- 		value = caishenCard
+	-- 	-- 	end
+
+	-- 	-- 	for i = value - 1, value + 1 do
+
+	-- 	-- 		local card
+	-- 	-- 		if i == caishenCard then
+	-- 	-- 			card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, 67)
+	-- 	-- 		else
+	-- 	-- 			card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, i)
+	-- 	-- 		end
+
+	-- 	-- 		local size = card:getSize()
+	-- 	-- 		local scale = self.middle_chi_bt:getSize().height / size.height * cardScale
+	-- 	-- 		card:setScale(scale)
+	-- 	-- 		card:setPosition(cc.p((i - value + 1) * size.width * scale + size.width * scale / 2, self.middle_chi_bt:getSize().height / 2 + 5))
+
+	-- 	-- 		if value == i then
+	-- 	-- 			--todo
+	-- 	-- 			card:setColor(cc.c3b(140, 140, 140))
+	-- 	-- 		end
+
+	-- 	-- 		card:setEnabled(false)
+	-- 	-- 		self.middle_chi_bt:addChild(card)
+
+	-- 	-- 		bt_width = bt_width + size.width * scale
+
+	-- 	-- 	end
+
+	-- 	-- else
+
+	-- 	-- 	for i = value - 1, value + 1 do
+
+	-- 	-- 		local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, i)
+	-- 	-- 		local size = card:getSize()
+	-- 	-- 		local scale = self.middle_chi_bt:getSize().height / size.height * cardScale
+	-- 	-- 		card:setScale(scale)
+	-- 	-- 		card:setPosition(cc.p((i - value + 1) * size.width * scale + size.width * scale / 2, self.middle_chi_bt:getSize().height / 2 + 5))
+
+	-- 	-- 		if value == i then
+	-- 	-- 			--todo
+	-- 	-- 			card:setColor(cc.c3b(140, 140, 140))
+	-- 	-- 		end
+
+	-- 	-- 		card:setEnabled(false)
+	-- 	-- 		self.middle_chi_bt:addChild(card)
+
+	-- 	-- 		bt_width = bt_width + size.width * scale
+
+	-- 	-- 	end
+
+	-- 	-- end
+
+	-- 	local position = self.middle_chi_bt:getPosition()
+	-- 	self.middle_chi_bt:setPosition(cc.p(bx_width + bt_width / 2, position.y))
+	-- 	local size = self.middle_chi_bt:getSize()
+	-- 	self.middle_chi_bt:setSize(cc.size(bt_width, size.height))
+
+	-- 	bx_width = bx_width + bt_width + 20
+
+	-- end
+
+	-- if bit.band(controlType, TING_TYPE_RIGHT) > 0 then
+
+	-- 	-- dump(value, "-----CHI_TYPE_RIGHT-----")
+
+	-- 	self.right_chi_bt:setVisible(true)
+	-- 	self.right_chi_bt:removeAllChildren()
+
+	-- 	local bt_width = 0
+
+	-- 	-- --假如是白板替身
+	-- 	-- if isbaibantishen == 1 then
+
+	-- 	-- 	--获取财神牌值
+	-- 	-- 	local caishenCard = JS_CAISHEN[1]
+			
+	-- 	-- 	--假如操作牌是白板
+	-- 	-- 	if value == 67 then
+	-- 	-- 		value = caishenCard
+	-- 	-- 	end
+
+	-- 	-- 	for i = value - 2, value do
+			
+	-- 	-- 		local card
+	-- 	-- 		if i == caishenCard then
+	-- 	-- 			card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, 67)
+	-- 	-- 		else
+	-- 	-- 			card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, i)
+	-- 	-- 		end
+
+	-- 	-- 		local size = card:getSize()
+	-- 	-- 		local scale = self.right_chi_bt:getSize().height / size.height * cardScale
+	-- 	-- 		card:setScale(scale)
+	-- 	-- 		card:setPosition(cc.p((i - value + 2) * size.width * scale + size.width * scale / 2, self.right_chi_bt:getSize().height / 2 + 5))
+
+	-- 	-- 		if value == i then
+	-- 	-- 			--todo
+	-- 	-- 			card:setColor(cc.c3b(140, 140, 140))
+	-- 	-- 		end
+				
+	-- 	-- 		card:setEnabled(false)
+	-- 	-- 		self.right_chi_bt:addChild(card)
+
+	-- 	-- 		bt_width = bt_width + size.width * scale
+
+	-- 	-- 	end
+
+	-- 	-- else
+
+	-- 	-- 	for i = value - 2, value do
+			
+	-- 	-- 		local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, i)
+	-- 	-- 		local size = card:getSize()
+	-- 	-- 		local scale = self.right_chi_bt:getSize().height / size.height * cardScale
+	-- 	-- 		card:setScale(scale)
+	-- 	-- 		card:setPosition(cc.p((i - value + 2) * size.width * scale + size.width * scale / 2, self.right_chi_bt:getSize().height / 2 + 5))
+
+	-- 	-- 		if value == i then
+	-- 	-- 			--todo
+	-- 	-- 			card:setColor(cc.c3b(140, 140, 140))
+	-- 	-- 		end
+				
+	-- 	-- 		card:setEnabled(false)
+	-- 	-- 		self.right_chi_bt:addChild(card)
+
+	-- 	-- 		bt_width = bt_width + size.width * scale
+
+	-- 	-- 	end
+
+	-- 	-- end
+
+	-- 	local position = self.right_chi_bt:getPosition()
+	-- 	self.right_chi_bt:setPosition(cc.p(bx_width + bt_width / 2, position.y))
+	-- 	local size = self.right_chi_bt:getSize()
+	-- 	self.right_chi_bt:setSize(cc.size(bt_width, size.height))
+
+	-- 	bx_width = bx_width + bt_width + 20
+		
+	-- end
+
+	return bx_width
+
+
+	
+
+
+
+
+end
 --显示吃选择牌盒子
 function ControlPlaneOperator:showSelectBox(controlType)
 

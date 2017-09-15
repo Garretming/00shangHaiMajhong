@@ -38,6 +38,9 @@ local LOGIN_OUT_TIMER = 20
 --定义麻将游戏界面名称
 local run_scene_name = "js_majiang_3d.gameScene"
 
+--定义麻将操作
+require("js_majiang_3d.globle.ZZMJDefine")
+
 --扣除台费百分数
 local percent_base = 0.20
 
@@ -185,7 +188,7 @@ end
 local LocaArrayByPlayerType = {}
 --亮倒（听牌）
 function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
-    dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-")
+    dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-tingpai ")
 		--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮
 
 -- 				             "huCardsSum"   = 1	
@@ -207,20 +210,28 @@ function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
 -- -     }	
 -- -     "UserId"    = 100845	
 
---获取触发操作的用户的位置
-    local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
-    local playerType = cardUtils:getPlayerType(seatId)
-	-- pritn("")
-	--  if playerType  == CARD_PLAYERTYPE_MY then
-	 if pack.UserId  == UID then
-		--构建听牌数据
-		local showTingBtnType = {}
 
-		showTingBtnType["type"] = 0x1000  --操作类型
-		print(TING_TYPE_T,"-------------")
-		showTingBtnType["value"] = pack.LiangDate.OpCard  --可丢弃的牌
+	-- print("获取触发操作的用户的位置------" .. playerType,CARD_PLAYERTYPE_MY)
+
+
+	
+	--  if playerType  == CARD_PLAYERTYPE_MY then
+	 if pack.cardSum  > 0 and pack.UserId  == UID then
+		--构建听牌数据
+		local showTingBtnType = pack
+		
+		local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
+		local playerType = cardUtils:getPlayerType(seatId)
+
+		showTingBtnType["type"] = TING_TYPE_T  --操作类型
+		-- print(TING_TYPE_T,"-------------")
+		-- showTingBtnType["value"] = pack.LiangDate --可丢弃的牌
 		--听牌
-		gamePlaneOperator:showControlPlane(showTingBtnType)
+
+		print("77777777")
+
+		gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
+		
 	 end
 
 end
@@ -1200,6 +1211,7 @@ function ZZMJReceiveHandle:SVR_REGET_ROOM(pack)
     dump(controlTable, "-----重连controlTable-----")
 
 	--显示碰杠吃胡操作界面
+	print("6666666666666665")
 	gamePlaneOperator:showControlPlane(controlTable)
 
 -----------------------------------------------------------------------------------------------
@@ -1385,7 +1397,7 @@ end
 function ZZMJReceiveHandle:SVR_NORMAL_OPERATE(pack)
 
 	dump(pack, "-----服务器告知客户端可以进行的操作-----")
-
+print("5555552")
 	local controlTable = cardUtils:getControlTable(pack.handle, pack.card, 1)
 	gamePlaneOperator:showControlPlane(controlTable)
 
@@ -1422,13 +1434,13 @@ function ZZMJReceiveHandle:SVR_PLAYER_USER_BROADCAST(pack)
         for k,v in pairs(pack.tingCards) do
             if playerType == CARD_PLAYERTYPE_MY then
                 gamePlaneOperator:showTingHuPlane(playerType, v.tingHuCards)--显示听牌提示牌
-
-
 				--@garret 显示听牌按钮
-				local showTingBtnType = {}
-				showTingBtnType["type"] = TING_TYPE_T  --操作类型
-				showTingBtnType["value"] = v.card --听牌要丢弃的牌
-				gamePlaneOperator:showControlPlane(showTingBtnType)
+
+				-- print("444444444222")
+				-- local showTingBtnType = {}
+				-- showTingBtnType["type"] = TING_TYPE_T  --操作类型
+				-- showTingBtnType["value"] = v.card --听牌要丢弃的牌
+				-- gamePlaneOperator:showControlPlane(showTingBtnType)
             end
         end
     end
@@ -1984,7 +1996,7 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
         else
             D3_CHUPAI = 2
         end
-
+print("33333")
         gamePlaneOperator:showControlPlane(controlTable)
 
     end
@@ -2016,6 +2028,7 @@ function ZZMJReceiveHandle:SVR_SEND_MAJIANG_BROADCAST(pack)
 
 	if pack.uid ~= USER_INFO["uid"] then
         --假如不是自己出牌，则显示该牌触发的操作界面
+		print("111111")
 		gamePlaneOperator:showControlPlane(handleResult)
 	else
         --假如是自己出牌，把自己出牌状态重置

@@ -563,5 +563,33 @@ function GamePlaneOperator:didSelectOutCard(card)
     ZZMJ_CONTROLLER:didSelectOutCard(card)
 
 end
+--@garret 显示手牌中暗牌
+function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
+
+	--显示听按钮
+	self:showControlPlane(value)
+	
+
+
+	local cardSum = value.cardSum
+	local  cardValue = value.LiangDate
+	--丢牌
+	local tingSeq = {}
+	
+	for i=1,cardSum do
+		for k,v in pairs(cardValue) do
+			if k == "OpCard" then
+				table.insert(tingSeq,v)
+				break
+			end
+		end
+	end
+	
+
+	--显示可丢弃暗牌
+	playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
+end
+
+
 
 return GamePlaneOperator

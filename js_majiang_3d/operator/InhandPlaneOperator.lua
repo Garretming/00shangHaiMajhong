@@ -15,7 +15,7 @@ local NEW_CARD_TAG = 20
 
 local cardTemp = nil
 
---初始化自己区域
+--初始化自己区域(左下侧碰杠区)
 function InhandPlaneOperator:init(playerType, plane)
 
 	--移除操作区域上的所有牌
@@ -939,5 +939,236 @@ end
 -- 		local width = oriX
 -- 		plane:setSize(cc.size(width, plane:getSize().height))
 -- end
+
+
+--@garret 显示听牌 暗牌
+function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, tingSeq)
+	dump("显示手牌", "-----showCards-----")
+
+	--对传入牌进行排序
+	table.sort(cardDatas)
+
+	local cardsSeq = {}
+	local laiziSeq = {}
+	local caishenSeq = {}
+	local baibanSeq = {}
+
+
+	--挑出赖子，财神，白板（白板替身的情况下）
+	for k,v in pairs(cardDatas) do
+
+        if v == HHMJ_LAIZI then
+
+			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
+
+			table.insert(laiziSeq, 1, cardData)
+
+		else
+
+			local isCaishen = false
+			for k1,v1 in pairs(JS_CAISHEN) do
+				
+				if v == v1 then
+					isCaishen = true
+				end
+
+			end
+
+			if isCaishen then
+
+				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				table.insert(caishenSeq, 1, cardData)
+				
+			else
+
+				if isbaibantishen == 1 then
+
+					if v == 67 then
+					
+						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+						table.insert(baibanSeq, cardData)
+
+					else
+
+						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+						table.insert(cardsSeq, cardData)
+
+					end
+				
+				else
+
+					local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+					table.insert(cardsSeq, cardData)
+
+				end
+
+			end
+
+		end
+
+	end
+
+	--获取财神牌值
+	local caishenCard = JS_CAISHEN[1]
+
+	--把白板插入到替换牌的位置上
+	local xiaoYuCaiShenSeq = {}
+	local daYuCaiShenSeq = {}
+	local newCardsSeq = {}
+	for k,v in pairs(cardsSeq) do
+		if v.m_value < caishenCard then
+			table.insert(xiaoYuCaiShenSeq, v)
+		else
+			table.insert(daYuCaiShenSeq, v)
+		end
+	end
+
+	--插入小于财神的牌到新牌数组
+	for k,v in pairs(xiaoYuCaiShenSeq) do
+		table.insert(newCardsSeq, v)
+	end
+
+	--插入白板到新牌数组
+	for k,v in pairs(baibanSeq) do
+		table.insert(newCardsSeq, v)
+	end
+
+	--插入大于财神的牌到新牌数组
+	for k,v in pairs(daYuCaiShenSeq) do
+		table.insert(newCardsSeq, v)
+	end
+
+	--合拼赖子数组和手牌数组
+	for i,v in ipairs(laiziSeq) do
+		table.insert(newCardsSeq, 1, v)
+	end
+
+	--合拼财神数组和手牌数组
+	for i,v in ipairs(caishenSeq) do
+		table.insert(newCardsSeq, 1, v)
+	end
+
+	--使用3D麻将操作类显示手牌
+	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------
+
+
+	-- plane:removeAllChildren()
+
+	-- selectedTag = 99
+	
+	-- local oriX = 0
+	-- local oriY = plane:getSize().height / 2
+
+	-- 	for i=1,table.getn(cards) do
+	-- 		local data = cards[i]
+
+	-- 		local isTing = false
+
+	-- 		for k,v in pairs(tingSeq) do
+	-- 			if data == v.card then
+	-- 				--todo
+	-- 				isTing = true
+	-- 				break
+	-- 			end
+	-- 		end
+
+	-- 		local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, data)
+	-- 		card:setScale(card:getScale() * 1.1)
+	-- 		card:setPosition(cc.p(oriX + card:getSize().width * card:getScale() / 2, card:getSize().height * card:getScale() / 2))
+	-- 		card:setTag(i)
+
+	-- 		if isTing then
+	-- 			--todo
+	-- 			card:setTouchEnabled(true)
+	-- 			card:addTouchEventListener(function(sender, event)
+
+				
+
+	-- 			if event == TOUCH_EVENT_ENDED then
+	-- 				--todo
+	-- 				--print("card value")
+	-- 				--dump(sender.m_value, "card value") 
+	-- 				--dump(sender:getAnchorPoint())
+
+					
+	-- 				if selectedTag == sender:getTag() then
+	-- 					    --出牌
+	-- 					    -- ZZMJ_CONTROLLER:hideTingHuPlane()
+	-- 					 --    for k,v in pairs(tingSeq) do
+	-- 						-- 	if v.card == sender.m_value then
+	-- 						-- 		--todo
+	-- 						-- 		local tingHuCards = v.tingHuCards
+	-- 						-- 		ZZMJ_CONTROLLER:showTingHuPlane(tingHuCards)
+
+	-- 						-- 		ZZMJ_CONTROLLER:requestLiang(tingHuCards)
+	-- 						-- 		ZZMJ_CONTROLLER:playCard(sender.m_value)	
+	-- 						-- 		break
+	-- 						-- 	end
+	-- 						-- end
+	-- 						-- dump(sender.m_value, "liang card test")
+	-- 						ZZMJ_CONTROLLER:requestLiang(sender.m_value)
+	-- 						-- ZZMJ_CONTROLLER:playCard(sender.m_value)	
+							
+	-- 					else
+	-- 						self:cancelSelectingCard(plane)
+
+	-- 						local p = sender:getPosition()
+
+	-- 						sender:setScale(1.2)
+	-- 						local offsetX = 0.1 * sender:getSize().width
+
+	-- 						sender:setPosition(cc.p(p.x + offsetX / 2, p.y + 30))
+
+	-- 						local tag = sender:getTag()
+	-- 						selectedTag = tag
+	-- 						tag = tag + 1
+	-- 						local nextCard = plane:getChildByTag(tag)
+	-- 						while nextCard do
+	-- 							--todo
+	-- 							nextCard:setPosition(cc.p(nextCard:getPosition().x + offsetX, nextCard:getPosition().y))
+
+	-- 							tag = tag + 1
+	-- 							nextCard = plane:getChildByTag(tag)
+	-- 						end
+
+	-- 						for k,v in pairs(tingSeq) do
+	-- 							if v.card == sender.m_value then
+	-- 								--todo
+	-- 								local tingHuCards = v.tingHuCards
+	-- 								ZZMJ_CONTROLLER:showTingHuPlane(CARD_PLAYERTYPE_MY, tingHuCards)
+
+	-- 								break
+	-- 							end
+	-- 						end
+	-- 					end
+	-- 			end
+
+	-- 			end)
+	-- 		else
+	-- 			card:setTouchEnabled(false)
+	-- 			card:setColor(cc.c3b(150, 150, 150))
+	-- 		end
+
+	-- 		card:setTag(i)
+
+	-- 		plane:addChild(card)
+
+	-- 		oriX = oriX + card:getSize().width * card:getScale()
+	-- 	end
+
+	-- 	local width = oriX
+	-- 	plane:setSize(cc.size(width, plane:getSize().height))
+
+	-- 	--使用3D麻将操作类显示手牌
+	-- 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
+end
 
 return InhandPlaneOperator

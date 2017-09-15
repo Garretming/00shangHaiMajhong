@@ -30,7 +30,7 @@ Quick-Cocos2d-x C++ support ready.
 
 [LUA-print] [INFO] # device.language              = cn
 
-[LUA-print] [INFO] # device.writablePath          = e:\www_root\00shangHaiMajhong\
+[LUA-print] [INFO] # device.writablePath          = C:/Users/Administrator/AppData/Local/DouyouTV/
 
 [LUA-print] [INFO] # device.directorySeparator    = \
 
@@ -76,7 +76,7 @@ Quick-Cocos2d-x C++ support ready.
 
 [LUA-print] [INFO] #
 
-[LUA-print] [INFO] GameState.load() - file "e:\www_root\00shangHaiMajhong\state.txt" not found
+[LUA-print] [INFO] GameState.load() - file "C:/Users/Administrator/AppData/Local/DouyouTV\state.txt" not found
 
 [LUA-print] MainScene:onEnter
 
@@ -3474,11 +3474,11 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] -         "name"    = "completed"
 
-[LUA-print] -         "request" = userdata: 0x0c418698
+[LUA-print] -         "request" = userdata: 0x0c02c790
 
 [LUA-print] -     }
 
-[LUA-print] -     "netData" = "{"data":{"cardCount":0,"points":1},"returnCode":"0"}"
+[LUA-print] -     "netData" = "{"data":{"cardCount":0,"points":2},"returnCode":"0"}"
 
 [LUA-print] - }
 
@@ -3492,7 +3492,7 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] -     1 = {
 
-[LUA-print] -         "activityId"      = 28444
+[LUA-print] -         "activityId"      = 28456
 
 [LUA-print] -         "coins"           = 1
 
@@ -3508,7 +3508,7 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] -         "gameName"        = "上海敲麻"
 
-[LUA-print] -         "inviteCode"      = "047502"
+[LUA-print] -         "inviteCode"      = "026892"
 
 [LUA-print] -         "isJoin"          = 1
 
@@ -3518,7 +3518,7 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] -         "rounds"          = 0
 
-[LUA-print] -         "startDate"       = 1505378529000
+[LUA-print] -         "startDate"       = 1505439766000
 
 [LUA-print] -         "status"          = "0"
 
@@ -3536,11 +3536,11 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] dump from: [string "hall/groudgamemanager.lua"]:15: in function 'join_freegame'
 
-[LUA-print] - "-----加入组局入参invitationCode-----" = "047502"
+[LUA-print] - "-----加入组局入参invitationCode-----" = "026892"
 
 [LUA-print] dump from: [string "hall/groudgamemanager.lua"]:16: in function 'join_freegame'
 
-[LUA-print] - "-----加入组局入参activityId-----" = 28444
+[LUA-print] - "-----加入组局入参activityId-----" = 28456
 
 [LUA-print] dump from: [string "hall/groudgamemanager.lua"]:17: in function 'join_freegame'
 
@@ -3558,9 +3558,9 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] - "-----加入组局请求参数-----" = {
 
-[LUA-print] -     "activityId"     = 28444
+[LUA-print] -     "activityId"     = 28456
 
-[LUA-print] -     "invitationCode" = "047502"
+[LUA-print] -     "invitationCode" = "026892"
 
 [LUA-print] -     "level"          = "524"
 
@@ -3577,4 +3577,3445 @@ HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInt
 load cocostudio csb is hall/NetworkLoadingView/NetworkLoadingLayer.csb
 
 HTTPRequest[0x0009] - create request with url: http://119.23.152.242:8080/hbiInterface/joinFreeGame
+
+[LUA-print] dump from: [string "hall/network/http/Request.lua"]:32: in function <[string "hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string "hall/groudgamemanager.lua"]:32: in function 'callBack'
+
+[LUA-print] - "-----请求加入组局结果返回-----" = {
+
+[LUA-print] -     "data" = {
+
+[LUA-print] -         "activityDiscription" = "8局 10倍底花 飞苍蝇 1花"
+
+[LUA-print] -         "activityName"        = "用户1380134的组局"
+
+[LUA-print] -         "coins"               = 1
+
+[LUA-print] -         "creatorId"           = "100845"
+
+[LUA-print] -         "creatorNickname"     = "用户1380134"
+
+[LUA-print] -         "creatorPhotoUrl"     = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/B091361568125195_change_YMIB0920130223Cb009.jpg"
+
+[LUA-print] -         "gameActivityId"      = "28456"
+
+[LUA-print] -         "gameCode"            = "js_majiang_3d"
+
+[LUA-print] -         "gameId"              = "524"
+
+[LUA-print] -         "gameName"            = "上海敲麻"
+
+[LUA-print] -         "inviteCode"          = "026892"
+
+[LUA-print] -         "level"               = 524
+
+[LUA-print] -         "minutes"             = 0
+
+[LUA-print] -         "oriCoins"            = 2000
+
+[LUA-print] -         "players" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "startDate"           = 1505439765521
+
+[LUA-print] -         "status"              = 0
+
+[LUA-print] -         "tableId"             = 343408640
+
+[LUA-print] -     }
+
+[LUA-print] -     "returnCode" = "0"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "hall/groudgamemanager.lua"]:52: in function 'callBack'
+
+[LUA-print] - "----------" = "界面选择游戏的 enter_mode:524，enter_code：js_majiang_3d"
+
+[LUA-print] dump from: [string "hall/groudgamemanager.lua"]:64: in function 'callBack'
+
+[LUA-print] - "----------" = "最后进入游戏的 enter_mode:524，enter_code：js_majiang_3d"
+
+[LUA-print] dump from: [string "hall/util/YaYaVoiceServerUtil.lua"]:11: in function 'LoginRoom'
+
+[LUA-print] - "-----YaYaVoiceServerUtil-----" = "进入房间"
+
+[LUA-print] get version key:js_majiang_3d_current-version
+
+[LUA-print] -----获取[js_majiang_3d] 版本号是：[]
+
+[LUA-print] dump from: [string "hall/GameUpdate.lua"]:501: in function 'queryVersionInJoinGame'
+
+[LUA-print] - "-----检查游戏版本（加入组局时用）-----" = ""
+
+[LUA-print] zhixingenterScene	nil
+
+[LUA-print] zhixingenterScene	js_majiang_3d
+
+[LUA-print] dump from: [string "hall/3DMahjongCard/Define.lua"]:20: in main chunk
+
+[LUA-print] - "<var>" = "define test"
+
+load cocostudio csb is js_majiang_3d/GameScene.csb
+
+load cocostudio csb is hall/FaceUI/faceUI.csb
+
+[LUA-print] 289.5	nimab2	15
+
+Can't set a nullptr to item model!
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:342: in function 'getDeviceInfo'
+
+[LUA-print] - "-----显示手机信息-----" = ""
+
+HTTPRequest[0x0002] - request removed
+
+HTTPRequest[0x0003] - request removed
+
+HTTPRequest[0x0004] - request removed
+
+HTTPRequest[0x0005] - request removed
+
+HTTPRequest[0x0006] - request removed
+
+HTTPRequest[0x0007] - request removed
+
+HTTPRequest[0x0008] - request removed
+
+[LUA-print] build cmd:%x header lenght:%d	275	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+cocos2d: QuadCommand: resizing index size from [-1] to [6]
+
+HTTPRequest[0x0009] - request removed
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:48 [00 00 00 2C 42 59 00 00 00 00 02 10 00 00 00 00 00 00 14 78 00 00 14 78 00 00 00 0A 31 32 37 2E 30 2E 30 2E 31 00 00 00 4F 10 00 00 00 00 02 0C ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	tid	343408640
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	24	2	sid	5240
+
+[LUA-print] read data string pos:%d	25
+
+[LUA-print] read data string len:%d	10
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	25	38	14	ip	127.0.0.1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	39	42	4	port	20240
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	43	46	4	res	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	47	48	2	level	524
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x4006，0x7114，0x908，0x906，0x210，0x212，0x214，0x3008，0x7103，0x1003，0x7101，0x7104，0x1007，0x4013，0x1005，0x3009，0x100e，0x1009，0x4012，0x7106，0x4104，0x4005，0x1004，0x3002，0x3001，0x1008，0x4001，0x907，当前解析协议号：0x213，当前解析协议号：0x213，当前解析协议号：0x213，当前解析协议号：0x210，"
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:751: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:749>
+
+[LUA-print] - "-----处理进入房间-----" = {
+
+[LUA-print] -     "cmd"   = 528
+
+[LUA-print] -     "ip"    = "127.0.0.1"
+
+[LUA-print] -     "level" = 524
+
+[LUA-print] -     "port"  = 20240
+
+[LUA-print] -     "res"   = 0
+
+[LUA-print] -     "sid"   = 5240
+
+[LUA-print] -     "tid"   = 343408640
+
+[LUA-print] - }
+
+[LUA-print] build cmd:%x header lenght:%d	4097	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:114 [00 00 00 6E 42 59 00 00 00 00 10 6A 00 00 00 00 00 00 00 00 00 04 00 01 89 ED 00 00 00 0F 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 00 00 01 89 EE 00 00 00 0F 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 00 00 01 89 EF 00 00 00 0F 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 00 00 01 89 F0 00 00 00 0F 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	playercount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	27
+
+[LUA-print] read data string len:%d	15
+
+[LUA-print] read data string pos:%d	50
+
+[LUA-print] read data string len:%d	15
+
+[LUA-print] read data string pos:%d	73
+
+[LUA-print] read data string len:%d	15
+
+[LUA-print] read data string pos:%d	96
+
+[LUA-print] read data string len:%d	15
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	114	92	playeripdata	[{"uid":100845,"ip":"113.110.177.28"},{"uid":100846,"ip":"113.110.177.28"},{"uid":100847,"ip":"113.110.177.28"},{"uid":100848,"ip":"113.110.177.28"}]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:822 [00 00 03 32 42 59 00 00 00 00 10 09 00 00 00 00 00 00 00 00 00 00 00 00 01 00 06 00 03 00 00 07 D0 00 00 00 22 01 23 00 00 00 00 01 00 00 00 01 00 3B 00 3B 00 00 00 00 00 2A 00 03 00 01 89 ED 00 00 00 00 00 00 00 00 07 00 00 00 AE 7B 22 69 70 22 3A 22 31 32 37 2E 30 2E 30 2E 31 22 2C 22 6D 6F 6E 65 79 22 3A 30 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 70 68 6F 74 6F 55 72 6C 22 3A 22 68 74 74 70 3A 2F 2F 68 62 69 72 64 74 65 73 74 2E 6F 73 73 2D 63 6E 2D 73 68 65 6E 7A 68 65 6E 2E 61 6C 69 79 75 6E 63 73 2E 63 6F 6D 2F 42 30 39 31 33 36 31 35 36 38 31 32 35 31 39 35 5F 63 68 61 6E 67 65 5F 59 4D 49 42 30 39 32 30 31 33 30 32 32 33 43 62 30 30 39 2E 6A 70 67 22 2C 22 73 65 78 22 3A 22 32 22 7D 0A 00 00 00 07 D0 00 03 15 16 17 00 01 23 00 00 00 03 53 57 55 00 0E 07 00 32 00 21 00 41 00 19 00 22 00 08 01 21 00 05 00 09 01 31 00 02 00 01 00 34 00 01 00 01 89 EE 00 01 00 00 00 00 00 00 0B 00 00 00 AB 7B 22 69 70 22 3A 22 31 32 37 2E 30 2E 30 2E 31 22 2C 22 6D 6F 6E 65 79 22 3A 30 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 70 68 6F 74 6F 55 72 6C 22 3A 22 68 74 74 70 3A 2F 2F 68 62 69 72 64 74 65 73 74 2E 6F 73 73 2D 63 6E 2D 73 68 65 6E 7A 68 65 6E 2E 61 6C 69 79 75 6E 63 73 2E 63 6F 6D 2F 61 30 34 34 61 64 33 34 35 39 38 32 62 32 62 37 61 32 66 30 66 37 63 64 33 33 61 64 63 62 65 66 37 36 30 39 39 62 34 38 2E 6A 70 67 22 2C 22 73 65 78 22 3A 22 32 22 7D 0A 00 00 00 07 D0 00 03 07 08 09 00 00 00 00 00 03 51 52 54 00 0C 41 00 31 01 34 01 42 00 41 00 18 00 04 00 28 00 02 00 03 01 05 00 43 00 01 00 01 89 EF 00 02 00 00 00 00 00 00 07 00 00 00 AB 7B 22 69 70 22 3A 22 31 32 37 2E 30 2E 30 2E 31 22 2C 22 6D 6F 6E 65 79 22 3A 30 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 70 68 6F 74 6F 55 72 6C 22 3A 22 68 74 74 70 3A 2F 2F 68 62 69 72 64 74 65 73 74 2E 6F 73 73 2D 63 6E 2D 73 68 65 6E 7A 68 65 6E 2E 61 6C 69 79 75 6E 63 73 2E 63 6F 6D 2F 30 36 30 38 32 38 33 38 31 66 33 30 65 39 32 34 38 30 31 32 34 38 33 35 34 65 30 38 36 65 30 36 31 64 39 35 66 37 30 34 2E 6A 70 67 22 2C 22 73 65 78 22 3A 22 31 22 7D 0A 00 00 00 07 D0 00 03 01 02 03 00 01 34 00 00 00 00 00 0B 41 00 32 00 33 00 42 00 43 00 33 00 24 00 28 00 11 00 16 00 33 00 01 00 00 07 01 03 04 05 16 17 18 00 00 00 02 31 09 00 00 00 00 00 0D 42 00 08 00 24 00 15 01 43 00 08 00 29 00 23 01 28 00 26 00 43 00 06 00 24 00 01 FF 00 00 02 0C 01 01 01 A0 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	19	1	handleCard	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	20	23	4	handle	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	25	2	currentPlayerId	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	26	27	2	nTableType	6
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	28	29	2	seat_id	3
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	30	33	4	gold	2000
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	34	35	2	nTingFlag	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	36	37	2	qiangTouCard	34
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	38	38	1	caiShenCount	1
+
+[LUA-print] [parsePacket_]array fixedLength:%d	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	39	39	1	caiShenCards	[35]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	40	40	1	isbaibantishen	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	41	44	4	nBaseChips	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	45	48	4	nBaseRadix	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	49	50	2	nOutCardTimeout	59
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	51	52	2	nOperationTimeout	59
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	53	54	2	m_nBankSeatId	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	55	56	2	m_nShaiZi	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	57	58	2	card_less	42
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	59	60	2	nPlayerCount	3
+
+[LUA-print] [parsePacket_]array fixedLength:%d	3
+
+[LUA-print] read data string pos:%d	74
+
+[LUA-print] read data string len:%d	174
+
+[LUA-print] read data string pos:%d	315
+
+[LUA-print] read data string len:%d	171
+
+[LUA-print] read data string pos:%d	548
+
+[LUA-print] read data string len:%d	171
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	61	763	703	users_info	[{"cCards":[21,22,23],"HuSeatId":0,"outCards":[{"outcardtype":0,"card":7},{"outcardtype":0,"card":50},{"outcardtype":0,"card":33},{"outcardtype":0,"card":65},{"outcardtype":0,"card":25},{"outcardtype":0,"card":34},{"outcardtype":1,"card":8},{"outcardtype":0,"card":33},{"outcardtype":0,"card":5},{"outcardtype":1,"card":9},{"outcardtype":0,"card":49},{"outcardtype":0,"card":2},{"outcardtype":0,"card":1},{"outcardtype":0,"card":52}],"uid":100845,"seat_id":0,"outCount":14,"pCards":[35],"m_bAI":0,"hCount":3,"pCount":1,"cCount":3,"online":1,"user_gold":2000,"user_info":"{\"ip\":\"127.0.0.1\",\"money\":0,\"nickName\":\"用户1380134\",\"photoUrl\":\"http:\/\/hbirdtest.oss-cn-shenzhen.aliyuncs.com\/B091361568125195_change_YMIB0920130223Cb009.jpg\",\"sex\":\"2\"}\n","gCount":0,"nTingFlag":0,"countHandCards":7,"hCards":[83,87,85],"gCards":{}},{"cCards":[7,8,9],"HuSeatId":0,"outCards":[{"outcardtype":0,"card":65},{"outcardtype":1,"card":49},{"outcardtype":1,"card":52},{"outcardtype":0,"card":66},{"outcardtype":0,"card":65},{"outcardtype":0,"card":24},{"outcardtype":0,"card":4},{"outcardtype":0,"card":40},{"outcardtype":0,"card":2},{"outcardtype":1,"card":3},{"outcardtype":0,"card":5},{"outcardtype":0,"card":67}],"uid":100846,"seat_id":1,"outCount":12,"pCards":{},"m_bAI":0,"hCount":3,"pCount":0,"cCount":3,"online":1,"user_gold":2000,"user_info":"{\"ip\":\"127.0.0.1\",\"money\":0,\"nickName\":\"用户1380136\",\"photoUrl\":\"http:\/\/hbirdtest.oss-cn-shenzhen.aliyuncs.com\/a044ad345982b2b7a2f0f7cd33adcbef76099b48.jpg\",\"sex\":\"2\"}\n","gCount":0,"nTingFlag":0,"countHandCards":11,"hCards":[81,82,84],"gCards":{}},{"cCards":[1,2,3],"HuSeatId":0,"outCards":[{"outcardtype":0,"card":65},{"outcardtype":0,"card":50},{"outcardtype":0,"card":51},{"outcardtype":0,"card":66},{"outcardtype":0,"card":67},{"outcardtype":0,"card":51},{"outcardtype":0,"card":36},{"outcardtype":0,"card":40},{"outcardtype":0,"card":17},{"outcardtype":0,"card":22},{"outcardtype":0,"card":51}],"uid":100847,"seat_id":2,"outCount":11,"pCards":[52],"m_bAI":0,"hCount":0,"pCount":1,"cCount":3,"online":1,"user_gold":2000,"user_info":"{\"ip\":\"127.0.0.1\",\"money\":0,\"nickName\":\"用户1380137\",\"photoUrl\":\"http:\/\/hbirdtest.oss-cn-shenzhen.aliyuncs.com\/060828381f30e924801248354e086e061d95f704.jpg\",\"sex\":\"1\"}\n","gCount":0,"nTingFlag":0,"countHandCards":7,"hCards":{},"gCards":{}}]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	764	764	1	pHuSeatId	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	765	766	2	handCount	7
+
+[LUA-print] [parsePacket_]array fixedLength:%d	7
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	767	773	7	handCards	[1,3,4,5,22,23,24]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	774	775	2	cCount	0
+
+[LUA-print] [parsePacket_]array fixedLength:%d	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	776	775	0	cCards	{}
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	776	777	2	pCount	2
+
+[LUA-print] [parsePacket_]array fixedLength:%d	2
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	778	779	2	pCards	[49,9]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	780	781	2	gCount	0
+
+[LUA-print] [parsePacket_]array fixedLength:%d	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	782	781	0	gCards	{}
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	782	783	2	hCount	0
+
+[LUA-print] [parsePacket_]array fixedLength:%d	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	784	783	0	hCards	{}
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	784	785	2	outCount	13
+
+[LUA-print] [parsePacket_]array fixedLength:%d	13
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	786	811	26	outCards	[{"outcardtype":0,"card":66},{"outcardtype":0,"card":8},{"outcardtype":0,"card":36},{"outcardtype":1,"card":21},{"outcardtype":0,"card":67},{"outcardtype":0,"card":8},{"outcardtype":0,"card":41},{"outcardtype":1,"card":35},{"outcardtype":0,"card":40},{"outcardtype":0,"card":38},{"outcardtype":0,"card":67},{"outcardtype":0,"card":6},{"outcardtype":0,"card":36}]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	812	812	1	quew	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	813	813	1	isDQw	-1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	814	817	4	m_nLevel	524
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	818	818	1	tingHuCount	1
+
+[LUA-print] [parsePacket_]array fixedLength:%d	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	819	819	1	tingHuCards	[1]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	820	820	1	tingCount	1
+
+[LUA-print] [parsePacket_]array fixedLength:%d	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	821	822	2	tingCards	[{"tingHuCount":0,"tingHuCards":{},"card":-96}]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:30 [00 00 00 1A 42 59 00 00 00 00 51 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	time	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	26	4	round	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	27	30	4	round_total	8
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x4006，0x7114，0x908，0x906，0x210，0x212，0x214，0x3008，0x7103，0x1003，0x7101，0x7104，0x1007，0x4013，0x1005，0x3009，0x100e，0x1009，0x4012，0x7106，0x4104，0x4005，0x1004，0x3002，0x3001，0x1008，0x4001，0x907，当前解析协议号：0x106a，当前解析协议号：0x1009，当前解析协议号：0x5101，"
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:423: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:421>
+
+[LUA-print] - "-----广播用户IP-----" = {
+
+[LUA-print] -     "cmd"          = 4202
+
+[LUA-print] -     "playercount"  = 4
+
+[LUA-print] -     "playeripdata" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "ip"  = "113.110.177.28"
+
+[LUA-print] -             "uid" = 100845
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "ip"  = "113.110.177.28"
+
+[LUA-print] -             "uid" = 100846
+
+[LUA-print] -         }
+
+[LUA-print] -         3 = {
+
+[LUA-print] -             "ip"  = "113.110.177.28"
+
+[LUA-print] -             "uid" = 100847
+
+[LUA-print] -         }
+
+[LUA-print] -         4 = {
+
+[LUA-print] -             "ip"  = "113.110.177.28"
+
+[LUA-print] -             "uid" = 100848
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] build cmd:%x header lenght:%d	357	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:930: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:928>
+
+[LUA-print] - "-----重连房间成功-----" = {
+
+[LUA-print] -     "cCards" = {
+
+[LUA-print] -     }
+
+[LUA-print] -     "cCount"            = 0
+
+[LUA-print] -     "caiShenCards" = {
+
+[LUA-print] -         1 = 35
+
+[LUA-print] -     }
+
+[LUA-print] -     "caiShenCount"      = 1
+
+[LUA-print] -     "card_less"         = 42
+
+[LUA-print] -     "cmd"               = 4105
+
+[LUA-print] -     "currentPlayerId"   = 1
+
+[LUA-print] -     "gCards" = {
+
+[LUA-print] -     }
+
+[LUA-print] -     "gCount"            = 0
+
+[LUA-print] -     "gold"              = 2000
+
+[LUA-print] -     "hCards" = {
+
+[LUA-print] -     }
+
+[LUA-print] -     "hCount"            = 0
+
+[LUA-print] -     "handCards" = {
+
+[LUA-print] -         1 = 1
+
+[LUA-print] -         2 = 3
+
+[LUA-print] -         3 = 4
+
+[LUA-print] -         4 = 5
+
+[LUA-print] -         5 = 22
+
+[LUA-print] -         6 = 23
+
+[LUA-print] -         7 = 24
+
+[LUA-print] -     }
+
+[LUA-print] -     "handCount"         = 7
+
+[LUA-print] -     "handle"            = 0
+
+[LUA-print] -     "handleCard"        = 0
+
+[LUA-print] -     "isDQw"             = -1
+
+[LUA-print] -     "isbaibantishen"    = 0
+
+[LUA-print] -     "m_nBankSeatId"     = 0
+
+[LUA-print] -     "m_nLevel"          = 524
+
+[LUA-print] -     "m_nShaiZi"         = 0
+
+[LUA-print] -     "nBaseChips"        = 1
+
+[LUA-print] -     "nBaseRadix"        = 1
+
+[LUA-print] -     "nOperationTimeout" = 59
+
+[LUA-print] -     "nOutCardTimeout"   = 59
+
+[LUA-print] -     "nPlayerCount"      = 3
+
+[LUA-print] -     "nTableType"        = 6
+
+[LUA-print] -     "nTingFlag"         = 0
+
+[LUA-print] -     "outCards" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "card"        = 66
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "card"        = 8
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         3 = {
+
+[LUA-print] -             "card"        = 36
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         4 = {
+
+[LUA-print] -             "card"        = 21
+
+[LUA-print] -             "outcardtype" = 1
+
+[LUA-print] -         }
+
+[LUA-print] -         5 = {
+
+[LUA-print] -             "card"        = 67
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         6 = {
+
+[LUA-print] -             "card"        = 8
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         7 = {
+
+[LUA-print] -             "card"        = 41
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         8 = {
+
+[LUA-print] -             "card"        = 35
+
+[LUA-print] -             "outcardtype" = 1
+
+[LUA-print] -         }
+
+[LUA-print] -         9 = {
+
+[LUA-print] -             "card"        = 40
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         10 = {
+
+[LUA-print] -             "card"        = 38
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         11 = {
+
+[LUA-print] -             "card"        = 67
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         12 = {
+
+[LUA-print] -             "card"        = 6
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -         13 = {
+
+[LUA-print] -             "card"        = 36
+
+[LUA-print] -             "outcardtype" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "outCount"          = 13
+
+[LUA-print] -     "pCards" = {
+
+[LUA-print] -         1 = 49
+
+[LUA-print] -         2 = 9
+
+[LUA-print] -     }
+
+[LUA-print] -     "pCount"            = 2
+
+[LUA-print] -     "pHuSeatId"         = 0
+
+[LUA-print] -     "qiangTouCard"      = 34
+
+[LUA-print] -     "quew"              = 1
+
+[LUA-print] -     "seat_id"           = 3
+
+[LUA-print] -     "tingCards" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "card"        = -96
+
+[LUA-print] -             tingHuCards = *MAX NESTING*
+
+[LUA-print] -             "tingHuCount" = 0
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "tingCount"         = 1
+
+[LUA-print] -     "tingHuCards" = {
+
+[LUA-print] -         1 = 1
+
+[LUA-print] -     }
+
+[LUA-print] -     "tingHuCount"       = 1
+
+[LUA-print] -     "users_info" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "HuSeatId"       = 0
+
+[LUA-print] -             cCards = *MAX NESTING*
+
+[LUA-print] -             "cCount"         = 3
+
+[LUA-print] -             "countHandCards" = 7
+
+[LUA-print] -             gCards = *MAX NESTING*
+
+[LUA-print] -             "gCount"         = 0
+
+[LUA-print] -             hCards = *MAX NESTING*
+
+[LUA-print] -             "hCount"         = 3
+
+[LUA-print] -             "m_bAI"          = 0
+
+[LUA-print] -             "nTingFlag"      = 0
+
+[LUA-print] -             "online"         = 1
+
+[LUA-print] -             outCards = *MAX NESTING*
+
+[LUA-print] -             "outCount"       = 14
+
+[LUA-print] -             pCards = *MAX NESTING*
+
+[LUA-print] -             "pCount"         = 1
+
+[LUA-print] -             "seat_id"        = 0
+
+[LUA-print] -             "uid"            = 100845
+
+[LUA-print] -             "user_gold"      = 2000
+
+[LUA-print] -             "user_info"      = "{"ip":"127.0.0.1","money":0,"nickName":"用户1380134","photoUrl":"http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/B091361568125195_change_YMIB0920130223Cb009.jpg","sex":"2"}
+"
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "HuSeatId"       = 0
+
+[LUA-print] -             cCards = *MAX NESTING*
+
+[LUA-print] -             "cCount"         = 3
+
+[LUA-print] -             "countHandCards" = 11
+
+[LUA-print] -             gCards = *MAX NESTING*
+
+[LUA-print] -             "gCount"         = 0
+
+[LUA-print] -             hCards = *MAX NESTING*
+
+[LUA-print] -             "hCount"         = 3
+
+[LUA-print] -             "m_bAI"          = 0
+
+[LUA-print] -             "nTingFlag"      = 0
+
+[LUA-print] -             "online"         = 1
+
+[LUA-print] -             outCards = *MAX NESTING*
+
+[LUA-print] -             "outCount"       = 12
+
+[LUA-print] -             pCards = *MAX NESTING*
+
+[LUA-print] -             "pCount"         = 0
+
+[LUA-print] -             "seat_id"        = 1
+
+[LUA-print] -             "uid"            = 100846
+
+[LUA-print] -             "user_gold"      = 2000
+
+[LUA-print] -             "user_info"      = "{"ip":"127.0.0.1","money":0,"nickName":"用户1380136","photoUrl":"http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/a044ad345982b2b7a2f0f7cd33adcbef76099b48.jpg","sex":"2"}
+"
+
+[LUA-print] -         }
+
+[LUA-print] -         3 = {
+
+[LUA-print] -             "HuSeatId"       = 0
+
+[LUA-print] -             cCards = *MAX NESTING*
+
+[LUA-print] -             "cCount"         = 3
+
+[LUA-print] -             "countHandCards" = 7
+
+[LUA-print] -             gCards = *MAX NESTING*
+
+[LUA-print] -             "gCount"         = 0
+
+[LUA-print] -             hCards = *MAX NESTING*
+
+[LUA-print] -             "hCount"         = 0
+
+[LUA-print] -             "m_bAI"          = 0
+
+[LUA-print] -             "nTingFlag"      = 0
+
+[LUA-print] -             "online"         = 1
+
+[LUA-print] -             outCards = *MAX NESTING*
+
+[LUA-print] -             "outCount"       = 11
+
+[LUA-print] -             pCards = *MAX NESTING*
+
+[LUA-print] -             "pCount"         = 1
+
+[LUA-print] -             "seat_id"        = 2
+
+[LUA-print] -             "uid"            = 100847
+
+[LUA-print] -             "user_gold"      = 2000
+
+[LUA-print] -             "user_info"      = "{"ip":"127.0.0.1","money":0,"nickName":"用户1380137","photoUrl":"http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/060828381f30e924801248354e086e061d95f704.jpg","sex":"1"}
+"
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+cocos2d: removeChildByName(name = loading): child not found!
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:342: in function 'getDeviceInfo'
+
+[LUA-print] - "-----显示手机信息-----" = ""
+
+[LUA-print] dump from: [string "hall/VoiceRecord/VoiceRecordView.lua"]:79: in function 'showView'
+
+[LUA-print] - "-----录音按钮-----" = "添加按钮"
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/GamePlaneOperator.lua"]:99: in function 'showQiangTou'
+
+[LUA-print] - "-----财神牌-----" = {
+
+[LUA-print] -     1 = 35
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 35
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "hall/GameCommon.lua"]:218: in function 'getUrlPicture'
+
+[LUA-print] - "getUrlPicture" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/middle_20090419_a2dc30923f6ebde5997coS7WumU0H1Kf.jpg"
+
+[LUA-print] getUrlPicture:	middle_20090419_a2dc30923f6ebde5997coS7WumU0H1Kf.jpg
+
+[LUA-print] dump from: [string "hall/GameCommon.lua"]:218: in function 'getUrlPicture'
+
+[LUA-print] - "getUrlPicture" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/B091361568125195_change_YMIB0920130223Cb009.jpg"
+
+[LUA-print] getUrlPicture:	B091361568125195_change_YMIB0920130223Cb009.jpg
+
+[LUA-print] dump from: [string "hall/GameCommon.lua"]:218: in function 'getUrlPicture'
+
+[LUA-print] - "getUrlPicture" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/a044ad345982b2b7a2f0f7cd33adcbef76099b48.jpg"
+
+[LUA-print] getUrlPicture:	a044ad345982b2b7a2f0f7cd33adcbef76099b48.jpg
+
+[LUA-print] dump from: [string "hall/GameCommon.lua"]:218: in function 'getUrlPicture'
+
+[LUA-print] - "getUrlPicture" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/060828381f30e924801248354e086e061d95f704.jpg"
+
+[LUA-print] getUrlPicture:	060828381f30e924801248354e086e061d95f704.jpg
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:571: in function 'redrawGameInfo'
+
+[LUA-print] - "<var>" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:635: in function 'redrawGameInfo'
+
+[LUA-print] - "-----isbaibantishen-----" = 0
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:754: in function 'redrawGameInfo'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] -     1 = 83
+
+[LUA-print] -     2 = 87
+
+[LUA-print] -     3 = 85
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:847: in function 'showHuaCard'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] -     1 = 83
+
+[LUA-print] -     2 = 85
+
+[LUA-print] -     3 = 87
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 83
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 85
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 87
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:635: in function 'redrawGameInfo'
+
+[LUA-print] - "-----isbaibantishen-----" = 0
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:754: in function 'redrawGameInfo'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] -     1 = 81
+
+[LUA-print] -     2 = 82
+
+[LUA-print] -     3 = 84
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:847: in function 'showHuaCard'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] -     1 = 81
+
+[LUA-print] -     2 = 82
+
+[LUA-print] -     3 = 84
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 81
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 82
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 84
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:571: in function 'redrawGameInfo'
+
+[LUA-print] - "<var>" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:635: in function 'redrawGameInfo'
+
+[LUA-print] - "-----isbaibantishen-----" = 0
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:754: in function 'redrawGameInfo'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1133: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:928>
+
+[LUA-print] - "-----pack.handCount-----" = 7
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:571: in function 'redrawGameInfo'
+
+[LUA-print] - "<var>" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:635: in function 'redrawGameInfo'
+
+[LUA-print] - "-----isbaibantishen-----" = 0
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/ControlPlaneOperator.lua"]:1143: in function 'showTingHuPlane'
+
+[LUA-print] - "-----tingHuCards-----" = {
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:754: in function 'redrawGameInfo'
+
+[LUA-print] - "-----用户花牌-----" = {
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1205: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:928>
+
+[LUA-print] - "-----重连controlTable-----" = {
+
+[LUA-print] -     "gangCards" = {
+
+[LUA-print] -     }
+
+[LUA-print] -     "type"      = 0
+
+[LUA-print] -     "value"     = 0
+
+[LUA-print] - }
+
+[LUA-print] 6666666666666665
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2381: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2379>
+
+[LUA-print] - "-----组局时长-----" = {
+
+[LUA-print] -     "cmd"         = 20737
+
+[LUA-print] -     "round"       = 0
+
+[LUA-print] -     "round_total" = 8
+
+[LUA-print] -     "time"        = 0
+
+[LUA-print] - }
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x4006，0x7114，0x908，0x906，0x210，0x212，0x214，0x3008，0x7103，0x1003，0x7101，0x7104，0x1007，0x4013，0x1005，0x3009，0x100e，0x1009，0x4012，0x7106，0x4104，0x4005，0x1004，0x3002，0x3001，0x1008，0x4001，0x907，当前解析协议号：0x213，当前解析协议号：0x213，当前解析协议号：0x213，当前解析协议号：0x213，"
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:307: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:305>
+
+[LUA-print] - "-------接收服务器发来的距离数据---------" = {
+
+[LUA-print] -     "cmd"      = 531
+
+[LUA-print] -     "msgCount" = 4
+
+[LUA-print] -     "msgList" = {
+
+[LUA-print] -         1 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380134","uid":100845,"ip":"113.110.177.28"}"
+
+[LUA-print] -         2 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380136","uid":100846,"ip":"113.110.177.28"}"
+
+[LUA-print] -         3 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380137","uid":100847,"ip":"113.110.177.28"}"
+
+[LUA-print] -         4 = "{"longitude":"10.00","latitude":"10.00","invote_code":"026892","nickName":"用户1380138","uid":100848,"ip":"113.110.177.28"}"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+cocos2d: QuadCommand: resizing index size from [6] to [12]
+
+[LUA-print] -----self.HeartNum-----	2	true
+
+[LUA-print] check networking-----
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:27 [00 00 00 17 42 59 00 00 00 00 41 04 00 00 00 00 00 00 00 01 89 EE 33 00 00 00 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100846
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	card	51
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	27	4	handle	0
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:25 [00 00 00 15 42 59 00 00 00 00 40 06 00 00 00 00 00 00 00 01 89 EF 00 00 29 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	if_gang	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	25	2	simplNum	41
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:50 [00 00 00 2E 42 59 00 00 00 00 30 09 00 00 00 00 00 00 00 01 89 EF 04 16 01 07 02 06 08 13 02 07 07 04 06 08 06 08 33 01 07 02 06 08 28 01 07 02 06 08 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	UserId	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	cardSum	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	50	27	LiangDate	[{"OpCard":22,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":19,"componentSum":4,"component":[6,8,6,8],"huCards":[7,7],"huCardsSum":2},{"OpCard":51,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":40,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1}]
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2004: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2002>
+
+[LUA-print] - "-----广播用户出牌-----" = {
+
+[LUA-print] -     "card"   = 51
+
+[LUA-print] -     "cmd"    = 16644
+
+[LUA-print] -     "handle" = 0
+
+[LUA-print] -     "uid"    = 100846
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:342: in function 'getDeviceInfo'
+
+[LUA-print] - "-----显示手机信息-----" = ""
+
+[LUA-print] 111111
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:312: in function 'playCard'
+
+[LUA-print] - "ZZMJ_CURRENT_CARDNODEplayCard" = {
+
+[LUA-print] -     "class" = {
+
+[LUA-print] -         "__cname" = "DCardData"
+
+[LUA-print] -         "__ctype" = 2
+
+[LUA-print] -         __index = *REF*
+
+[LUA-print] -         "ctor"    = function: 0x0cda7b68
+
+[LUA-print] -         "new"     = function: 0x0cbc59e8
+
+[LUA-print] -     }
+
+[LUA-print] -     "fromplayerType" = 0
+
+[LUA-print] -     "m_value"        = 51
+
+[LUA-print] -     "orderSeq"       = 1
+
+[LUA-print] -     "type"           = 1
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1879: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1877>
+
+[LUA-print] - "-----广播抓牌用户-----" = {
+
+[LUA-print] -     "cmd"      = 16390
+
+[LUA-print] -     "if_gang"  = 0
+
+[LUA-print] -     "simplNum" = 41
+
+[LUA-print] -     "uid"      = 100847
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:191: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:190>
+
+[LUA-print] - "----亮倒操作前的数据-  0x3009--  收到消息-tingpai " = {
+
+[LUA-print] -     "LiangDate" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "OpCard"       = 22
+
+[LUA-print] -             component = *MAX NESTING*
+
+[LUA-print] -             "componentSum" = 2
+
+[LUA-print] -             huCards = *MAX NESTING*
+
+[LUA-print] -             "huCardsSum"   = 1
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "OpCard"       = 19
+
+[LUA-print] -             component = *MAX NESTING*
+
+[LUA-print] -             "componentSum" = 4
+
+[LUA-print] -             huCards = *MAX NESTING*
+
+[LUA-print] -             "huCardsSum"   = 2
+
+[LUA-print] -         }
+
+[LUA-print] -         3 = {
+
+[LUA-print] -             "OpCard"       = 51
+
+[LUA-print] -             component = *MAX NESTING*
+
+[LUA-print] -             "componentSum" = 2
+
+[LUA-print] -             huCards = *MAX NESTING*
+
+[LUA-print] -             "huCardsSum"   = 1
+
+[LUA-print] -         }
+
+[LUA-print] -         4 = {
+
+[LUA-print] -             "OpCard"       = 40
+
+[LUA-print] -             component = *MAX NESTING*
+
+[LUA-print] -             "componentSum" = 2
+
+[LUA-print] -             huCards = *MAX NESTING*
+
+[LUA-print] -             "huCardsSum"   = 1
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "UserId"    = 100847
+
+[LUA-print] -     "cardSum"   = 4
+
+[LUA-print] -     "cmd"       = 12297
+
+[LUA-print] - }
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 99.000000000004
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 100.00000000001
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 96.999999999994
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 66.999999999979
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 114
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 84.000000000003
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 101
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 96.000000000004
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 100.00000000002
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] -----------reConnect---1-------------------
+
+[LUA-print] -----------reConnect---2-------------------
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:114: in function 'disconnect'
+
+[LUA-print] - "-----断开Socket连接-----" = ""
+
+[LUA-print] oncloseed------
+
+[LUA-print] 创建新Socket实例----------------
+
+[LUA-print] check networking-----
+
+[LUA-print] onclose---------------------
+
+[LUA-print] dump from: [string "hall/HallServer.lua"]:140: in function 'netClose'
+
+[LUA-print] - "-----HallServer-----netClose-----" = true
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 [LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:542 [00 00 02 1A 42 59 00 00 00 00 02 13 00 00 00 00 00 00 00 00 00 04 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 34 22 2C 22 75 69 64 22 3A 31 30 30 38 34 35 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 36 22 2C 22 75 69 64 22 3A 31 30 30 38 34 36 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 37 22 2C 22 75 69 64 22 3A 31 30 30 38 34 37 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 00 00 00 7E 7B 22 6C 6F 6E 67 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 6C 61 74 69 74 75 64 65 22 3A 22 31 30 2E 30 30 22 2C 22 69 6E 76 6F 74 65 5F 63 6F 64 65 22 3A 22 30 32 36 38 39 32 22 2C 22 6E 69 63 6B 4E 61 6D 65 22 3A 22 E7 94 A8 E6 88 B7 31 33 38 30 31 33 38 22 2C 22 75 69 64 22 3A 31 30 30 38 34 38 2C 22 69 70 22 3A 22 31 31 33 2E 31 31 30 2E 31 37 37 2E 32 38 22 7D 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	msgCount	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] read data string pos:%d	23
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	153
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	283
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] read data string pos:%d	413
+
+[LUA-print] read data string len:%d	126
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	542	520	msgList	["{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380134\",\"uid\":100845,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380136\",\"uid\":100846,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380137\",\"uid\":100847,\"ip\":\"113.110.177.28\"}","{\"longitude\":\"10.00\",\"latitude\":\"10.00\",\"invote_code\":\"026892\",\"nickName\":\"用户1380138\",\"uid\":100848,\"ip\":\"113.110.177.28\"}"]
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x400[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "hall/3DMahjongCard/InhandOperator.lua"]:1008: in function <[string "hall/3DMahjongCard/InhandOperator.lua"]:1006>
+
+[LUA-print] - "test if can touch" = 1
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "hall/3DMahjongCard/InhandOperator.lua"]:1008: in function <[string "hall/3DMahjongCard/InhandOperator.lua"]:1006>
+
+[LUA-print] - "test if can touch" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/ControlPlaneOperator.lua"]:1143: in function 'showTingHuPlane'
+
+[LUA-print] - "-----tingHuCards-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -         "component" = {
+
+[LUA-print] -             1 = 19
+
+[LUA-print] -             2 = 20
+
+[LUA-print] -         }
+
+[LUA-print] -         "componentCount" = 2
+
+[LUA-print] -         "huCards" = {
+
+[LUA-print] -             1 = 18
+
+[LUA-print] -             2 = 21
+
+[LUA-print] -         }
+
+[LUA-print] -         "huCardsCount"   = 2
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 18
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 21
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/GameController.lua"]:46: in function 'playCard'
+
+[LUA-print] - "playCard OUtcard" = 51
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/ControlPlaneOperator.lua"]:1143: in function 'showTingHuPlane'
+
+[LUA-print] - "-----tingHuCards-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -         "component" = {
+
+[LUA-print] -             1 = 19
+
+[LUA-print] -             2 = 20
+
+[LUA-print] -         }
+
+[LUA-print] -         "componentCount" = 2
+
+[LUA-print] -         "huCards" = {
+
+[LUA-print] -             1 = 18
+
+[LUA-print] -             2 = 21
+
+[LUA-print] -         }
+
+[LUA-print] -         "huCardsCount"   = 2
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 18
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:43: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:44: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:45: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 1
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:46: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = 21
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:47: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] dump from: [string "js_majiang_3d/card/card.lua"]:48: in function 'setCard'
+
+[LUA-print] - "-----Card:setCard-----" = nil
+
+[LUA-print] build cmd:%x header lenght:%d	8194	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:27 [00 00 00 17 42 59 00 00 00 00 41 04 00 00 00 00 00 00 00 01 89 EE 33 00 00 00 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100846
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	card	51
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	27	4	handle	0
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:25 [00 00 00 15 42 59 00 00 00 00 40 06 00 00 00 00 00 00 00 01 89 EF 00 00 29 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	if_gang	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	25	2	simplNum	41
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:50 [00 00 00 2E 42 59 00 00 00 00 30 09 00 00 00 00 00 00 00 01 89 EF 04 16 01 07 02 06 08 13 02 07 07 04 06 08 06 08 33 01 07 02 06 08 28 01 07 02 06 08 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	UserId	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	cardSum	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	50	27	LiangDate	[{"OpCard":22,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":19,"componentSum":4,"component":[6,8,6,8],"huCards":[7,7],"huCardsSum":2},{"OpCard":51,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":40,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1}]
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x4006，0x7114，0x908，0x90[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:27 [00 00 00 17 42 59 00 00 00 00 41 04 00 00 00 00 00 00 00 01 89 EE 33 00 00 00 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100846
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	card	51
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	27	4	handle	0
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:25 [00 00 00 15 42 59 00 00 00 00 40 06 00 00 00 00 00 00 00 01 89 EF 00 00 29 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	uid	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	if_gang	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	25	2	simplNum	41
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:50 [00 00 00 2E 42 59 00 00 00 00 30 09 00 00 00 00 00 00 00 01 89 EF 04 16 01 07 02 06 08 13 02 07 07 04 06 08 06 08 33 01 07 02 06 08 28 01 07 02 06 08 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	UserId	100847
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	23	1	cardSum	4
+
+[LUA-print] [parsePacket_]array fixedLength:%d	4
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	24	50	27	LiangDate	[{"OpCard":22,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":19,"componentSum":4,"component":[6,8,6,8],"huCards":[7,7],"huCardsSum":2},{"OpCard":51,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1},{"OpCard":40,"componentSum":2,"component":[6,8],"huCards":[7],"huCardsSum":1}]
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:346: in function <[string "hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：上海敲麻，当前协议下的协议号：0x4007，0x7109，0x4008，0x909，0x905，0x4009，0x100d，0x200c，0x3005，0x4022，0x213，0x211，0x3006，0x103a，0x5100，0x102a，0x7110，0x104a，0x5101，0x106a，0x3007，0x4006，0x7114，0x908，0x906，0x210，0x212，0x214，0x3008，0x7103，0x1003，0x7101，0x7104，0x1007，0x4013，0x1005，0x3009，0x100e，0x1009，0x4012，0x7106，0x4104，0x4005，0x1004，0x3002，0x3001，0x1008，0x4001，0x907，当前解析协议号：0x4104，当前解析协议号：0x4006，当前解析协议号：0x3009，"
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2004: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:2002>
+
+[LUA-print] - "-----广播用户出牌-----" = {
+
+[LUA-print] -     "card"   = 51
+
+[LUA-print] -     "cmd"    = 16644
+
+[LUA-print] -     "handle" = 0
+
+[LUA-print] -     "uid"    = 100846
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:342: in function 'getDeviceInfo'
+
+[LUA-print] - "-----显示手机信息-----" = ""
+
+[LUA-print] 111111
+
+[LUA-print] dump from: [string "js_majiang_3d/operator/PlayerPlaneOperator.lua"]:312: in function 'playCard'
+
+[LUA-print] - "ZZMJ_CURRENT_CARDNODEplayCard" = {
+
+[LUA-print] -     "class" = {
+
+[LUA-print] -         "__cname" = "DCardData"
+
+[LUA-print] -         "__ctype" = 2
+
+[LUA-print] -         __index = *REF*
+
+[LUA-print] -         "ctor"    = function: 0x0c9ae8d8
+
+[LUA-print] -         "new"     = function: 0x0cd488f0
+
+[LUA-print] -     }
+
+[LUA-print] -     "fromplayerType" = 0
+
+[LUA-print] -     "m_value"        = 51
+
+[LUA-print] -     "orderSeq"       = 1
+
+[LUA-print] -     "type"           = 1
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1879: in function <[string "js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:1877>
+
+[LUA-print] - "-----广播抓牌用户-----" = {
+
+[LUA-[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 81.999999999994
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 99.999999999994
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 113
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 98.99999999999
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 98.99999999999
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 98.99999999999
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 110.99999999999
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 99.999999999966
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	3	true
+
+[LUA-print] check networking-----
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 98.99999999999
+
+[LUA-print] -----self.HeartNum-----	2	true
+
+[LUA-print] check networking-----
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] -----------reConnect---1-------------------
+
+[LUA-print] -----------reConnect---2-------------------
+
+[LUA-print] dump from: [string "hall/ScoketGame.lua"]:114: in function 'disconnect'
+
+[LUA-print] - "-----断开Socket连接-----" = ""
+
+[LUA-print] oncloseed------
+
+[LUA-print] 创建新Socket实例----------------
+
+[LUA-print] check networking-----
+
+[LUA-print] onclose---------------------
+
+[LUA-print] dump from: [string "hall/HallServer.lua"]:140: in function 'netClose'
+
+[LUA-print] - "-----HallServer-----netClose-----" = true
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
+
+[LUA-print] dump from: [string "js_majiang_3d/gameScene.lua"]:444: in function <[string "js_majiang_3d/gameScene.lua"]:431>
+
+[LUA-print] - "PINT_TIME" = 2000
+
+[LUA-print] -----self.HeartNum-----	0	true
+
+[LUA-print] check networking-----
+
+[LUA-print] show button state:3
+
+load cocostudio csb is hall/scene/res/168/tips/LayerTips_new.csb
 

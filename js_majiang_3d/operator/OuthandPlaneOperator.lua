@@ -1,4 +1,6 @@
 local Card = require("js_majiang_3d.card.card")
+
+---已出的牌区域
 local OuthandPlaneOperator = class("OuthandPlaneOperator")
 
 local FIRST_ROW_COUNT = 5
@@ -592,5 +594,8 @@ function OuthandPlaneOperator:removeLatestOutCard(outPlane, card)
 
 	return false
 end
+
+
+
 
 return OuthandPlaneOperator
