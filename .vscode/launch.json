@@ -9,7 +9,7 @@
             "localRoot": "${workspaceRoot}",
             "mainFile": "src/main.lua",
             "port": 7003,
-            "exePath": "E:\\www_root\\00shangHaiMajhong\\DouyouTV.exe",
+            "exePath": "F:\\work_root\\00shangHaiMajhong\\DouyouTV.exe",
             "printType": 1
         },
         {
