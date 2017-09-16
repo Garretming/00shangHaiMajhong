@@ -56,7 +56,7 @@ function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 
 			table.insert(laiziSeq, 1, cardData)
 
-		else
+		else  --非癞子牌
 
 			local isCaishen = false
 			for k1,v1 in pairs(JS_CAISHEN) do
@@ -72,7 +72,7 @@ function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
 				table.insert(caishenSeq, 1, cardData)
 				
-			else
+			else   --非财神牌
 
 				if isbaibantishen == 1 then
 
@@ -121,26 +121,27 @@ function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 		table.insert(newCardsSeq, v)
 	end
 
+	
+	--合拼赖子数组和手牌数组
+	for i,v in ipairs(laiziSeq) do
+		table.insert(newCardsSeq, v)
+	end
+	--合拼财神数组和手牌数组
+	for i,v in ipairs(caishenSeq) do
+		table.insert(newCardsSeq, v)
+	end
+	
 	--插入白板到新牌数组
 	for k,v in pairs(baibanSeq) do
 		table.insert(newCardsSeq, v)
 	end
 
+	
+
 	--插入大于财神的牌到新牌数组
 	for k,v in pairs(daYuCaiShenSeq) do
 		table.insert(newCardsSeq, v)
 	end
-
-	--合拼赖子数组和手牌数组
-	for i,v in ipairs(laiziSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
-
-	--合拼财神数组和手牌数组
-	for i,v in ipairs(caishenSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
-
 	--使用3D麻将操作类显示手牌
 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
 
@@ -954,7 +955,8 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 	local baibanSeq = {}
 	--听牌数据
 	local newTingSeq = {}
-
+	dump(cardDatas,"cardDatas-----")
+	dump(tingSeq,"tingSeq--听牌数据---")
 
 	--挑出赖子，财神，白板（白板替身的情况下）
 	for k,v in pairs(cardDatas) do
@@ -977,7 +979,7 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 			end
 
 			if isCaishen then
-
+				--第三个参数控制显示类型
 				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
 				table.insert(caishenSeq, 1, cardData)
 				
@@ -1005,27 +1007,20 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 				end
 
 			end
-
-
-			---听牌数据 s
-			local isTing = false
-
-			for k,v in pairs(tingSeq) do
-				if data == v.card then
-					--todo
-					isTing = true
-					break
-				end
+		end
+		---听牌数据 s
+		local isTing = false
+		for m,n in pairs(tingSeq) do
+			if v == n then
+				--todo
+				isTing = true
+				break
 			end
-			--加到听牌数据中
-			if isTing then
-				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
-				table.insert(newTingSeq, 1, cardData)
-			end
-
-
-
-
+		end
+		--加到听牌数据中
+		if isTing then
+			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
+			table.insert(newTingSeq, 1, cardData)
 		end
 
 	end
@@ -1050,6 +1045,18 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 		table.insert(newCardsSeq, v)
 	end
 
+	
+
+	--合拼赖子数组和手牌数组
+	for i,v in ipairs(laiziSeq) do
+		table.insert(newCardsSeq,v)
+	end
+
+	--合拼财神数组和手牌数组
+	for i,v in ipairs(caishenSeq) do
+		table.insert(newCardsSeq, v)
+	end
+
 	--插入白板到新牌数组
 	for k,v in pairs(baibanSeq) do
 		table.insert(newCardsSeq, v)
@@ -1060,142 +1067,31 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 		table.insert(newCardsSeq, v)
 	end
 
-	--合拼赖子数组和手牌数组
-	for i,v in ipairs(laiziSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
-
-	--合拼财神数组和手牌数组
-	for i,v in ipairs(caishenSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
+	
 
 	--组合听牌数据到总数据中
 	for i,v in ipairs(newTingSeq) do
 		table.insert(newCardsSeq, 1, v)
 	end
-	
+
+	--挑出听牌可丢弃牌---进行放大效果
+	for k,v in pairs(newCardsSeq) do
+		for m,n in pairs(tingSeq) do
+			if v.m_value == n.m_value then
+				-- table.insert(newTingSeq, v)
+				newCardsSeq[k], tingSeq[m] = tingSeq[m],newCardsSeq[k]  --交换数据
+			-- else
+			-- 	table.insert(daYuCaiShenSeq, v)
+			end
+
+		end
+	end
+
+
 	--使用3D麻将操作类显示手牌
 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
 
 
-
-
-
-
-
-------------------------------------------------------------------------------------
-
-
-	-- plane:removeAllChildren()
-
-	-- selectedTag = 99
-	
-	-- local oriX = 0
-	-- local oriY = plane:getSize().height / 2
-
-	-- 	for i=1,table.getn(cards) do
-	-- 		local data = cards[i]
-
-	-- 		local isTing = false
-
-	-- 		for k,v in pairs(tingSeq) do
-	-- 			if data == v.card then
-	-- 				--todo
-	-- 				isTing = true
-	-- 				break
-	-- 			end
-	-- 		end
-
-	-- 		local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, data)
-	-- 		card:setScale(card:getScale() * 1.1)
-	-- 		card:setPosition(cc.p(oriX + card:getSize().width * card:getScale() / 2, card:getSize().height * card:getScale() / 2))
-	-- 		card:setTag(i)
-
-	-- 		if isTing then
-	-- 			--todo
-	-- 			card:setTouchEnabled(true)
-	-- 			card:addTouchEventListener(function(sender, event)
-
-				
-
-	-- 			if event == TOUCH_EVENT_ENDED then
-	-- 				--todo
-	-- 				--print("card value")
-	-- 				--dump(sender.m_value, "card value") 
-	-- 				--dump(sender:getAnchorPoint())
-
-					
-	-- 				if selectedTag == sender:getTag() then
-	-- 					    --出牌
-	-- 					    -- ZZMJ_CONTROLLER:hideTingHuPlane()
-	-- 					 --    for k,v in pairs(tingSeq) do
-	-- 						-- 	if v.card == sender.m_value then
-	-- 						-- 		--todo
-	-- 						-- 		local tingHuCards = v.tingHuCards
-	-- 						-- 		ZZMJ_CONTROLLER:showTingHuPlane(tingHuCards)
-
-	-- 						-- 		ZZMJ_CONTROLLER:requestLiang(tingHuCards)
-	-- 						-- 		ZZMJ_CONTROLLER:playCard(sender.m_value)	
-	-- 						-- 		break
-	-- 						-- 	end
-	-- 						-- end
-	-- 						-- dump(sender.m_value, "liang card test")
-	-- 						ZZMJ_CONTROLLER:requestLiang(sender.m_value)
-	-- 						-- ZZMJ_CONTROLLER:playCard(sender.m_value)	
-							
-	-- 					else
-	-- 						self:cancelSelectingCard(plane)
-
-	-- 						local p = sender:getPosition()
-
-	-- 						sender:setScale(1.2)
-	-- 						local offsetX = 0.1 * sender:getSize().width
-
-	-- 						sender:setPosition(cc.p(p.x + offsetX / 2, p.y + 30))
-
-	-- 						local tag = sender:getTag()
-	-- 						selectedTag = tag
-	-- 						tag = tag + 1
-	-- 						local nextCard = plane:getChildByTag(tag)
-	-- 						while nextCard do
-	-- 							--todo
-	-- 							nextCard:setPosition(cc.p(nextCard:getPosition().x + offsetX, nextCard:getPosition().y))
-
-	-- 							tag = tag + 1
-	-- 							nextCard = plane:getChildByTag(tag)
-	-- 						end
-
-	-- 						for k,v in pairs(tingSeq) do
-	-- 							if v.card == sender.m_value then
-	-- 								--todo
-	-- 								local tingHuCards = v.tingHuCards
-	-- 								ZZMJ_CONTROLLER:showTingHuPlane(CARD_PLAYERTYPE_MY, tingHuCards)
-
-	-- 								break
-	-- 							end
-	-- 						end
-	-- 					end
-	-- 			end
-
-	-- 			end)
-	-- 		else
-	-- 			card:setTouchEnabled(false)
-	-- 			card:setColor(cc.c3b(150, 150, 150))
-	-- 		end
-
-	-- 		card:setTag(i)
-
-	-- 		plane:addChild(card)
-
-	-- 		oriX = oriX + card:getSize().width * card:getScale()
-	-- 	end
-
-	-- 	local width = oriX
-	-- 	plane:setSize(cc.size(width, plane:getSize().height))
-
-	-- 	--使用3D麻将操作类显示手牌
-	-- 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
 end
 
 return InhandPlaneOperator

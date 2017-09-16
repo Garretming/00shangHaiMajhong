@@ -75,9 +75,18 @@ function Card:initView()
 	if self.m_value == 0 then
 		return
 	end
-	
-	if self.m_playerType == CARD_PLAYERTYPE_MY then
 
+	local vvv=  {
+		self.m_playerType,
+		self.m_cardType,
+		self.m_cardDisplayType,
+		self.m_shape,
+		self.m_fromplayerType
+	}
+	dump(vvv,"ansnsnssnsnsndndn------------------")
+
+	if self.m_playerType == CARD_PLAYERTYPE_MY then
+		dump(CARD_PLAYERTYPE_MY,"zhheheheeheheh-------------1111")
 		self.body:setTexture("hall/3DMahjongCard/image/" .. self.m_value .. "_" .. self.m_playerType .. "_" .. self.m_cardType .. "_" .. self.m_cardDisplayType .. ".png")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
@@ -149,14 +158,16 @@ function Card:initView()
 
 
 
-	elseif self.m_playerType == CARD_PLAYERTYPE_LEFT then
+	elseif self.m_playerType == CARD_PLAYERTYPE_LEFT then   --碰杠区 1
+
+	dump(CARD_PLAYERTYPE_LEFT,"zhheheheeheheh-------------333333311")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
 
 			self.body:setVisible(false)
 		elseif self.m_cardDisplayType == CARD_DISPLAY_TYPE_SHOW then
 			self.body:setVisible(true)
-			
+			--   m_playerType  玩家位置    m_cardType 玩家牌位置 
 			self.body:setTexture("hall/3DMahjongCard/image/" .. self.m_value .. "_" .. self.m_playerType .. "_" .. self.m_cardType .. "_" .. self.m_cardDisplayType .. ".png")
 			self.body:setPosition(cc.p(self:getSize().width / 2 + 2, self:getSize().height - self.body:getContentSize().height / 2 + 1))
 		     
@@ -170,6 +181,7 @@ function Card:initView()
 		end
 
 	elseif self.m_playerType == CARD_PLAYERTYPE_RIGHT then
+	dump(CARD_PLAYERTYPE_RIGHT,"zhheheheeheheh-------------333333311")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
 

@@ -1171,6 +1171,12 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
 				card:setColor(cc.c3b(255, 255, 0))
 			    card:setOpacity(230)
 			end
+			-- --显示听弃牌
+			-- for m,n in pairs(JS_TING_REMOVE) do
+			-- 	if cardDatas[i] == n then
+			-- 		card:setScale(1.1)
+			-- 	end
+			-- end
 
 			card:setTag(i)
 

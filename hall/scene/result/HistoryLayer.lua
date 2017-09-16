@@ -345,7 +345,8 @@ function HistoryLayer:showHistories(templateCell, plane, datas)
 			if datayx =="斗地主" then
 				oriScore = 20000 
 			elseif  datayx=="跑得快" or datayx=="二人红中"or datayx=="三人红中"or datayx=="红中麻将" or datayx=="长沙麻将" then
-				oriScore = 2000
+				-- oriScore = 2000
+				oriScore = 0
 			end
 
 			if data["userinfos"][1] then

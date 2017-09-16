@@ -69,13 +69,15 @@ end
 
 --设置墙头牌
 function GamePlaneOperator:showQiangTou(show, fanCardValue, caiShenCards)
-
+	
 	if ZZMJ_GAME_PLANE ~= nil then
 
 		local qiangTouPlane = ZZMJ_GAME_PLANE:getChildByName(CHILD_NAME_QIANGTOU_PLANE)
-		-- qiangTouPlane:setVisible(show)
-		--@garret 隐藏财神提示
-		qiangTouPlane:setVisible(false)
+		--隐藏墙头牌
+		if show == true then
+			show = false
+		end
+		qiangTouPlane:setVisible(show)
 		qiangTouPlane:setSize(153.00, 33.00)
 
 		if fanCardValue ~= nil then
@@ -389,7 +391,7 @@ function GamePlaneOperator:buHua(playerType)
 end
 
 function GamePlaneOperator:showCaiPiao(playerType)
-    playerPlaneOperator:showCaiPiao(self:getPlayerPlane(playerType))
+    -- playerPlaneOperator:showCaiPiao(self:getPlayerPlane(playerType))
 end
 
 function GamePlaneOperator:showCardsForHu(playerType, cardDatas,hucard)
@@ -565,27 +567,25 @@ function GamePlaneOperator:didSelectOutCard(card)
 end
 --@garret 显示手牌中暗牌
 function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
-
 	--显示听按钮
 	self:showControlPlane(value)
-	
 
-
-	local cardSum = value.cardSum
+	local cardSum = value.cardSum  --可能的组合数
 	local  cardValue = value.LiangDate
+
+	dump(value,"value1111111111111111111111111")
 	--丢牌
 	local tingSeq = {}
-	
-	for i=1,cardSum do
-		for k,v in pairs(cardValue) do
-			if k == "OpCard" then
-				table.insert(tingSeq,v)
-				break
+	for k,v in pairs(cardValue) do
+		for m,n in pairs(v) do 
+			if m.huCardsSum == 1 then
+				table.insert( tingSeq, m.OpCard )
 			end
 		end
 	end
-	
+	dump(tingSeq,"tingSeq----暗牌")
 
+	-- JS_TING_REMOVE = tingSeq
 	--显示可丢弃暗牌
 	playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
 end

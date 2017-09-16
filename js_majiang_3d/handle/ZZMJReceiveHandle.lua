@@ -189,47 +189,15 @@ local LocaArrayByPlayerType = {}
 --亮倒（听牌）
 function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
     dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-tingpai ")
-		--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮
+		--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮 显示暗牌
+	local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
+	local playerType = cardUtils:getPlayerType(seatId)
 
--- 				             "huCardsSum"   = 1	
--- - "----亮倒操作前的数据-  0x3009--  收到消息-" = {	
--- -         }	
--- -     "LiangDate" = {	
--- -         1 = {	
--- -     }	
--- -             "OpCard"       = 51	
--- -             component = *MAX NESTING*	
--- -     "UserId"    = 100845	
--- -             "componentSum" = 2	
--- -     "cardSum"   = 1	
--- -             huCards = *MAX NESTING*	
--- -             "huCardsSum"   = 1	
--- -     "cmd"       = 12297	
--- -         }	
--- - }	
--- -     }	
--- -     "UserId"    = 100845	
-
-
-	-- print("获取触发操作的用户的位置------" .. playerType,CARD_PLAYERTYPE_MY)
-
-
-	
-	--  if playerType  == CARD_PLAYERTYPE_MY then
-	 if pack.cardSum  > 0 and pack.UserId  == UID then
+	-- if playerType  == CARD_PLAYERTYPE_MY then
+	if pack.UserId == UID then
 		--构建听牌数据
 		local showTingBtnType = pack
-		
-		local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
-		local playerType = cardUtils:getPlayerType(seatId)
-
 		showTingBtnType["type"] = TING_TYPE_T  --操作类型
-		-- print(TING_TYPE_T,"-------------")
-		-- showTingBtnType["value"] = pack.LiangDate --可丢弃的牌
-		--听牌
-
-		print("77777777")
-
 		gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
 		
 	 end
@@ -797,10 +765,14 @@ function ZZMJReceiveHandle:SVR_LOGIN_ROOM(pack)
 
     dump(pack, "-----登录房间成功-----")
     
+
 	SCENENOW['scene']:removeChildByName("loading")
 	if SCENENOW['name'] ~= run_scene_name then
 		return
 	end	
+	--garret 隐藏墙头牌
+	gamePlaneOperator:showQiangTou(false)
+
 
     isBuHuaIng = false
     
@@ -875,6 +847,7 @@ function ZZMJReceiveHandle:SVR_LOGIN_ROOM(pack)
 
     --设置自己已准备
     gamePlaneOperator:setReadyStatus(CARD_PLAYERTYPE_MY)
+	
 
 	--绘制其他玩家
 	if pack.user_mount > 0  then
@@ -1598,7 +1571,7 @@ function ZZMJReceiveHandle:SVR_SEND_USER_CARD(pack)
 	--骰子动画
 	-- aniUtils:shuaiZi(pack.shai)
 
-    --显示墙头牌
+    --显示墙头牌  --y
     gamePlaneOperator:showQiangTou(true, pack.qiangTouCard, pack.caiShenCards)
 
     --发牌

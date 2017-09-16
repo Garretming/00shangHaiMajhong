@@ -34,9 +34,13 @@ ZZMJ_TING = 0
 
 D3_OPERATOR = nil
 
-HHMJ_LAIZI = 1024
 
+--癞子牌
+HHMJ_LAIZI = 1024
+--财神牌
 JS_CAISHEN = {}
+--听弃牌
+JS_TING_REMOVE = {}
 
 ZZMJ_TOTAL_ROUNDS = nil
 ZZMJ_ROUND = nil
