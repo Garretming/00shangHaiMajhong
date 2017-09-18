@@ -1370,7 +1370,7 @@ end
 function ZZMJReceiveHandle:SVR_NORMAL_OPERATE(pack)
 
 	dump(pack, "-----服务器告知客户端可以进行的操作-----")
-print("5555552")
+	-- print("服务器告知客户端可以进行的操作controlTable" .. controlTable)
 	local controlTable = cardUtils:getControlTable(pack.handle, pack.card, 1)
 	gamePlaneOperator:showControlPlane(controlTable)
 

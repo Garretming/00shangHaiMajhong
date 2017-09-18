@@ -989,7 +989,7 @@ function InhandOperator:revertOutCardPosition()
 end
 
 
-function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
+function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard,blackCarrds)
 
 	self:clearHandCards(plane)
     
@@ -1172,11 +1172,20 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
 			    card:setOpacity(230)
 			end
 			-- --显示听弃牌
-			-- for m,n in pairs(JS_TING_REMOVE) do
-			-- 	if cardDatas[i] == n then
-			-- 		card:setScale(1.1)
-			-- 	end
-			-- end
+			-- dump(blackCarrds,"-- --JS_TING_REMOVE-----------------显示听弃牌")
+			-- print("cardDatas[i]--".. data)
+
+			
+			if JS_TING_REMOVE ~= nil  then
+				for m,n in pairs(JS_TING_REMOVE) do
+			-- print("cardDatas[i]-data.m_value,n-".. data.m_value,n)
+					if data.m_value == n then
+						card:setColor(cc.c3b(150, 150, 150))
+					end
+				end
+				JS_TING_REMOVE = nil 
+			end
+			
 
 			card:setTag(i)
 
@@ -1249,6 +1258,7 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
 
 			card:setPosition(cc.p(oriX + card:getSize().width * card:getScale() / 2, oriY + card:getSize().height * card:getScale() / 2))
 
+	
 			card:setTag(i)
 
 			card:setLocalZOrder(i)

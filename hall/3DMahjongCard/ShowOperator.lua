@@ -100,7 +100,7 @@ function ShowOperator:removeCards(playerType, plane, removeCards, isRemoveNewCar
 	inhandOperator:removeCards(playerType, plane, removeCards, isRemoveNewCard)
 end
 
-function ShowOperator:showCards(playerType, plane, cardDatas, isNoNewCard, tingMode, tingSeq, ifAutoGetNewCard)
+function ShowOperator:showCards(playerType, plane, cardDatas, isNoNewCard, tingMode, tingSeq, ifAutoGetNewCard,blackCards)
 	local t14thCard = nil
     
 
@@ -117,7 +117,7 @@ function ShowOperator:showCards(playerType, plane, cardDatas, isNoNewCard, tingM
 				table.remove(cardDatas, cardnum)
 			end
 
-			inhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
+			inhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard,blackCards)
 
 			if t14thCard then
 				self:getNewCard(playerType, plane, t14thCard, false)

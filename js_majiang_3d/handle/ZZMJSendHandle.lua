@@ -63,7 +63,7 @@ function majiangServer:requestHandle(handle, value)
 end
 
 --@garret  请求服务器---听牌操作
-function majiangServer:sendTingCard(value)
+function majiangServer:sendTingCardHandle(handle,value)
     local pack = bm.server:createPacketBuilder(PROTOCOL.SEND_CARD)
         :setParameter("card", value)
         :build()

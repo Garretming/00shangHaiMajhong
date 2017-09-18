@@ -19,9 +19,9 @@ function ZZMJController:control(controlType, value)
 	dump( bit.band(controlType, TING_TYPE_T),"------走到这了")
 	require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
 
-
-
 end
+
+
 
 
 function ZZMJController:showSameCard(value)

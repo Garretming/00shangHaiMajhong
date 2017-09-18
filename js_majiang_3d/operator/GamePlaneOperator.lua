@@ -567,27 +567,54 @@ function GamePlaneOperator:didSelectOutCard(card)
 end
 --@garret 显示手牌中暗牌
 function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
-	--显示听按钮
-	self:showControlPlane(value)
+	
 
 	local cardSum = value.cardSum  --可能的组合数
 	local  cardValue = value.LiangDate
 
-	dump(value,"value1111111111111111111111111")
+	-- dump(value,"value1111111111111111111111111")
 	--丢牌
 	local tingSeq = {}
-	for k,v in pairs(cardValue) do
-		for m,n in pairs(v) do 
-			if m.huCardsSum == 1 then
-				table.insert( tingSeq, m.OpCard )
-			end
-		end
-	end
-	dump(tingSeq,"tingSeq----暗牌")
+	--有丢牌数据
+	if cardSum > 0 then
+		for k,v in pairs(cardValue) do
 
-	-- JS_TING_REMOVE = tingSeq
-	--显示可丢弃暗牌
-	playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
+			-- dump(v.huCards,"huCardsahfsdfsdjiofsdjiojioffoaijsdjioafsdioj00-------------")
+			local leaveNum= table.getn(v.huCards)
+
+			if leaveNum == 1 then
+				table.insert( tingSeq, v.OpCard)
+				break
+			end
+
+		
+		end	
+
+	end
+
+
+	dump(tingSeq,"tingSeq----暗牌")
+	local lltt = table.getn(tingSeq)
+	--有丢牌数据才显示听牌按钮  并且不存在杠胡等操作
+	value.tingSeq = tingSeq
+	if  lltt > 0 then
+		
+		self:showControlPlane(value) --显示听按钮
+		-- local controlType = value["type"]
+		-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
+			
+		-- end
+			--显示可丢弃暗牌
+		if tingFlag == 1 then
+			JS_TING_REMOVE = tingSeq
+			playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
+		end
+	
+		
+	end
+
+	
+	
 end
 
 

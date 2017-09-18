@@ -124,6 +124,7 @@ function ControlPlaneOperator:init(playerType, img, plane, lgPlane, tingHuPlane)
 		plane:addChild(self.ting_bt)
 
 		self.showHU = false
+		self.showGang = false
 
 		plane:setVisible(false)
 
@@ -200,12 +201,7 @@ function ControlPlaneOperator:init(playerType, img, plane, lgPlane, tingHuPlane)
 				elseif sender == self.ting_bt then  ---亮倒  （听牌）
 					--移除一张牌  ---给服务器消息移除一张牌
 					plane:setVisible(false)
-				
 					--处理移除牌
-					-- local tingMoveCards = ZZMJ_CONTROL_TABLE["OpCard"]--@garret 可以丢弃的牌
-					-- -- ZZMJ_CONTROLLER:control(0, tingMoveCards)
-
-					dump(ZZMJ_CONTROL_TABLE,"ZZMJ_CONTROL_TABLE-------")
 					ZZMJ_CONTROLLER:control(bit.band(controlType, CONTROL_TYPE_TING), value)
 					
 						
@@ -397,12 +393,13 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 		oriX = oriX + size.width + CONTROL_BT_SPLIT * boxscale
 
-		self.showHU = true
+	
 	end
 
 	if bit.band(controlType, CONTROL_TYPE_GANG) > 0 then
 
 		self.gang_bt:setVisible(true)
+	
 
 		if #ZZMJ_CONTROL_TABLE["gangCards"] > 1 then
 			self.gang_select_bx:setVisible(true)
@@ -460,15 +457,20 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 
 	end
+	
+
+	local size = self.guo_bt:getSize()
 	--@garret 听牌
 	if bit.band(controlType, CONTROL_TYPE_TING) > 0 then
 			
 			self.ting_bt:setVisible(true)
 			--胡牌按钮存在是不显示
-			if self.showHU == true then
+				tingFlag = 1
+			if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
 				self.ting_bt:setVisible(false)
-				self.showHU = false
+				tingFlag = 0
 			end
+
 			local size = self.ting_bt:getSize()
 			self.ting_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))
 
@@ -492,10 +494,8 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 			-- self.select_bx:setPosition(cc.p(oriX + box_width / 2, self.select_bx:getSize().height / 2))
 			-- self.select_bx:setSize(cc.size(box_width, 66.92 * boxscale))
-		
-		end
-
-	local size = self.guo_bt:getSize()
+			-- self.guo_bt:setVisible(false)
+	end
 	
 	-- self.guo_bt:performWithDelay(function()
 	-- self.guo_bt:setVisible(true)

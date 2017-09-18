@@ -1008,20 +1008,20 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 
 			end
 		end
-		---听牌数据 s
-		local isTing = false
-		for m,n in pairs(tingSeq) do
-			if v == n then
-				--todo
-				isTing = true
-				break
-			end
-		end
-		--加到听牌数据中
-		if isTing then
-			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
-			table.insert(newTingSeq, 1, cardData)
-		end
+		-- ---听牌数据 s
+		-- local isTing = false
+		-- for m,n in pairs(tingSeq) do
+		-- 	if v == n then
+		-- 		--todo
+		-- 		isTing = true
+		-- 		break
+		-- 	end
+		-- end
+		-- --加到听牌数据中
+		-- if isTing then
+		-- 	local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
+		-- 	table.insert(newTingSeq, 1, cardData)
+		-- end
 
 	end
 
@@ -1069,27 +1069,30 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 
 	
 
-	--组合听牌数据到总数据中
-	for i,v in ipairs(newTingSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
+	-- --组合听牌数据到总数据中
+	-- for i,v in ipairs(newTingSeq) do
+	-- 	table.insert(newCardsSeq, 1, v)
+	-- end
 
 	--挑出听牌可丢弃牌---进行放大效果
-	for k,v in pairs(newCardsSeq) do
-		for m,n in pairs(tingSeq) do
-			if v.m_value == n.m_value then
-				-- table.insert(newTingSeq, v)
-				newCardsSeq[k], tingSeq[m] = tingSeq[m],newCardsSeq[k]  --交换数据
-			-- else
-			-- 	table.insert(daYuCaiShenSeq, v)
-			end
+	-- for k,v in pairs(newCardsSeq) do
+	-- 	for m,n in pairs(tingSeq) do
+	-- 		if v.m_value == n then
+	-- 			-- table.insert(newTingSeq, v)
+	-- 			newCardsSeq[k], tingSeq[m] = tingSeq[m],newCardsSeq[k]  --交换数据
+	-- 		-- else
+	-- 		-- 	table.insert(daYuCaiShenSeq, v)
+	-- 		end
 
-		end
-	end
+	-- 	end
+	-- end
 
 
 	--使用3D麻将操作类显示手牌
-	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
+	if tingSeq ~= nil then
+		D3_OPERATOR:showCards(playerType, plane, newCardsSeq,nil,nil,nil,nil,tingSeq)
+	end
+	
 
 
 end

@@ -40,7 +40,10 @@ HHMJ_LAIZI = 1024
 --财神牌
 JS_CAISHEN = {}
 --听弃牌
-JS_TING_REMOVE = {}
+JS_TING_REMOVE = nil
+tingFlag = 0
+huFlag = 0
+gangFlag = 0
 
 ZZMJ_TOTAL_ROUNDS = nil
 ZZMJ_ROUND = nil
