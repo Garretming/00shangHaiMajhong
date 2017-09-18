@@ -4,7 +4,7 @@ Quick-Cocos2d-x C++ support ready.
 
 [LUA-print] 7003
 
-[LUA-print] dump from: [string "LuaDebugjit.lua"]:884: in function 'debugger_setBreak'
+[LUA-print] dump from: [string ".\LuaDebugjit.lua"]:884: in function 'debugger_setBreak'
 
 [LUA-print] - "breakInfos" = {
 
@@ -30,7 +30,10 @@ Quick-Cocos2d-x C++ support ready.
 
 [LUA-print] [INFO] # device.language              = cn
 
+
 [LUA-print] [INFO] # device.writablePath          = e:\www_root\00shangHaiMajhong\
+
+
 
 [LUA-print] [INFO] # device.directorySeparator    = \
 
@@ -76,38 +79,43 @@ Quick-Cocos2d-x C++ support ready.
 
 [LUA-print] [INFO] #
 
+<<<<<<< HEAD
 [LUA-print] [INFO] GameState.load() - file "e:\www_root\00shangHaiMajhong\state.txt" not found
+=======
+[LUA-print] [INFO] GameState.load() - file "f:\work_root\00shangHaiMajhong\state.txt" not found
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 [LUA-print] MainScene:onEnter
 
 load cocostudio csb is res/loading/loading.csb
 
-[LUA-print] dump from: [string "hall/data/AppMessage.lua"]:6: in function 'ctor'
+[LUA-print] dump from: [string ".\hall/data/AppMessage.lua"]:6: in function 'ctor'
 
 [LUA-print] - "-----AppMessage:ctor-----" = "初始化应用信息"
 
-[LUA-print] dump from: [string "hall/data/Config.lua"]:6: in function 'ctor'
+[LUA-print] dump from: [string ".\hall/data/Config.lua"]:6: in function 'ctor'
 
 [LUA-print] - "-----Config:ctor-----" = "初始化配置"
 
-[LUA-print] dump from: [string "hall/data/Config.lua"]:56: in function 'initPath'
+[LUA-print] dump from: [string ".\hall/data/Config.lua"]:56: in function 'initPath'
 
 [LUA-print] - "-----Config:initPath-----" = "初始化文件访问路径"
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:8: in function 'ctor'
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:8: in function 'ctor'
 
 [LUA-print] - "-----Request-----" = "初始化请求文件"
 
 load cocostudio csb is res/loading/loading.csb
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:16: in function 'createHttRq'
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
 
 [LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer"
 
 HTTPRequest[0x0001] - create request with url: http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:32: in function <[string "hall/network/http/Request.lua"]:27>
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
 
+<<<<<<< HEAD
 [LUA-print] - "-----event.name-----" = "failed"
 
 HTTPRequest[0x0001] - request removed
@@ -115,36 +123,293 @@ HTTPRequest[0x0001] - request removed
 [LUA-print] dump from: [string "hall/network/http/Request.lua"]:16: in function 'createHttRq'
 
 [LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer"
+=======
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:178: in function 'callBack'
+
+[LUA-print] - "-----请求登录验证返回-----" = {
+
+[LUA-print] -     "data" = {
+
+[LUA-print] -         "everydayLoginSendCard" = 0
+
+[LUA-print] -         "hall" = {
+
+[LUA-print] -             "id"     = 3
+
+[LUA-print] -             "ip"     = "119.23.152.242"
+
+[LUA-print] -             "name"   = "大厅3"
+
+[LUA-print] -             "port"   = "4700"
+
+[LUA-print] -             "status" = 1
+
+[LUA-print] -         }
+
+[LUA-print] -         "isFirstLogin"          = 1
+
+[LUA-print] -         "mtKey"                 = "123456"
+
+[LUA-print] -         "playerProfile" = {
+
+[LUA-print] -             "account"        = "1380138"
+
+[LUA-print] -             "cardCount"      = 0
+
+[LUA-print] -             "coinAmount"     = 0
+
+[LUA-print] -             "grade"          = 0
+
+[LUA-print] -             "hasBindPhone"   = false
+
+[LUA-print] -             "hasPayPassword" = false
+
+[LUA-print] -             "jewelAmount"    = 0
+
+[LUA-print] -             "nickName"       = "用户1380138"
+
+[LUA-print] -             "onlineStatus"   = "1"
+
+[LUA-print] -             "phone"          = "1380138"
+
+[LUA-print] -             "photoUrl"       = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/middle_20090419_a2dc30923f6ebde5997coS7WumU0H1Kf.jpg"
+
+[LUA-print] -             "promoCode"      = "1380138"
+
+[LUA-print] -             "sex"            = "2"
+
+[LUA-print] -             "status"         = "1"
+
+[LUA-print] -             "userId"         = "100848"
+
+[LUA-print] -             "wealth"         = 0
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "returnCode" = "0"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:222: in function 'callBack'
+
+[LUA-print] - "-----agentId-----" = nil
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:223: in function 'callBack'
+
+[LUA-print] - "-----agentName-----" = nil
+
+[LUA-print] dump from: [string ".\hall/HallServer.lua"]:22: in function 'connectSocket'
+
+[LUA-print] - "-----建立Socket连接-----" = "119.23.152.242"
+
+[LUA-print] 创建新Socket实例----------------
+
+HTTPRequest[0x0001] - request removed
+
+[LUA-print] NEO [%d] onConnected. %s	nil	SOCKET_TCP_CONNECTED
+
+[LUA-print] unschduleHeartBeat----------------------
+
+[LUA-print] dump from: [string ".\hall/HallServer.lua"]:35: in function 'onAfterConnected'
+
+[LUA-print] - "-----Socket连接成功-----" = ""
+
+[LUA-print] dump from: [string ".\hall/HallServer.lua"]:53: in function 'onAfterConnected'
+
+[LUA-print] - "-----protocol_name-----" = ""
+
+[LUA-print] dump from: [string ".\hall/HallServer.lua"]:54: in function 'onAfterConnected'
+
+[LUA-print] - "-----PROTOCOL.HALL_PROTOCOL_EX-----" = "HALL_PROTOCOL_EX"
+
+[LUA-print] dump from: [string ".\hall/HallServer.lua"]:109: in function 'LoginHall'
+
+[LUA-print] - "-----HallServer-----" = "-----Socket登录大厅---116-----"
+
+[LUA-print] build cmd:%x header lenght:%d	278	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+[LUA-print] decrypt success
+
+[LUA-print] #[PACK_PARSE] len:118 [00 00 00 72 42 59 00 00 00 00 02 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 FF FF 00 00 00 00 00 00 00 00 08 00 00 00 15 00 00 00 00 00 00 00 14 00 00 00 00 00 00 00 0D 00 00 00 00 00 00 00 0E 00 00 00 00 00 00 00 0F 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00 28 00 00 00 00 00 00 00 29 00 00 00 00 ]
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	19	22	4	Ver	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	23	26	4	Levelcount	0
+
+[LUA-print] [parsePacket_]array fixedLength:%d	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	27	26	0	Usercount	{}
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	27	30	4	Friendcount	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	31	34	4	Tid	0
+
+[LUA-print] read data string pos:%d	35
+
+[LUA-print] read data string len:%d	1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	35	39	5	Ip	
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	40	43	4	port	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	44	45	2	Serverlevel	-1
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	46	49	4	on_look_user	0
+
+[LUA-print] [%03d-%03d][%03d]%s=%s	50	53	4	type	0
+
+[LUA-print] buf len: 118 pos:54
+
+[LUA-print] dump from: [string ".\hall/ScoketGame.lua"]:346: in function <[string ".\hall/ScoketGame.lua"]:298>
+
+[LUA-print] - "-----协议解析输出-----" = "当前所在：nil，当前协议下的协议号：0x210，0x213，0x301，0x110，0x532，0x201，0x203，当前解析协议号：0x201，"
+
+[LUA-print] dump from: [string ".\hall/HallHandle.lua"]:38: in function <[string ".\hall/HallHandle.lua"]:36>
+
+[LUA-print] - "-----大厅Socket连接成功-----" = {
+
+[LUA-print] -     "Friendcount"  = 0
+
+[LUA-print] -     "Ip"           = ""
+
+[LUA-print] -     "Levelcount"   = 0
+
+[LUA-print] -     "Serverlevel"  = -1
+
+[LUA-print] -     "Tid"          = 0
+
+[LUA-print] -     "Usercount" = {
+
+[LUA-print] -     }
+
+[LUA-print] -     "Ver"          = 1
+
+[LUA-print] -     "cmd"          = 513
+
+[LUA-print] -     "on_look_user" = 0
+
+[LUA-print] -     "port"         = 0
+
+[LUA-print] -     "type"         = 0
+
+[LUA-print] - }
+
+[LUA-print] 	-----Socket返回登录成功，进入大厅-----	false
+
+[LUA-print] GameCommon:landLoading false
+
+load cocostudio csb is hall/scene/res/168/hall/room_lequ.csb
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:314: in function 'getGameType'
+
+[LUA-print] - "-----获取游戏分类列表-----" = ""
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+
+[LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/game/queryGameType"
+
+HTTPRequest[0x0002] - create request with url: http://119.23.152.242:8080/hbiInterface/game/queryGameType
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:260: in function 'getGameList'
+
+[LUA-print] - "-----获取游戏列表-----" = ""
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+
+[LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/game/hallLoading"
+
+HTTPRequest[0x0003] - create request with url: http://119.23.152.242:8080/hbiInterface/game/hallLoading
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:381: in function 'getCreateGroupGameConfig'
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 HTTPRequest[0x0002] - create request with url: http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer
 
+<<<<<<< HEAD
 [LUA-print] dump from: [string "hall/network/http/Request.lua"]:32: in function <[string "hall/network/http/Request.lua"]:27>
+=======
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 [LUA-print] - "-----event.name-----" = "failed"
 
 HTTPRequest[0x0002] - request removed
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:16: in function 'createHttRq'
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
 
 [LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer"
 
 HTTPRequest[0x0003] - create request with url: http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer
 
+<<<<<<< HEAD
 [LUA-print] dump from: [string "hall/network/http/Request.lua"]:32: in function <[string "hall/network/http/Request.lua"]:27>
+=======
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 [LUA-print] - "-----event.name-----" = "failed"
 
 HTTPRequest[0x0003] - request removed
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:16: in function 'createHttRq'
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
 
+<<<<<<< HEAD
 [LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer"
+=======
+[LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/roomCard/queryRoomCardCount"
+
+HTTPRequest[0x0007] - create request with url: http://119.23.152.242:8080/hbiInterface/roomCard/queryRoomCardCount
+
+load cocostudio csb is hall/scene/res/168/activity/Activity_Scene.csb
+
+[LUA-print] dump from: [string ".\hall/GameCommon.lua"]:218: in function 'getUrlPicture'
+
+[LUA-print] - "getUrlPicture" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/middle_20090419_a2dc30923f6ebde5997coS7WumU0H1Kf.jpg"
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 HTTPRequest[0x0004] - create request with url: http://119.23.152.242:8080/hbiInterface/playerUser/getUserInfo4GameServer
 
-[LUA-print] dump from: [string "hall/network/http/Request.lua"]:32: in function <[string "hall/network/http/Request.lua"]:27>
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
 
+<<<<<<< HEAD
 [LUA-print] - "-----event.name-----" = "failed"
+=======
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:326: in function 'callBack'
+
+[LUA-print] - "-----获取游戏分类列表返回-----" = {
+
+[LUA-print] -     "data" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "gameId"   = 190
+
+[LUA-print] -             "gameType" = "热门类"
+
+[LUA-print] -             "id"       = 1
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "南京麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "gameId"   = 524
+
+[LUA-print] -             "gameType" = "麻将类"
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
 
 [LUA-print] show button state:3
 
@@ -164,5 +429,3070 @@ HTTPRequest[0x0005] - create request with url: http://119.23.152.242:8080/hbiInt
 
 [LUA-print] - "-----event.name-----" = "failed"
 
+<<<<<<< HEAD
 HTTPRequest[0x0005] - request removed
 
+=======
+[LUA-print] -             "gameId"   = 40
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 34
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "湖南麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         22 = {
+
+[LUA-print] -             "gameId"   = 44
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 35
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "湖北麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         23 = {
+
+[LUA-print] -             "gameId"   = 4
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 36
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "四川麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         24 = {
+
+[LUA-print] -             "gameId"   = 43
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 37
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "广东麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         25 = {
+
+[LUA-print] -             "gameId"   = 90
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 38
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "河北麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         26 = {
+
+[LUA-print] -             "gameId"   = 77
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 39
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "赣州冲关"
+
+[LUA-print] -         }
+
+[LUA-print] -         27 = {
+
+[LUA-print] -             "gameId"   = 507
+
+[LUA-print] -             "gameType" = "热门类"
+
+[LUA-print] -             "id"       = 40
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         28 = {
+
+[LUA-print] -             "gameId" = 508
+
+[LUA-print] -             "id"     = 41
+
+[LUA-print] -             "name"   = "00"
+
+[LUA-print] -         }
+
+[LUA-print] -         29 = {
+
+[LUA-print] -             "gameId"   = 503
+
+[LUA-print] -             "gameType" = "麻将类"
+
+[LUA-print] -             "id"       = 503
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "潮汕麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         30 = {
+
+[LUA-print] -             "gameId"   = 505
+
+[LUA-print] -             "gameType" = "热门类"
+
+[LUA-print] -             "id"       = 505
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "陕西麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -         31 = {
+
+[LUA-print] -             "gameId"   = 515
+
+[LUA-print] -             "gameType" = "扑克类"
+
+[LUA-print] -             "id"       = 515
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "抢庄斗牛（新）"
+
+[LUA-print] -         }
+
+[LUA-print] -         32 = {
+
+[LUA-print] -             "gameId"   = 526
+
+[LUA-print] -             "gameType" = "扑克类"
+
+[LUA-print] -             "id"       = 526
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "4人斗地主"
+
+[LUA-print] -         }
+
+[LUA-print] -         33 = {
+
+[LUA-print] -             "gameId"   = 528
+
+[LUA-print] -             "gameType" = "扑克类"
+
+[LUA-print] -             "id"       = 528
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "四人斗地主"
+
+[LUA-print] -         }
+
+[LUA-print] -         34 = {
+
+[LUA-print] -             "gameId"   = 529
+
+[LUA-print] -             "gameType" = "热门类"
+
+[LUA-print] -             "id"       = 529
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "牌九"
+
+[LUA-print] -         }
+
+[LUA-print] -         35 = {
+
+[LUA-print] -             "gameId"   = 540
+
+[LUA-print] -             "gameType" = "热门类"
+
+[LUA-print] -             "id"       = 540
+
+[LUA-print] -             "isShow"   = 1
+
+[LUA-print] -             "name"     = "饶平麻将"
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "returnCode" = "0"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:370: in function 'callBack'
+
+[LUA-print] - "-----bm.gameList-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -         "gameArr" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -             6 = *MAX NESTING*
+
+[LUA-print] -             7 = *MAX NESTING*
+
+[LUA-print] -             8 = *MAX NESTING*
+
+[LUA-print] -             9 = *MAX NESTING*
+
+[LUA-print] -             10 = *MAX NESTING*
+
+[LUA-print] -             11 = *MAX NESTING*
+
+[LUA-print] -             12 = *MAX NESTING*
+
+[LUA-print] -             13 = *MAX NESTING*
+
+[LUA-print] -             14 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameType" = "热门类"
+
+[LUA-print] -     }
+
+[LUA-print] -     2 = {
+
+[LUA-print] -         "gameArr" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameType" = "3D类"
+
+[LUA-print] -     }
+
+[LUA-print] -     3 = {
+
+[LUA-print] -         "gameArr" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -             6 = *MAX NESTING*
+
+[LUA-print] -             7 = *MAX NESTING*
+
+[LUA-print] -             8 = *MAX NESTING*
+
+[LUA-print] -             9 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameType" = "麻将类"
+
+[LUA-print] -     }
+
+[LUA-print] -     4 = {
+
+[LUA-print] -         "gameArr" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -             6 = *MAX NESTING*
+
+[LUA-print] -             7 = *MAX NESTING*
+
+[LUA-print] -             8 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameType" = "扑克类"
+
+[LUA-print] -     }
+
+[LUA-print] -     5 = {
+
+[LUA-print] -         "gameArr" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameType" = "棋牌类"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:273: in function 'callBack'
+
+[LUA-print] - "-----获取游戏列表返回-----" = {
+
+[LUA-print] -     "data" = {
+
+[LUA-print] -         1 = {
+
+[LUA-print] -             "code"          = "cs_majiang"
+
+[LUA-print] -             "danLosePoint"  = -8
+
+[LUA-print] -             "danTiePoint"   = 0
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 88
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "3D长沙麻将"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 4
+
+[LUA-print] -             "version"       = "1.0.118"
+
+[LUA-print] -         }
+
+[LUA-print] -         2 = {
+
+[LUA-print] -             "code"        = "szkawuxing"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 44
+
+[LUA-print] -             "gameType"    = "麻将类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "随州卡五星"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 7
+
+[LUA-print] -             "version"     = "1.0.10"
+
+[LUA-print] -         }
+
+[LUA-print] -         3 = {
+
+[LUA-print] -             "code"        = "tdh"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 46
+
+[LUA-print] -             "gameType"    = "麻将类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "推倒胡"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 9
+
+[LUA-print] -             "version"     = "1.0.12"
+
+[LUA-print] -         }
+
+[LUA-print] -         4 = {
+
+[LUA-print] -             "code"        = "xykawuxing"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 47
+
+[LUA-print] -             "gameType"    = "麻将类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "襄阳卡五星"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 10
+
+[LUA-print] -             "version"     = "1.0.9"
+
+[LUA-print] -         }
+
+[LUA-print] -         5 = {
+
+[LUA-print] -             "code"          = "zz_majiang2"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 48
+
+[LUA-print] -             "gameType"      = "麻将类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 0
+
+[LUA-print] -             "name"          = "二人转转"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.11"
+
+[LUA-print] -         }
+
+[LUA-print] -         6 = {
+
+[LUA-print] -             "code"          = "zz_majiang3"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 49
+
+[LUA-print] -             "gameType"      = "麻将类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 0
+
+[LUA-print] -             "name"          = "三人转转"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.11"
+
+[LUA-print] -         }
+
+[LUA-print] -         7 = {
+
+[LUA-print] -             "code"         = "jsnj_majiang"
+
+[LUA-print] -             "danLosePoint" = 0
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 0
+
+[LUA-print] -             "gameId"       = 190
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "南京麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 4
+
+[LUA-print] -             "version"      = "1.8.996"
+
+[LUA-print] -         }
+
+[LUA-print] -         8 = {
+
+[LUA-print] -             "code"         = "HYmahjong"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 530
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "河源麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 530
+
+[LUA-print] -             "version"      = "1.0.0"
+
+[LUA-print] -         }
+
+[LUA-print] -         9 = {
+
+[LUA-print] -             "code"        = "pu_1"
+
+[LUA-print] -             "danWinPoint" = 10
+
+[LUA-print] -             "gameId"      = 510
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "pu_1"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 510
+
+[LUA-print] -         }
+
+[LUA-print] -         10 = {
+
+[LUA-print] -             "code"         = "hb_majiang"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 90
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "河北麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 4
+
+[LUA-print] -             "version"      = "1.0.4"
+
+[LUA-print] -         }
+
+[LUA-print] -         11 = {
+
+[LUA-print] -             "code"        = "niuniu_qz"
+
+[LUA-print] -             "danWinPoint" = 10
+
+[LUA-print] -             "gameId"      = 515
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "抢庄牛牛"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 515
+
+[LUA-print] -         }
+
+[LUA-print] -         12 = {
+
+[LUA-print] -             "code"        = "niuniu_mp"
+
+[LUA-print] -             "danWinPoint" = 10
+
+[LUA-print] -             "gameId"      = 516
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "明牌抢庄牛牛"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 516
+
+[LUA-print] -         }
+
+[LUA-print] -         13 = {
+
+[LUA-print] -             "code"          = "xgkawuxing"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 50
+
+[LUA-print] -             "gameType"      = "麻将类"
+
+[LUA-print] -             "isMainPage"    = 1
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "孝感卡五星"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 11
+
+[LUA-print] -             "version"       = "1.0.2"
+
+[LUA-print] -         }
+
+[LUA-print] -         14 = {
+
+[LUA-print] -             "code"          = "ganzhou_majiang"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 77
+
+[LUA-print] -             "gameType"      = "麻将类"
+
+[LUA-print] -             "isMainPage"    = 1
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "赣州冲关"
+
+[LUA-print] -             "photo"         = ""
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 19
+
+[LUA-print] -             "version"       = "1.0.4"
+
+[LUA-print] -         }
+
+[LUA-print] -         15 = {
+
+[LUA-print] -             "code"        = "pdk"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 11
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 1
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "跑得快"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 13
+
+[LUA-print] -             "version"     = "1.0.44"
+
+[LUA-print] -         }
+
+[LUA-print] -         16 = {
+
+[LUA-print] -             "code"          = "niuniu"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 13
+
+[LUA-print] -             "gameType"      = "扑克类"
+
+[LUA-print] -             "isMainPage"    = 1
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "推锅斗牛"
+
+[LUA-print] -             "photo"         = ""
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 24
+
+[LUA-print] -             "version"       = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         17 = {
+
+[LUA-print] -             "code"        = "niuniu"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 14
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "定庄斗牛"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 25
+
+[LUA-print] -             "version"     = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         18 = {
+
+[LUA-print] -             "code"        = "niuniu"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 15
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "轮庄斗牛"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 26
+
+[LUA-print] -             "version"     = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         19 = {
+
+[LUA-print] -             "code"        = "niuniu"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 16
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "通比斗牛"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 27
+
+[LUA-print] -             "version"     = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         20 = {
+
+[LUA-print] -             "code"        = "niuniu"
+
+[LUA-print] -             "danWinPoint" = 0
+
+[LUA-print] -             "gameId"      = 17
+
+[LUA-print] -             "gameType"    = "扑克类"
+
+[LUA-print] -             "isMainPage"  = 0
+
+[LUA-print] -             "isShow"      = 1
+
+[LUA-print] -             "name"        = "牛牛坐庄"
+
+[LUA-print] -             "playerCount" = 0
+
+[LUA-print] -             "status"      = "2"
+
+[LUA-print] -             "type"        = 28
+
+[LUA-print] -             "version"     = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         21 = {
+
+[LUA-print] -             "code"         = "rpmahjong"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 540
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "饶平麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 540
+
+[LUA-print] -             "version"      = "1.0.0"
+
+[LUA-print] -         }
+
+[LUA-print] -         22 = {
+
+[LUA-print] -             "code"         = "ddz"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 1
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "斗地主"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 12
+
+[LUA-print] -             "version"      = "1.0.60"
+
+[LUA-print] -         }
+
+[LUA-print] -         23 = {
+
+[LUA-print] -             "code"          = "majiang"
+
+[LUA-print] -             "danLosePoint"  = -8
+
+[LUA-print] -             "danTiePoint"   = 0
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/game27freeGamePhoto20160530152142.jpg"
+
+[LUA-print] -             "gameId"        = 4
+
+[LUA-print] -             "gameType"      = "麻将类"
+
+[LUA-print] -             "isFreeGame"    = 1
+
+[LUA-print] -             "isMainPage"    = 1
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "血战麻将"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 2
+
+[LUA-print] -             "version"       = "1.4.107"
+
+[LUA-print] -         }
+
+[LUA-print] -         24 = {
+
+[LUA-print] -             "code"         = "niuniu"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 5
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "抢庄牛牛"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 1
+
+[LUA-print] -             "version"      = "1.0.56"
+
+[LUA-print] -         }
+
+[LUA-print] -         25 = {
+
+[LUA-print] -             "code"         = "js_majiang_3d"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 524
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "上海敲麻"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 524
+
+[LUA-print] -             "version"      = "1.0.100"
+
+[LUA-print] -         }
+
+[LUA-print] -         26 = {
+
+[LUA-print] -             "code"          = "zhajinhua"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 7
+
+[LUA-print] -             "gameType"      = "扑克类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "诈金花"
+
+[LUA-print] -             "photo"         = ""
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 18
+
+[LUA-print] -             "version"       = "1.0.28"
+
+[LUA-print] -         }
+
+[LUA-print] -         27 = {
+
+[LUA-print] -             "code"         = "chaoshan_majiang                                  "
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 503
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "潮汕麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 503
+
+[LUA-print] -             "version"      = "1.0.0"
+
+[LUA-print] -         }
+
+[LUA-print] -         28 = {
+
+[LUA-print] -             "code"         = "wakeng"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 504
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "挖坑"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 504
+
+[LUA-print] -         }
+
+[LUA-print] -         29 = {
+
+[LUA-print] -             "code"          = "zz_majiang_3d"
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 81
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "红中王"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.51"
+
+[LUA-print] -         }
+
+[LUA-print] -         30 = {
+
+[LUA-print] -             "code"          = "xlsg"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 9
+
+[LUA-print] -             "gameType"      = "扑克类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "三公"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 14
+
+[LUA-print] -             "version"       = "1.0.12"
+
+[LUA-print] -         }
+
+[LUA-print] -         31 = {
+
+[LUA-print] -             "code"         = "four-ddz"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 526
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "4人斗地主"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 526
+
+[LUA-print] -         }
+
+[LUA-print] -         32 = {
+
+[LUA-print] -             "code"         = "shanxiMJ"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 505
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "陕西麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 505
+
+[LUA-print] -             "version"      = "1.0.0"
+
+[LUA-print] -         }
+
+[LUA-print] -         33 = {
+
+[LUA-print] -             "code"         = "fourlandlords"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 528
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "四人斗地主"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 528
+
+[LUA-print] -         }
+
+[LUA-print] -         34 = {
+
+[LUA-print] -             "code"         = "fg_majiang"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 506
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "某某麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 506
+
+[LUA-print] -         }
+
+[LUA-print] -         35 = {
+
+[LUA-print] -             "code"          = "gd_majiang_3d"
+
+[LUA-print] -             "danLosePoint"  = -8
+
+[LUA-print] -             "danTiePoint"   = 0
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 83
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "白板变"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 5
+
+[LUA-print] -             "version"       = "1.0.26"
+
+[LUA-print] -         }
+
+[LUA-print] -         36 = {
+
+[LUA-print] -             "code"         = "paijiu"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 529
+
+[LUA-print] -             "gameType"     = "扑克类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "牌九"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 529
+
+[LUA-print] -             "version"      = "1.0.0"
+
+[LUA-print] -         }
+
+[LUA-print] -         37 = {
+
+[LUA-print] -             "code"          = "zz_majiang_old_3d"
+
+[LUA-print] -             "danLosePoint"  = -8
+
+[LUA-print] -             "danTiePoint"   = 0
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 84
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 1
+
+[LUA-print] -             "isShow"        = 1
+
+[LUA-print] -             "name"          = "3D转转麻将"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.910"
+
+[LUA-print] -         }
+
+[LUA-print] -         38 = {
+
+[LUA-print] -             "code"         = "gdyj_majiang"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 507
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 507
+
+[LUA-print] -         }
+
+[LUA-print] -         39 = {
+
+[LUA-print] -             "code"         = "cs_majiang"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 40
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "长沙麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 4
+
+[LUA-print] -             "version"      = "1.0.115"
+
+[LUA-print] -         }
+
+[LUA-print] -         40 = {
+
+[LUA-print] -             "code"         = "zz_majiang_old_3d"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 41
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 1
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "转转麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 3
+
+[LUA-print] -             "version"      = "1.0.53"
+
+[LUA-print] -         }
+
+[LUA-print] -         41 = {
+
+[LUA-print] -             "code"          = "zz_majiang_2_3d"
+
+[LUA-print] -             "danWinPoint"   = 10
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 85
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 0
+
+[LUA-print] -             "name"          = "3D二人转转"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.550"
+
+[LUA-print] -         }
+
+[LUA-print] -         42 = {
+
+[LUA-print] -             "code"         = "ma_1"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 509
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "ma_1"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 509
+
+[LUA-print] -         }
+
+[LUA-print] -         43 = {
+
+[LUA-print] -             "code"          = "zz_majiang_3_3d"
+
+[LUA-print] -             "danWinPoint"   = 0
+
+[LUA-print] -             "freeGamePhoto" = ""
+
+[LUA-print] -             "gameId"        = 86
+
+[LUA-print] -             "gameType"      = "3D类"
+
+[LUA-print] -             "isMainPage"    = 0
+
+[LUA-print] -             "isShow"        = 0
+
+[LUA-print] -             "name"          = "3D三人转转"
+
+[LUA-print] -             "playerCount"   = 0
+
+[LUA-print] -             "remark"        = ""
+
+[LUA-print] -             "status"        = "2"
+
+[LUA-print] -             "type"          = 3
+
+[LUA-print] -             "version"       = "1.0.450"
+
+[LUA-print] -         }
+
+[LUA-print] -         44 = {
+
+[LUA-print] -             "code"         = "gd_majiang"
+
+[LUA-print] -             "danLosePoint" = -8
+
+[LUA-print] -             "danTiePoint"  = 0
+
+[LUA-print] -             "danWinPoint"  = 10
+
+[LUA-print] -             "gameId"       = 43
+
+[LUA-print] -             "gameType"     = "麻将类"
+
+[LUA-print] -             "isMainPage"   = 0
+
+[LUA-print] -             "isShow"       = 1
+
+[LUA-print] -             "name"         = "广东麻将"
+
+[LUA-print] -             "playerCount"  = 0
+
+[LUA-print] -             "status"       = "2"
+
+[LUA-print] -             "type"         = 5
+
+[LUA-print] -             "version"      = "1.0.22"
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     "returnCode" = "0"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:298: in function 'callBack'
+
+[LUA-print] - "-----获取游戏列表成功，检查重连-----" = ""
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:383: in function 'requestGroupStatus'
+
+[LUA-print] - "-----重连操作，查询当前用户组局历史记录-----" = "http://119.23.152.242:8080/hbiInterface/viewReganizeHistory   user:100848"
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+
+[LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/viewReganizeHistory"
+
+HTTPRequest[0x0008] - create request with url: http://119.23.152.242:8080/hbiInterface/viewReganizeHistory
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:400: in function 'callBack'
+
+[LUA-print] - "-----获取组局配置返回-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 90
+
+[LUA-print] -         "gameName"   = "河北麻将"
+
+[LUA-print] -         "level"      = 90
+
+[LUA-print] -     }
+
+[LUA-print] -     2 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 4
+
+[LUA-print] -         "gameName"   = "血战麻将"
+
+[LUA-print] -         "level"      = 60
+
+[LUA-print] -     }
+
+[LUA-print] -     3 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 41
+
+[LUA-print] -         "gameName"   = "转转麻将"
+
+[LUA-print] -         "level"      = 61
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     4 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 40
+
+[LUA-print] -         "gameName"   = "长沙麻将"
+
+[LUA-print] -         "level"      = 62
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     5 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 43
+
+[LUA-print] -         "gameName"   = "广东麻将"
+
+[LUA-print] -         "level"      = 63
+
+[LUA-print] -     }
+
+[LUA-print] -     6 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 1
+
+[LUA-print] -         "gameName"   = "斗地主"
+
+[LUA-print] -         "level"      = 110
+
+[LUA-print] -     }
+
+[LUA-print] -     7 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 11
+
+[LUA-print] -         "gameName"   = "跑得快"
+
+[LUA-print] -         "level"      = 160
+
+[LUA-print] -     }
+
+[LUA-print] -     8 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 5
+
+[LUA-print] -         "gameName"   = "抢庄斗牛"
+
+[LUA-print] -         "level"      = 10
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     9 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 44
+
+[LUA-print] -         "gameName"   = "随州卡五星"
+
+[LUA-print] -         "level"      = 65
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     10 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 46
+
+[LUA-print] -         "gameName"   = "推倒胡"
+
+[LUA-print] -         "level"      = 67
+
+[LUA-print] -     }
+
+[LUA-print] -     11 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 13
+
+[LUA-print] -         "gameName"   = "推锅斗牛"
+
+[LUA-print] -         "level"      = 13
+
+[LUA-print] -     }
+
+[LUA-print] -     12 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 14
+
+[LUA-print] -         "gameName"   = "定庄斗牛"
+
+[LUA-print] -         "level"      = 14
+
+[LUA-print] -     }
+
+[LUA-print] -     13 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 15
+
+[LUA-print] -         "gameName"   = "轮庄斗牛"
+
+[LUA-print] -         "level"      = 15
+
+[LUA-print] -     }
+
+[LUA-print] -     14 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 16
+
+[LUA-print] -         "gameName"   = "通比斗牛"
+
+[LUA-print] -         "level"      = 16
+
+[LUA-print] -     }
+
+[LUA-print] -     15 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 17
+
+[LUA-print] -         "gameName"   = "牛牛换庄斗牛"
+
+[LUA-print] -         "level"      = 17
+
+[LUA-print] -     }
+
+[LUA-print] -     16 = {
+
+[LUA-print] -         "chouMa"     = 20000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 9
+
+[LUA-print] -         "gameName"   = "三公"
+
+[LUA-print] -         "level"      = 170
+
+[LUA-print] -     }
+
+[LUA-print] -     17 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 51
+
+[LUA-print] -         "gameName"   = "三人海南"
+
+[LUA-print] -         "level"      = 72
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     18 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 52
+
+[LUA-print] -         "gameName"   = "营口麻将"
+
+[LUA-print] -         "level"      = 73
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     19 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 87
+
+[LUA-print] -         "gameName"   = "3D营口麻将"
+
+[LUA-print] -         "level"      = 87
+
+[LUA-print] -     }
+
+[LUA-print] -     20 = {
+
+[LUA-print] -         "chouMa"     = 320
+
+[LUA-print] -         "diZhu"      = 2
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 7
+
+[LUA-print] -         "gameName"   = "诈金花"
+
+[LUA-print] -         "level"      = 155
+
+[LUA-print] -     }
+
+[LUA-print] -     21 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 77
+
+[LUA-print] -         "gameName"   = "赣州冲关"
+
+[LUA-print] -         "level"      = 77
+
+[LUA-print] -     }
+
+[LUA-print] -     22 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 78
+
+[LUA-print] -         "gameName"   = "宜宾麻将"
+
+[LUA-print] -         "level"      = 78
+
+[LUA-print] -     }
+
+[LUA-print] -     23 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 83
+
+[LUA-print] -         "gameName"   = "白板变"
+
+[LUA-print] -         "level"      = 83
+
+[LUA-print] -     }
+
+[LUA-print] -     24 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 81
+
+[LUA-print] -         "gameName"   = "红中王"
+
+[LUA-print] -         "level"      = 81
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     25 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 84
+
+[LUA-print] -         "gameName"   = "转转麻将"
+
+[LUA-print] -         "level"      = 84
+
+[LUA-print] -         "otherGame" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -     }
+
+[LUA-print] -     26 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 88
+
+[LUA-print] -         "gameName"   = "长沙麻将"
+
+[LUA-print] -         "level"      = 88
+
+[LUA-print] -     }
+
+[LUA-print] -     27 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 90
+
+[LUA-print] -         "gameName"   = "河北麻将"
+
+[LUA-print] -         "level"      = 90
+
+[LUA-print] -     }
+
+[LUA-print] -     28 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 190
+
+[LUA-print] -         "gameName"   = "南京麻将"
+
+[LUA-print] -         "level"      = 190
+
+[LUA-print] -     }
+
+[LUA-print] -     29 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 503
+
+[LUA-print] -         "gameName"   = "潮汕麻将"
+
+[LUA-print] -         "level"      = 503
+
+[LUA-print] -     }
+
+[LUA-print] -     30 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 1
+
+[LUA-print] -         "gameName"   = "陕西挖坑"
+
+[LUA-print] -         "level"      = 110
+
+[LUA-print] -     }
+
+[LUA-print] -     31 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -             6 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 505
+
+[LUA-print] -         "gameName"   = "陕西麻将"
+
+[LUA-print] -         "level"      = 505
+
+[LUA-print] -     }
+
+[LUA-print] -     32 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 506
+
+[LUA-print] -         "gameName"   = "某某麻将"
+
+[LUA-print] -         "level"      = 506
+
+[LUA-print] -     }
+
+[LUA-print] -     33 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 507
+
+[LUA-print] -         "gameName"   = "麻将"
+
+[LUA-print] -         "level"      = 507
+
+[LUA-print] -     }
+
+[LUA-print] -     34 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 515
+
+[LUA-print] -         "gameName"   = "抢庄斗牛"
+
+[LUA-print] -         "level"      = 515
+
+[LUA-print] -     }
+
+[LUA-print] -     35 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 524
+
+[LUA-print] -         "gameName"   = "上海敲麻"
+
+[LUA-print] -         "level"      = 524
+
+[LUA-print] -     }
+
+[LUA-print] -     36 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 526
+
+[LUA-print] -         "gameName"   = "4人斗地主"
+
+[LUA-print] -         "level"      = 526
+
+[LUA-print] -     }
+
+[LUA-print] -     37 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 528
+
+[LUA-print] -         "gameName"   = "四人斗地主"
+
+[LUA-print] -         "level"      = 528
+
+[LUA-print] -     }
+
+[LUA-print] -     38 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 43
+
+[LUA-print] -         "gameName"   = "潮汕麻将"
+
+[LUA-print] -         "level"      = 63
+
+[LUA-print] -     }
+
+[LUA-print] -     39 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 43
+
+[LUA-print] -         "gameName"   = "广东麻将"
+
+[LUA-print] -         "level"      = 63
+
+[LUA-print] -     }
+
+[LUA-print] -     40 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 508
+
+[LUA-print] -         "gameName"   = "河北推倒胡"
+
+[LUA-print] -         "level"      = 508
+
+[LUA-print] -     }
+
+[LUA-print] -     41 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 43
+
+[LUA-print] -         "gameName"   = "00"
+
+[LUA-print] -         "level"      = 63
+
+[LUA-print] -     }
+
+[LUA-print] -     42 = {
+
+[LUA-print] -         "chouMa"     = 2000
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 529
+
+[LUA-print] -         "gameName"   = "牌九"
+
+[LUA-print] -         "level"      = 529
+
+[LUA-print] -     }
+
+[LUA-print] -     43 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -             5 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 530
+
+[LUA-print] -         "gameName"   = "河源麻将"
+
+[LUA-print] -         "level"      = 530
+
+[LUA-print] -     }
+
+[LUA-print] -     44 = {
+
+[LUA-print] -         "chouMa"     = 1
+
+[LUA-print] -         "diZhu"      = 1
+
+[LUA-print] -         "gameConfig" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "gameId"     = 540
+
+[LUA-print] -         "gameName"   = "饶平麻将"
+
+[LUA-print] -         "level"      = 540
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/gameScene.lua"]:749: in function 'callBack'
+
+[LUA-print] - "-----查询走马灯-----" = {
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/gameScene.lua"]:961: in function 'callBack'
+
+[LUA-print] - "-----查询公告与客服信息-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -     }
+
+[LUA-print] -     2 = {
+
+[LUA-print] -     }
+
+[LUA-print] -     3 = {
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/gameScene.lua"]:789: in function 'callBack'
+
+[LUA-print] - "-----查询房卡数量-----" = {
+
+[LUA-print] -     "net" = {
+
+[LUA-print] -         "name"    = "completed"
+
+[LUA-print] -         "request" = userdata: 0x0a633000
+
+[LUA-print] -     }
+
+[LUA-print] -     "netData" = "{"data":{"cardCount":0,"points":3},"returnCode":"0"}"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:337: in function 'callBack'
+
+[LUA-print] - "-----当前用户未结束的组局-----" = {
+
+[LUA-print] -     1 = {
+
+[LUA-print] -         "activityId"      = 28552
+
+[LUA-print] -         "coins"           = 1
+
+[LUA-print] -         "creatorId"       = 100845
+
+[LUA-print] -         "creatorNickname" = "用户1380134"
+
+[LUA-print] -         "creatorPhotoUrl" = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/B091361568125195_change_YMIB0920130223Cb009.jpg"
+
+[LUA-print] -         "gameCode"        = "js_majiang_3d"
+
+[LUA-print] -         "gameId"          = 524
+
+[LUA-print] -         "gameName"        = "上海敲麻"
+
+[LUA-print] -         "inviteCode"      = "033214"
+
+[LUA-print] -         "isJoin"          = 1
+
+[LUA-print] -         "level"           = 524
+
+[LUA-print] -         "name"            = "用户1380134的组局"
+
+[LUA-print] -         "rounds"          = 0
+
+[LUA-print] -         "startDate"       = 1505537049000
+
+[LUA-print] -         "status"          = "0"
+
+[LUA-print] -     }
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:364: in function 'callBack'
+
+[LUA-print] - "-----查看组局记录（检查重连）-----" = "检查重连"
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:14: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参user_id-----" = 100848
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:15: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参invitationCode-----" = "033214"
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:16: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参activityId-----" = 28552
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:17: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参history-----" = true
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:18: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参level-----" = 524
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:19: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局入参reload-----" = true
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:227: in function 'join_freegame'
+
+[LUA-print] - "-----加入组局请求参数-----" = {
+
+[LUA-print] -     "activityId"     = 28552
+
+[LUA-print] -     "invitationCode" = "033214"
+
+[LUA-print] -     "level"          = "524"
+
+[LUA-print] -     "type"           = "P"
+
+[LUA-print] -     "userId"         = 100848
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:16: in function 'createHttRq'
+
+[LUA-print] - "-----请求链接-----" = "http://119.23.152.242:8080/hbiInterface/joinFreeGame"
+
+load cocostudio csb is hall/NetworkLoadingView/NetworkLoadingLayer.csb
+
+HTTPRequest[0x0009] - create request with url: http://119.23.152.242:8080/hbiInterface/joinFreeGame
+
+HTTPRequest[0x0002] - request removed
+
+HTTPRequest[0x0003] - request removed
+
+HTTPRequest[0x0004] - request removed
+
+HTTPRequest[0x0005] - request removed
+
+HTTPRequest[0x0006] - request removed
+
+HTTPRequest[0x0007] - request removed
+
+HTTPRequest[0x0008] - request removed
+
+[LUA-print] dump from: [string ".\hall/network/http/Request.lua"]:32: in function <[string ".\hall/network/http/Request.lua"]:27>
+
+[LUA-print] - "-----event.name-----" = "completed"
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:32: in function 'callBack'
+
+[LUA-print] - "-----请求加入组局结果返回-----" = {
+
+[LUA-print] -     "data" = {
+
+[LUA-print] -         "activityDiscription" = "8局 10倍底花 飞苍蝇 1花"
+
+[LUA-print] -         "activityName"        = "用户1380134的组局"
+
+[LUA-print] -         "coins"               = 1
+
+[LUA-print] -         "creatorId"           = "100845"
+
+[LUA-print] -         "creatorNickname"     = "用户1380134"
+
+[LUA-print] -         "creatorPhotoUrl"     = "http://hbirdtest.oss-cn-shenzhen.aliyuncs.com/B091361568125195_change_YMIB0920130223Cb009.jpg"
+
+[LUA-print] -         "gameActivityId"      = "28552"
+
+[LUA-print] -         "gameCode"            = "js_majiang_3d"
+
+[LUA-print] -         "gameId"              = "524"
+
+[LUA-print] -         "gameName"            = "上海敲麻"
+
+[LUA-print] -         "inviteCode"          = "033214"
+
+[LUA-print] -         "level"               = 524
+
+[LUA-print] -         "minutes"             = 0
+
+[LUA-print] -         "oriCoins"            = 2000
+
+[LUA-print] -         "players" = {
+
+[LUA-print] -             1 = *MAX NESTING*
+
+[LUA-print] -             2 = *MAX NESTING*
+
+[LUA-print] -             3 = *MAX NESTING*
+
+[LUA-print] -             4 = *MAX NESTING*
+
+[LUA-print] -         }
+
+[LUA-print] -         "startDate"           = 1505537048523
+
+[LUA-print] -         "status"              = 0
+
+[LUA-print] -         "tableId"             = 343408640
+
+[LUA-print] -     }
+
+[LUA-print] -     "returnCode" = "0"
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:52: in function 'callBack'
+
+[LUA-print] - "----------" = "界面选择游戏的 enter_mode:524，enter_code：js_majiang_3d"
+
+[LUA-print] dump from: [string ".\hall/groudgamemanager.lua"]:64: in function 'callBack'
+
+[LUA-print] - "----------" = "最后进入游戏的 enter_mode:524，enter_code：js_majiang_3d"
+
+[LUA-print] dump from: [string ".\hall/util/YaYaVoiceServerUtil.lua"]:11: in function 'LoginRoom'
+
+[LUA-print] - "-----YaYaVoiceServerUtil-----" = "进入房间"
+
+[LUA-print] get version key:js_majiang_3d_current-version
+
+[LUA-print] -----获取[js_majiang_3d] 版本号是：[]
+
+[LUA-print] dump from: [string ".\hall/GameUpdate.lua"]:501: in function 'queryVersionInJoinGame'
+
+[LUA-print] - "-----检查游戏版本（加入组局时用）-----" = ""
+
+[LUA-print] zhixingenterScene	nil
+
+[LUA-print] zhixingenterScene	js_majiang_3d
+
+[LUA-print] dump from: [string ".\hall/3DMahjongCard/Define.lua"]:20: in main chunk
+
+[LUA-print] - "<var>" = "define test"
+
+load cocostudio csb is js_majiang_3d/GameScene.csb
+
+load cocostudio csb is hall/FaceUI/faceUI.csb
+
+[LUA-print] 289.5	nimab2	15
+
+Can't set a nullptr to item model!
+
+[LUA-print] dump from: [string ".\js_majiang_3d/handle/ZZMJReceiveHandle.lua"]:348: in function 'getDeviceInfo'
+
+[LUA-print] - "-----显示手机信息-----" = ""
+
+[LUA-print] build cmd:%x header lenght:%d	275	18
+
+[LUA-print] -----------------------------build packet body	nil
+
+[LUA-print] 加密包体
+
+cocos2d: QuadCommand: resizing index size from [-1] to [6]
+
+>>>>>>> 8b7416a90f0da3ff51565973719c6a0f72c70c69
