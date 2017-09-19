@@ -256,10 +256,13 @@ function majiangServer:CLIENT_REPLY_LIANGDAO_REMAID(card)
 end
 
 function majiangServer:CLI_REQUEST_LIANG(card)
-    local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_REQUEST_LIANG)
+   
+    dump(card,"发消息给服务端")
+    -- local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_REQUEST_LIANG)
+    local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_LIANG_CARD)
     :setParameter("card", card)
     :build()
-    bm.server:send(pack)
+    bm.server:send(pack)   
 end
 
 function majiangServer:CLI_REQUEST_LIANG_GANG(lgCards)

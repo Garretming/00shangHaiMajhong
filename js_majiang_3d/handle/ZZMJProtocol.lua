@@ -28,6 +28,22 @@ CLIENT[P.CLI_LIANG_CARD]={
 
 }
 
+
+-- P.CLI_REQUEST_LIANG                      = 0x2013    
+-- CLIENT[P.CLI_REQUEST_LIANG] = {
+--     ver = 1,
+--     fmt = {
+--         {name = "card", type = T.BYTE},  --牌
+--         {name = "indexCount", type = T.BYTE},
+--         {name = "indexs", type = T.ARRAY, fixedLengthParser = "indexCount",fixedLength = 0, 
+--             fmt = {
+--                 {name = "index", type = T.BYTE},
+--             }
+--         },
+--     }
+-- }
+
+
 P.CLI_MSG_FACE                 =0x1004
 CLIENT[P.CLI_MSG_FACE]={
     ver=1,

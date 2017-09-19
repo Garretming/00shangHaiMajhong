@@ -40,6 +40,7 @@ end
 function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 
 	dump("显示手牌", "-----showCards-----")
+	dump(tingSeq,"手里的听牌数据")
 
 	--对传入牌进行排序
 	table.sort(cardDatas)
@@ -837,115 +838,117 @@ function InhandPlaneOperator:playCard(playerType, plane)
 	end
 end
 
--- function InhandPlaneOperator:showTingCards(plane, cards, tingSeq)
--- 	plane:removeAllChildren()
 
--- 	selectedTag = 99
+--显示听牌
+function InhandPlaneOperator:showTingCards(plane, cards, tingSeq)
+	plane:removeAllChildren()
 
--- 	local oriX = 0
--- 	local oriY = plane:getSize().height / 2
+	selectedTag = 99
 
--- 		for i=1,table.getn(cards) do
--- 			local data = cards[i]
+	local oriX = 0
+	local oriY = plane:getSize().height / 2
 
--- 			local isTing = false
+		for i=1,table.getn(cards) do
+			local data = cards[i]
 
--- 			for k,v in pairs(tingSeq) do
--- 				if data == v.card then
--- 					--todo
--- 					isTing = true
--- 					break
--- 				end
--- 			end
+			local isTing = false
 
--- 			local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, data)
--- 			card:setScale(card:getScale() * 1.1)
--- 			card:setPosition(cc.p(oriX + card:getSize().width * card:getScale() / 2, card:getSize().height * card:getScale() / 2))
--- 			card:setTag(i)
+			for k,v in pairs(tingSeq) do
+				if data == v.card then
+					--todo
+					isTing = true
+					break
+				end
+			end
 
--- 			if isTing then
--- 				--todo
--- 				card:setTouchEnabled(true)
+			local card = Card:new(CARD_PLAYERTYPE_MY, CARD_TYPE_INHAND, CARD_DISPLAY_TYPE_OPPOSIVE, data)
+			card:setScale(card:getScale() * 1.1)
+			card:setPosition(cc.p(oriX + card:getSize().width * card:getScale() / 2, card:getSize().height * card:getScale() / 2))
+			card:setTag(i)
 
--- 				card:addTouchEventListener(function(sender, event)
+			if isTing then
+				--todo
+				card:setTouchEnabled(true)
+
+				card:addTouchEventListener(function(sender, event)
 
 				
 
--- 				if event == TOUCH_EVENT_ENDED then
--- 					--todo
--- 					--print("card value")
--- 					--dump(sender.m_value, "card value") 
--- 					--dump(sender:getAnchorPoint())
+				if event == TOUCH_EVENT_ENDED then
+					--todo
+					--print("card value")
+					--dump(sender.m_value, "card value") 
+					--dump(sender:getAnchorPoint())
 
 					
--- 					if selectedTag == sender:getTag() then
--- 						    --出牌
--- 						    -- ZZMJ_CONTROLLER:hideTingHuPlane()
--- 						 --    for k,v in pairs(tingSeq) do
--- 							-- 	if v.card == sender.m_value then
--- 							-- 		--todo
--- 							-- 		local tingHuCards = v.tingHuCards
--- 							-- 		ZZMJ_CONTROLLER:showTingHuPlane(tingHuCards)
+					if selectedTag == sender:getTag() then
+						    --出牌
+						    -- ZZMJ_CONTROLLER:hideTingHuPlane()
+						 --    for k,v in pairs(tingSeq) do
+							-- 	if v.card == sender.m_value then
+							-- 		--todo
+							-- 		local tingHuCards = v.tingHuCards
+							-- 		ZZMJ_CONTROLLER:showTingHuPlane(tingHuCards)
 
--- 							-- 		ZZMJ_CONTROLLER:requestLiang(tingHuCards)
--- 							-- 		ZZMJ_CONTROLLER:playCard(sender.m_value)	
--- 							-- 		break
--- 							-- 	end
--- 							-- end
--- 							--dump(sender.m_value, "liang card test")
--- 							ZZMJ_CONTROLLER:requestLiang(sender.m_value)
--- 							-- ZZMJ_CONTROLLER:playCard(sender.m_value)	
+							-- 		ZZMJ_CONTROLLER:requestLiang(tingHuCards)
+							-- 		ZZMJ_CONTROLLER:playCard(sender.m_value)	
+							-- 		break
+							-- 	end
+							-- end
+							--dump(sender.m_value, "liang card test")
+							ZZMJ_CONTROLLER:requestLiang(sender.m_value)
+							-- ZZMJ_CONTROLLER:playCard(sender.m_value)	
 							
--- 						else
--- 							self:cancelSelectingCard(plane)
+						else
+							self:cancelSelectingCard(plane)
 
--- 							local p = sender:getPosition()
+							local p = sender:getPosition()
 
--- 							sender:setScale(1.2)
--- 							local offsetX = 0.1 * sender:getSize().width
+							sender:setScale(1.2)
+							local offsetX = 0.1 * sender:getSize().width
 
--- 							sender:setPosition(cc.p(p.x + offsetX / 2, p.y + 30))
+							sender:setPosition(cc.p(p.x + offsetX / 2, p.y + 30))
 
--- 							local tag = sender:getTag()
--- 							selectedTag = tag
--- 							tag = tag + 1
--- 							local nextCard = plane:getChildByTag(tag)
--- 							while nextCard do
--- 								--todo
--- 								nextCard:setPosition(cc.p(nextCard:getPosition().x + offsetX, nextCard:getPosition().y))
+							local tag = sender:getTag()
+							selectedTag = tag
+							tag = tag + 1
+							local nextCard = plane:getChildByTag(tag)
+							while nextCard do
+								--todo
+								nextCard:setPosition(cc.p(nextCard:getPosition().x + offsetX, nextCard:getPosition().y))
 
--- 								tag = tag + 1
--- 								nextCard = plane:getChildByTag(tag)
--- 							end
+								tag = tag + 1
+								nextCard = plane:getChildByTag(tag)
+							end
 
--- 							for k,v in pairs(tingSeq) do
--- 								if v.card == sender.m_value then
--- 									--todo
--- 									local tingHuCards = v.tingHuCards
--- 									ZZMJ_CONTROLLER:showTingHuPlane(CARD_PLAYERTYPE_MY, tingHuCards)
+							for k,v in pairs(tingSeq) do
+								if v.card == sender.m_value then
+									--todo
+									local tingHuCards = v.tingHuCards
+									ZZMJ_CONTROLLER:showTingHuPlane(CARD_PLAYERTYPE_MY, tingHuCards)
 
--- 									break
--- 								end
--- 							end
--- 						end
--- 				end
+									break
+								end
+							end
+						end
+				end
 
--- 				end)
--- 			else
--- 				card:setTouchEnabled(false)
--- 				card:setColor(cc.c3b(150, 150, 150))
--- 			end
+				end)
+			else
+				card:setTouchEnabled(false)
+				card:setColor(cc.c3b(150, 150, 150))
+			end
 
--- 			card:setTag(i)
+			card:setTag(i)
 
--- 			plane:addChild(card)
+			plane:addChild(card)
 
--- 			oriX = oriX + card:getSize().width * card:getScale()
--- 		end
+			oriX = oriX + card:getSize().width * card:getScale()
+		end
 
--- 		local width = oriX
--- 		plane:setSize(cc.size(width, plane:getSize().height))
--- end
+		local width = oriX
+		plane:setSize(cc.size(width, plane:getSize().height))
+end
 
 
 --@garret 显示听牌 暗牌
@@ -1097,6 +1100,8 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 	--使用3D麻将操作类显示手牌
 	if tingSeq ~= nil then
 		D3_OPERATOR:showCards(playerType, plane, newCardsSeq,nil,nil,nil,nil,tingSeq)
+		isTingFF = nil
+		JS_TING_REMOVE = nil
 	end
 	
 

@@ -85,7 +85,7 @@ function transcribe:getData(activityId_,roundIndex_)
                                         return;
                                     end
 
-                                    print("没有到这里？")
+                                    print(jsonData,"没有到这里？")
 
                                     isRun=true
 

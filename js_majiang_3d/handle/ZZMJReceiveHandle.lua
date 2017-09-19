@@ -186,21 +186,21 @@ function ZZMJReceiveHandle:ctor()
 end
 
 local LocaArrayByPlayerType = {}
---亮倒（听牌）
+-- 亮倒（听牌）  数据没有用
 function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
-    dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-tingpai ")
-		--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮 显示暗牌
-	local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
-	local playerType = cardUtils:getPlayerType(seatId)
+    -- dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-tingpai ")
+	-- 	--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮 显示暗牌
+	-- local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
+	-- local playerType = cardUtils:getPlayerType(seatId)
 
-	-- if playerType  == CARD_PLAYERTYPE_MY then
-	if pack.UserId == UID then
-		--构建听牌数据
-		local showTingBtnType = pack
-		showTingBtnType["type"] = TING_TYPE_T  --操作类型
-		gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
+	-- -- if playerType  == CARD_PLAYERTYPE_MY then
+	-- if pack.UserId == UID then
+	-- 	--构建听牌数据
+	-- 	local showTingBtnType = pack
+	-- 	showTingBtnType["type"] = TING_TYPE_T  --操作类型
+	-- 	gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
 		
-	 end
+	--  end
 
 end
 
@@ -1881,8 +1881,8 @@ end
 function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
 
 	dump(pack,"-----通知我抓的牌-----")
-
-    if isBuHuaIng then
+	
+    if isBuHuaIng then  --是否补花牌中
 
         bm.SchedulerPool:delayCall(function ()
              
@@ -1901,22 +1901,50 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
             --刷新手牌以显示听牌队列
             local tingSeq = pack.tingCards
             TINGSEQ = tingSeq
+
+			dump(pack,"TINGSEQ刷新手牌以显示听牌队列111")
+			dump(JS_TING_REMOVE,"3009数据")
+			dump(TINGSEQ,"3002数据")
+
             local value = bit.band(pack.card, 0xFF)
 
-            -- gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)
+            -- gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)--刷新手牌
 
             cardUtils:getNewCard(ZZMJ_MY_USERINFO.seat_id, value)
 
             gamePlaneOperator:getNewCard(CARD_PLAYERTYPE_MY,value,tingSeq)
 
             local controlTable = cardUtils:getControlTable(pack.handle, pack.card, 2, pack.cards)
+			dump(controlTable.type,"controlTable.type-----抓后续操作1")
 
-            -- if pack.tingCount > 0 then
-            --  -- --todo
-            --  -- controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
-            --  -- controlTable.tingSeq = pack.tingCards
-            --  -- controlTable.gangSeq = pack.lgCards
-            -- end
+			
+
+			local dd = {
+				CONTROL_TYPE_HU,
+				CONTROL_TYPE_PENG,
+				CONTROL_TYPE_GANG,
+				CONTROL_TYPE_CHI,
+				CONTROL_TYPE_TING,
+				CONTROL_TYPE_CAIPIAO
+			}
+			dump(dd,"相应的操作类型")
+
+			CONTROL_TYPE_GANG = bit.bor(bit.bor(bit.bor(GANG_TYPE_PG, GANG_TYPE_HUA), GANG_TYPE_AN), GANG_TYPE_BU)
+CONTROL_TYPE_PENG = PENG_TYPE_P
+CONTROL_TYPE_CHI = bit.bor(bit.bor(CHI_TYPE_RIGHT, CHI_TYPE_MIDDLE), CHI_TYPE_LEFT)
+
+CONTROL_TYPE_TING = TING_TYPE_T
+
+CONTROL_TYPE_BUHUA = BUHUA_TYPE_B
+CONTROL_TYPE_CAIPIAO = CAIPIAO_TYPE_B
+
+            if pack.tingCount > 0 then
+             -- --todo
+             controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
+			dump(controlTable.type,"controlTable.type-----抓后续操作1")
+             controlTable.tingSeq = pack.tingCards
+             controlTable.gangSeq = pack.lgCards
+            end
 
             if controlTable.type == CONTROL_TYPE_NONE or controlTable.type == CONTROL_TYPE_TING then
                 D3_CHUPAI = 1
@@ -1943,13 +1971,15 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
         --显示剩余牌数
         ZZMJ_REMAIN_CARDS_COUNT = ZZMJ_REMAIN_CARDS_COUNT - 1
         gamePlaneOperator:showRemainCardsCount()
-
+		dump(pack,"TINGSEQ刷新手牌以显示听牌队列2221")
+		dump(JS_TING_REMOVE,"3009数据")
+		dump(TINGSEQ,"3002数据")
         --刷新手牌以显示听牌队列
         local tingSeq = pack.tingCards
-        TINGSEQ = tingSeq
+        TINGSEQ = tingSeq  --全局的听牌数据
         local value = bit.band(pack.card, 0xFF)
 
-        -- gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)
+        gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)
 
         cardUtils:getNewCard(ZZMJ_MY_USERINFO.seat_id, value)
 
@@ -1957,19 +1987,22 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
 
         local controlTable = cardUtils:getControlTable(pack.handle, pack.card, 2, pack.cards)
 
-        -- if pack.tingCount > 0 then
-        --  -- --todo
-        --  -- controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
-        --  -- controlTable.tingSeq = pack.tingCards
-        --  -- controlTable.gangSeq = pack.lgCards
-        -- end
 
+		--显示亮杠数据
+        if pack.tingCount > 0 then  
+         -- --todo
+         controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
+         controlTable.tingSeq = pack.tingCards
+         controlTable.gangSeq = pack.lgCards
+        end
+
+		
         if controlTable.type == CONTROL_TYPE_NONE or controlTable.type == CONTROL_TYPE_TING then
-            D3_CHUPAI = 1
+            D3_CHUPAI = 1  -- 0 不能出牌 2 必须等待操作 1 可以出牌
         else
             D3_CHUPAI = 2
         end
-print("33333")
+
         gamePlaneOperator:showControlPlane(controlTable)
 
     end

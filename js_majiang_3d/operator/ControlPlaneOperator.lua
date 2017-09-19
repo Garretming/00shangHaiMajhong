@@ -123,8 +123,8 @@ function ControlPlaneOperator:init(playerType, img, plane, lgPlane, tingHuPlane)
 		self.ting_bt:setVisible(false)
 		plane:addChild(self.ting_bt)
 
-		self.showHU = false
-		self.showGang = false
+		-- self.showHU = false
+		-- self.showGang = false
 
 		plane:setVisible(false)
 
@@ -198,13 +198,14 @@ function ControlPlaneOperator:init(playerType, img, plane, lgPlane, tingHuPlane)
 						ZZMJ_LG_CARDS = {}
 						ZZMJ_CONTROLLER:requestLiangGang()
 					end
-				elseif sender == self.ting_bt then  ---亮倒  （听牌）
+				elseif sender == self.ting_bt then  --- （听牌）
 					--移除一张牌  ---给服务器消息移除一张牌
 					plane:setVisible(false)
-					--处理移除牌
-					dump(ZZMJ_CONTROL_TABLE,"要溢出的拍数据")
-					ZZMJ_CONTROLLER:controlTing(bit.band(controlType, CONTROL_TYPE_TING), ZZMJ_CONTROL_TABLE.tingSeq[1])
-					
+					if table.getn(ZZMJ_CONTROL_TABLE.tingSeq) > 0 then
+						--todo 显示听牌
+						-- print("todo 显示听牌")
+						ZZMJ_CONTROLLER:showTingCards(ZZMJ_CONTROL_TABLE.tingSeq)
+					end
 						
 				end
 			end
@@ -379,6 +380,7 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 	self.peng_bt:setVisible(false)
 	self.chi_bt:setVisible(false)
 	self.liang_bt:setVisible(false)
+	self.ting_bt:setVisible(false)
 
 	self.select_bx:setVisible(false)
 	self.gang_select_bx:setVisible(false)
@@ -462,48 +464,39 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 	
 
 	local size = self.guo_bt:getSize()
+	-- print("走到这离了")
+	if bit.band(controlType, CONTROL_TYPE_TING) > 0 then
+		-- print("走到这离了3")
+		-- self.liang_bt:setVisible(true)
+		-- local size = self.liang_bt:getSize()
+		-- self.liang_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))
+
+		-- oriX = oriX + size.width + CONTROL_BT_SPLIT
+		
+		-- plane:setVisible(false)
+		-- local value = ZZMJ_CONTROL_TABLE["value"]
+		-- ZZMJ_CONTROLLER:control(0, value)
+	end
+
+		print("走到这离了4" .. controlType )
 	--@garret 听牌
 	if bit.band(controlType, CONTROL_TYPE_TING) > 0 then
-			
-			self.ting_bt:setVisible(true)
-			--胡牌按钮存在是不显示
-				
-			-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
-			-- 	self.ting_bt:setVisible(false)
-			-- 	
-			-- end
-			if self.showHU == true or self.showGang ==  true then
-				self.ting_bt:setVisible(false)
-				self.showHU = false
-				self.showGang = false
-				tingFlag = 1
-			end
+		self.ting_bt:setVisible(true)
+		local size = self.ting_bt:getSize()
+		self.ting_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))
+
+		oriX = oriX + size.width + CONTROL_BT_SPLIT
 		
+		-- plane:setVisible(false)
 
-			local size = self.ting_bt:getSize()
-			self.ting_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))
-
-			oriX = oriX + size.width + CONTROL_BT_SPLIT
-
-			--显示明暗选择效果
-			-- self:showTingSelectCards(controlType)
-
-
-			-- --显示选牌盒子
-			-- self.select_bx:setVisible(true)
-
-			-- --显示可选择项目
-			-- if #ZZMJ_CONTROL_TABLE["cardSum"] > 1 then
-			-- 	self.gang_select_bx:setVisible(true)
-			-- else
-			-- 	self.gang_select_bx:setVisible(false)
-			-- end
-            -- -- 显示可选丢的牌
-			-- local box_width = self:showTingSelectBox(controlType)
-
-			-- self.select_bx:setPosition(cc.p(oriX + box_width / 2, self.select_bx:getSize().height / 2))
-			-- self.select_bx:setSize(cc.size(box_width, 66.92 * boxscale))
-			-- self.guo_bt:setVisible(false)
+		--听牌加色
+		
+		-- local lentN = table.getn(HNMJ_CONTROL_TABLE.tingSeq)
+		-- for i=1,lentN do
+		-- 	local value = HNMJ_CONTROL_TABLE.tingSeq
+		-- 	ZZMJ_CONTROLLER:showCards(CARD_PLAYERTYPE_MY, value) --显示手牌加色
+		-- end
+		
 	end
 	
 	-- self.guo_bt:performWithDelay(function()

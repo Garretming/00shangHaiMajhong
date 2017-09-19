@@ -43,6 +43,9 @@ function GamePlaneOperator:init()
 
 	ZZMJ_CARD_POINTER = ZZMJ_GAME_PLANE:getChildByName(CHILD_NAME_CARD_POINTER)
 	ZZMJ_CARD_POINTER:setVisible(false)
+	--隐藏墙头牌
+	local qiangTouPlane = ZZMJ_GAME_PLANE:getChildByName(CHILD_NAME_QIANGTOU_PLANE)
+	qiangTouPlane:setVisible(false)
       
 	local remain_cards_count_plane = ZZMJ_GAME_PLANE:getChildByName("remain_cards_count_plane")
 	local remain_cards_count_lb = remain_cards_count_plane:getChildByName("remain_cards_count_lb")
@@ -255,7 +258,7 @@ end
 function GamePlaneOperator:showZhuang(playerType)
 	playerPlaneOperator:showZhuang(self:getPlayerPlane(playerType))
 end
-
+--显示听牌数据
 function GamePlaneOperator:showCards(playerType,tingSeq)
 	playerPlaneOperator:showCards(playerType, self:getPlayerPlane(playerType),tingSeq)
 end
@@ -280,7 +283,7 @@ function GamePlaneOperator:showControlPlane(controlTable)
 	local controlType = controlTable["type"]
 
 
-
+	print("显示操作按钮界面1")
 	if controlType == CONTROL_TYPE_NONE then
 		--todo
 		return
@@ -347,7 +350,7 @@ end
 function GamePlaneOperator:redrawGameInfo(playerType, data)
 	playerPlaneOperator:redrawGameInfo(playerType, self:getPlayerPlane(playerType), data)
 end
-
+--显示听牌数据
 function GamePlaneOperator:showTingCards(tingSeq)
 	playerPlaneOperator:showTingCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY), tingSeq)
 end
@@ -569,7 +572,7 @@ end
 --@garret 显示手牌中暗牌
 function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
 	
-
+-- 0x01-0x09代表一万到九万，0x11-0x19代表一筒到九筒，0x21-0x29代表一条到九条，0x31、0x32、0x33、0x34分别代表东南西北，0x41、0x42、0x43分别代表白板、红中、发财，0x51、0x52、0x53、0x54、0x55、0x56、0x57、0x58分别代表花牌的春夏秋冬梅兰竹菊
 	local cardSum = value.cardSum  --可能的组合数
 	local  cardValue = value.LiangDate
 
@@ -578,44 +581,42 @@ function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
 	local tingSeq = {}
 	--有丢牌数据
 	if cardSum > 0 then
+		-- for k,v in pairs(cardValue) do
+		-- 	-- dump(v.huCards,"huCardsahfsdfsdjiofsdjiojioffoaijsdjioafsdioj00-------------")
+		-- 	local leaveNum= table.getn(v.huCards)
+
+		-- 	if leaveNum == 1 then
+		-- 		table.insert( tingSeq, v.OpCard)
+		-- 	end
+
+		-- end	
+	
 		for k,v in pairs(cardValue) do
-
-			-- dump(v.huCards,"huCardsahfsdfsdjiofsdjiojioffoaijsdjioafsdioj00-------------")
-			local leaveNum= table.getn(v.huCards)
-
-			if leaveNum == 1 then
-				table.insert( tingSeq, v.OpCard)
-				break
+			local ishad = false
+			for m,n in pairs(tingSeq) do 
+				if v.OpCard == n then
+					ishad  = true
+				end
+			end
+			if ishad == false then
+				table.insert(tingSeq,v.OpCard)
 			end
 
-		
-		end	
+		end
 
 	end
 
-
 	dump(tingSeq,"tingSeq----暗牌")
 	local lltt = table.getn(tingSeq)
+
 	--有丢牌数据才显示听牌按钮  并且不存在杠胡等操作
-	value.tingSeq = tingSeq
+	-- value.tingSeq = tingSeq
 	if  lltt > 0 then
-
-		tingFlag = 0  
-
-		value["tingSeq"] = clone(tingSeq)
-
-		self:showControlPlane(value) --显示听按钮
-		-- local controlType = value["type"]
-		-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
-			
-		-- end
-			--显示可丢弃暗牌
-		if tingFlag == 0 then
-			JS_TING_REMOVE = tingSeq
-			playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
-		end
-	
-		
+		--保存
+		JS_TING_REMOVE = tingSeq
+		isTingFF = 1
+		-- self:showControlPlane(value,isTingFF) --显示听按钮
+		-- playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
 	end
 
 	

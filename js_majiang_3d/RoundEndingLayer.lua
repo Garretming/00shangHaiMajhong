@@ -79,7 +79,7 @@ function RoundEndingLayer:showZhuaniao(data, isEnd)
 
 	end
 
-	timeDelay = 0.5
+	-- timeDelay = 0.5 + 3 延长抓鸟动画时间
 
 	local zhuaniaoLayout = SCENENOW["scene"]:getChildByName("zhuaniaoLayout")
 	if zhuaniaoLayout then
@@ -155,7 +155,7 @@ function RoundEndingLayer:show(data, isEnd)
 	self:showBirdCards(data.birdCards,data.zhongcard)
 
 	for i=1,table.getn(players) do
-		self:showEndingInfo(players[i], i)
+		self:showEndingInfo(players[i], i)  --显示牌局结算提示
 	end
     
     local current_time = os.time()
@@ -497,20 +497,20 @@ function RoundEndingLayer:showEndingInfo(player, index)
 
 	end
 	
-	-- if player.dgCount > 0 then
-	-- 	--todo
-	-- 	endingInfo = endingInfo .. "点杠x" .. player.dgCount .. " "
-	-- end
+	if player.dgCount > 0 then
+		--todo
+		endingInfo = endingInfo .. "点杠x" .. player.dgCount .. " "
+	end
 
-	-- if player.gCount - player.bgCount > 0 then
-	-- 	--todo
-	-- 	endingInfo = endingInfo .. "接杠x" .. (player.gCount-player.bgCount) .. " "
-	-- end
+	if player.gCount - player.bgCount > 0 then
+		--todo
+		endingInfo = endingInfo .. "接杠x" .. (player.gCount-player.bgCount) .. " "
+	end
 
-	-- if player.pgCount > 0 then
-	-- 	--todo
-	-- 	endingInfo = endingInfo .. "接杠x" .. player.pgCount .. " "
-	-- end
+	if player.pgCount > 0 then
+		--todo
+		endingInfo = endingInfo .. "接杠x" .. player.pgCount .. " "
+	end
 
 	desc_lb:setString(endingInfo)
 

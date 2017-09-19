@@ -83,10 +83,10 @@ function Card:initView()
 		self.m_shape,
 		self.m_fromplayerType
 	}
-	dump(vvv,"ansnsnssnsnsndndn------------------")
+	-- dump(vvv,"ansnsnssnsnsndndn------------------")
 
 	if self.m_playerType == CARD_PLAYERTYPE_MY then
-		dump(CARD_PLAYERTYPE_MY,"zhheheheeheheh-------------1111")
+		-- dump(CARD_PLAYERTYPE_MY,"zhheheheeheheh-------------1111")
 		self.body:setTexture("hall/3DMahjongCard/image/" .. self.m_value .. "_" .. self.m_playerType .. "_" .. self.m_cardType .. "_" .. self.m_cardDisplayType .. ".png")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
@@ -160,7 +160,7 @@ function Card:initView()
 
 	elseif self.m_playerType == CARD_PLAYERTYPE_LEFT then   --碰杠区 1
 
-	dump(CARD_PLAYERTYPE_LEFT,"zhheheheeheheh-------------333333311")
+	-- dump(CARD_PLAYERTYPE_LEFT,"zhheheheeheheh-------------333333311")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
 
@@ -181,7 +181,7 @@ function Card:initView()
 		end
 
 	elseif self.m_playerType == CARD_PLAYERTYPE_RIGHT then
-	dump(CARD_PLAYERTYPE_RIGHT,"zhheheheeheheh-------------333333311")
+	-- dump(CARD_PLAYERTYPE_RIGHT,"zhheheheeheheh-------------333333311")
 
 		if self.m_cardDisplayType == CARD_DISPLAY_TYPE_OPPOSIVE then
 

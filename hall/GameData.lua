@@ -14,11 +14,12 @@ function GameData:InitData()
         cc.UserDefault:getInstance():setBoolForKey("isFirstBegin", false)
     end
     
-    --电脑端测试用户100416  
-    UID = 100845
-    UID = 100846
-    UID = 100847
-    UID = 100848
+    --电脑端测试用户 -- UID = 100845  
+    UID = 101072  
+    -- UID = 101073 
+    -- UID = 101074  
+    -- UID = 101075  
+    
 
     
 

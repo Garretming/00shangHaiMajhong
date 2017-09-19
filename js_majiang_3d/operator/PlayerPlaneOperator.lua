@@ -204,7 +204,7 @@ end
 function PlayerPlaneOperator:showControlPlane(plane, controlType)
 	
 	local controlPlane = plane:getChildByName(CHILD_NAME_CONTROL_PLANE)
-
+	print("显示操作按钮界面2")
 	if controlPlane then
 		--todo
 		controlPlaneOperator:showPlane(controlPlane, controlType)
@@ -761,15 +761,15 @@ function PlayerPlaneOperator:redrawGameInfo(playerType, plane, data)
 end
 
 function PlayerPlaneOperator:showTingCards(plane, tingSeq)
-	-- local inhandPlane = plane:getChildByName(CHILD_NAME_INHANDPLANE)
+	local inhandPlane = plane:getChildByName(CHILD_NAME_INHANDPLANE)
     
 
-	-- local seatId = ZZMJ_MY_USERINFO.seat_id
+	local seatId = ZZMJ_MY_USERINFO.seat_id
 
-	-- local cards = ZZMJ_GAMEINFO_TABLE[seatId .. ""].hand
+	local cards = ZZMJ_GAMEINFO_TABLE[seatId .. ""].hand
 
 
-	-- inhandPlaneOperator:showTingCards(inhandPlane, cards, tingSeq)
+	inhandPlaneOperator:showTingCards(inhandPlane, cards, tingSeq)
 
 end
 

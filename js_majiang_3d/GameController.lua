@@ -1,30 +1,15 @@
 local ZZMJController = class("ZZMJController")
 --请求服务器操作牌
 function ZZMJController:control(controlType, value)
-
-
 	if D3_CHUPAI == 2 then
 		D3_CHUPAI = 1
 	end
-	
-	-- require("js_majiang_3d.globle.ZZMJDefine")
-	-- if bit.band(controlType, TING_TYPE_T) > 0 then
-	-- 	require("js_majiang_3d.handle.ZZMJSendHandle"):sendTingCard(value)
-	-- else
-	-- 	require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
-	-- end
-
-	dump( bit.band(controlType, TING_TYPE_T),"------走到这了")
-	if  bit.band(controlType, TING_TYPE_T) > 0 then
-		require("js_majiang_3d.handle.ZZMJSendHandle"):requestTingHandle(controlType, value)
-	else
-		require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
-	end
-	
-
+	require("js_majiang_3d.handle.ZZMJSendHandle"):requestHandle(controlType, value)
 end
 
-
+-- function ZZMJController:showCards(playerType,tingSeq)
+--     require("js_majiang_3d.operator.GamePlaneOperator"):showCards(playerType,tingSeq)
+-- end
 
 
 function ZZMJController:showSameCard(value)
@@ -67,6 +52,7 @@ function ZZMJController:C2G_CMD_REPLY_DISSOLVE_ROOM(agree)
     require("js_majiang_3d.handle.ZZMJSendHandle"):C2G_CMD_REPLY_DISSOLVE_ROOM(agree)
 end
 
+--显示听牌
 function ZZMJController:showTingCards(tingSeq)
 	require("js_majiang_3d.operator.GamePlaneOperator"):showTingCards(tingSeq)
 end
