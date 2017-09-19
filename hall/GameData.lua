@@ -16,9 +16,9 @@ function GameData:InitData()
     
     --电脑端测试用户100416  
     UID = 100845
-    -- UID = 100846
+    UID = 100846
     UID = 100847
-    -- UID = 100848
+    UID = 100848
 
     
 

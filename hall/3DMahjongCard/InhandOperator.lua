@@ -1172,7 +1172,7 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard,blac
 			    card:setOpacity(230)
 			end
 			-- --显示听弃牌
-			-- dump(blackCarrds,"-- --JS_TING_REMOVE-----------------显示听弃牌")
+			dump(JS_TING_REMOVE,"-- --JS_TING_REMOVE-----------------显示听弃牌")
 			-- print("cardDatas[i]--".. data)
 
 			
@@ -1183,7 +1183,7 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard,blac
 						card:setColor(cc.c3b(150, 150, 150))
 					end
 				end
-				JS_TING_REMOVE = nil 
+				
 			end
 			
 
@@ -1193,7 +1193,6 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard,blac
 
 			oriX = oriX - cardWidth
 		end
-
 		-- plane:setSize(cc.size(width, plane:getSize().height))
 	elseif playerType == CARD_PLAYERTYPE_LEFT then
 		--todo

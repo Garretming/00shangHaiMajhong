@@ -192,6 +192,7 @@ function PlayerPlaneOperator:showCards(playerType, plane,tingSeq)
 	-- else
 	-- 	inhandPlaneOperator:showCardsForAll(playerType, inhandPlane, cards, anke)
 	-- end
+
 	
 
 	self:reLocate(playerType, plane)
@@ -712,21 +713,22 @@ function PlayerPlaneOperator:redrawGameInfo(playerType, plane, data)
 	for k,v in pairs(baibanSeq) do
 		table.insert(newCardsSeq, v)
 	end
+	--合拼赖子数组和手牌数组
+	for i,v in ipairs(laiziSeq) do
+		table.insert(newCardsSeq, v)
+	end
+
+	--合拼财神数组和手牌数组
+	for i,v in ipairs(caishenSeq) do
+		table.insert(newCardsSeq, v)
+	end
 
 	--插入大于财神的牌到新牌数组
 	for k,v in pairs(daYuCaiShenSeq) do
 		table.insert(newCardsSeq, v)
 	end
 
-	--合拼赖子数组和手牌数组
-	for i,v in ipairs(laiziSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
-
-	--合拼财神数组和手牌数组
-	for i,v in ipairs(caishenSeq) do
-		table.insert(newCardsSeq, 1, v)
-	end
+	
     
     --通过3D桌面绘制玩家区域信息
 	D3_OPERATOR:redraw(playerType, inhandPlane, outhandPlane, progCards, newCardsSeq, outCards)

@@ -202,7 +202,8 @@ function ControlPlaneOperator:init(playerType, img, plane, lgPlane, tingHuPlane)
 					--移除一张牌  ---给服务器消息移除一张牌
 					plane:setVisible(false)
 					--处理移除牌
-					ZZMJ_CONTROLLER:control(bit.band(controlType, CONTROL_TYPE_TING), value)
+					dump(ZZMJ_CONTROL_TABLE,"要溢出的拍数据")
+					ZZMJ_CONTROLLER:controlTing(bit.band(controlType, CONTROL_TYPE_TING), ZZMJ_CONTROL_TABLE.tingSeq[1])
 					
 						
 				end
@@ -387,6 +388,7 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 
 	if bit.band(controlType, CONTROL_TYPE_HU) > 0 then
 		--todo
+		
 		self.hu_bt:setVisible(true)
 		local size = self.hu_bt:getSize()
 		self.hu_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))
@@ -465,11 +467,18 @@ function ControlPlaneOperator:showPlane(plane, controlType)
 			
 			self.ting_bt:setVisible(true)
 			--胡牌按钮存在是不显示
-				tingFlag = 1
-			if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
+				
+			-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
+			-- 	self.ting_bt:setVisible(false)
+			-- 	
+			-- end
+			if self.showHU == true or self.showGang ==  true then
 				self.ting_bt:setVisible(false)
-				tingFlag = 0
+				self.showHU = false
+				self.showGang = false
+				tingFlag = 1
 			end
+		
 
 			local size = self.ting_bt:getSize()
 			self.ting_bt:setPosition(cc.p(oriX + size.width / 2, size.height / 2))

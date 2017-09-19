@@ -280,6 +280,7 @@ function GamePlaneOperator:showControlPlane(controlTable)
 	local controlType = controlTable["type"]
 
 
+
 	if controlType == CONTROL_TYPE_NONE then
 		--todo
 		return
@@ -598,14 +599,18 @@ function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
 	--有丢牌数据才显示听牌按钮  并且不存在杠胡等操作
 	value.tingSeq = tingSeq
 	if  lltt > 0 then
-		
+
+		tingFlag = 0  
+
+		value["tingSeq"] = clone(tingSeq)
+
 		self:showControlPlane(value) --显示听按钮
 		-- local controlType = value["type"]
 		-- if bit.band(controlType, CONTROL_TYPE_GANG) > 0 or bit.band(controlType, CONTROL_TYPE_HU)  > 0 then
 			
 		-- end
 			--显示可丢弃暗牌
-		if tingFlag == 1 then
+		if tingFlag == 0 then
 			JS_TING_REMOVE = tingSeq
 			playerPlaneOperator:showTingSelectCards(self:getPlayerPlane(CARD_PLAYERTYPE_MY),tingSeq,playerType)
 		end

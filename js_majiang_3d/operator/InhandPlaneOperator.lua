@@ -15,6 +15,8 @@ local NEW_CARD_TAG = 20
 
 local cardTemp = nil
 
+
+
 --初始化自己区域(左下侧碰杠区)
 function InhandPlaneOperator:init(playerType, plane)
 
@@ -551,7 +553,8 @@ function InhandPlaneOperator:showCardsForAll(playerType, plane, cardDatas, anke,
                 hucardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
             else
 				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
-				table.insert(laiziSeq, 1, cardData)
+				-- table.insert(laiziSeq, 1, cardData)
+				table.insert(cardsSeq, cardData)
 			end
 
 		else
@@ -571,7 +574,8 @@ function InhandPlaneOperator:showCardsForAll(playerType, plane, cardDatas, anke,
 	                hucardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
 	            else
 					local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
-					table.insert(caishenSeq, 1, cardData)
+					-- table.insert(caishenSeq, 1, cardData)
+					table.insert(cardsSeq, cardData)
 				end
 				
 			else
@@ -590,13 +594,15 @@ function InhandPlaneOperator:showCardsForAll(playerType, plane, cardDatas, anke,
 
 	end
 
-	for i,v in ipairs(laiziSeq) do
-		table.insert(cardsSeq, 1, v)
-	end
+	-- for i,v in ipairs(laiziSeq) do
+	-- 	table.insert(cardsSeq, 1, v)
+	-- end
 
-	for i,v in ipairs(caishenSeq) do
-		table.insert(cardsSeq, 1, v)
-	end
+	-- for i,v in ipairs(caishenSeq) do
+	-- 	table.insert(cardsSeq, 1, v)
+	-- end
+
+	
 
 	--使用3D麻将界面显示摊牌
 	D3_OPERATOR:showCardsForAll( playerType, plane, {}, cardsSeq )
