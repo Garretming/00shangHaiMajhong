@@ -1171,20 +1171,8 @@ function InhandOperator:showCards(playerType, plane, cardDatas, isNoNewCard)
 				card:setColor(cc.c3b(255, 255, 0))
 			    card:setOpacity(230)
 			end
-			-- --显示听弃牌
-			-- dump(JS_TING_REMOVE,"-- --JS_TING_REMOVE-----------------显示听弃牌")
-			-- -- print("cardDatas[i]--".. data)
-			-- if JS_TING_REMOVE ~= nil and isTingFF ~= nil and isTingFF == 1 then
-			-- 	for m,n in pairs(JS_TING_REMOVE) do
-			-- -- print("cardDatas[i]-data.m_value,n-".. data.m_value,n)
-			-- 		if data.m_value == n then
-			-- 			card:setColor(cc.c3b(150, 150, 150))
-			-- 		end
-			-- 	end
-				
-			-- end
+	
 			
-
 			card:setTag(i)
 
 			plane:addChild(card)

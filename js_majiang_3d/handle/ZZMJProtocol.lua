@@ -28,20 +28,20 @@ CLIENT[P.CLI_LIANG_CARD]={
 
 }
 
-
--- P.CLI_REQUEST_LIANG                      = 0x2013    
--- CLIENT[P.CLI_REQUEST_LIANG] = {
---     ver = 1,
---     fmt = {
---         {name = "card", type = T.BYTE},  --牌
---         {name = "indexCount", type = T.BYTE},
---         {name = "indexs", type = T.ARRAY, fixedLengthParser = "indexCount",fixedLength = 0, 
---             fmt = {
---                 {name = "index", type = T.BYTE},
---             }
---         },
---     }
--- }
+--客户端发送亮牌操作丢弃的牌 ----旧的
+P.CLI_REQUEST_LIANG                      = 0x2013    
+CLIENT[P.CLI_REQUEST_LIANG] = {
+    ver = 1,
+    fmt = {
+        {name = "card", type = T.BYTE},  --牌
+        {name = "indexCount", type = T.BYTE},
+        {name = "indexs", type = T.ARRAY, fixedLengthParser = "indexCount",fixedLength = 0, 
+            fmt = {
+                {name = "index", type = T.BYTE},
+            }
+        },
+    }
+}
 
 
 P.CLI_MSG_FACE                 =0x1004
@@ -930,7 +930,7 @@ SERVER[P.SVR_NORMAL_OPERATE] = {
     }
 }
 
-P.SVR_LIANGDAO = 0x3009 ---
+P.SVR_LIANGDAO = 0x3009 ---服务器告知客户端可以进行听牌的操作
 SERVER[P.SVR_LIANGDAO] = {
     ver = 1,
     fmt={

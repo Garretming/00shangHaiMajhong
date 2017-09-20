@@ -40,7 +40,7 @@ end
 function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 
 	dump("显示手牌", "-----showCards-----")
-	dump(tingSeq,"手里的听牌数据")
+	-- dump(tingSeq,"手里的听牌数据")
 
 	--对传入牌进行排序
 	table.sort(cardDatas)
@@ -72,7 +72,8 @@ function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 
 			if isCaishen then
 
-				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
 				table.insert(caishenSeq, 1, cardData)
 				
 			else   --非财神牌
@@ -574,7 +575,8 @@ function InhandPlaneOperator:showCardsForAll(playerType, plane, cardDatas, anke,
 				if v == hucard and (not hucardData) then  --胡牌单独展示
 	                hucardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
 	            else
-					local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+					-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+					local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
 					-- table.insert(caishenSeq, 1, cardData)
 					table.insert(cardsSeq, cardData)
 				end
@@ -785,7 +787,8 @@ function InhandPlaneOperator:getNewCard(playerType, plane, value,tingSeq)
 		cardData = D3_CARDDATA:new(value, 0, CARDNODE_TYPE_LAIZI)
 
 	elseif value == JS_CAISHEN then
-		cardData = D3_CARDDATA:new(value, 0, CARDNODE_TYPE_CAISHEN)
+		-- cardData = D3_CARDDATA:new(value, 0, CARDNODE_TYPE_CAISHEN)
+		cardData = D3_CARDDATA:new(value, 1, CARDNODE_TYPE_NORMAL)
 
 	else
 
@@ -800,7 +803,8 @@ function InhandPlaneOperator:getNewCard(playerType, plane, value,tingSeq)
 
 		if isCaishen then
 
-			cardData = D3_CARDDATA:new(value, 0, CARDNODE_TYPE_CAISHEN)
+			-- cardData = D3_CARDDATA:new(value, 0, CARDNODE_TYPE_CAISHEN)
+			cardData = D3_CARDDATA:new(value, 1, CARDNODE_TYPE_NORMAL)  --
 			
 		else
 
@@ -989,7 +993,8 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 
 			if isCaishen then
 				--第三个参数控制显示类型
-				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL) --去除财神显示
 				table.insert(caishenSeq, 1, cardData)
 				
 			else
@@ -1017,20 +1022,7 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 
 			end
 		end
-		-- ---听牌数据 s
-		-- local isTing = false
-		-- for m,n in pairs(tingSeq) do
-		-- 	if v == n then
-		-- 		--todo
-		-- 		isTing = true
-		-- 		break
-		-- 	end
-		-- end
-		-- --加到听牌数据中
-		-- if isTing then
-		-- 	local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
-		-- 	table.insert(newTingSeq, 1, cardData)
-		-- end
+	
 
 	end
 
@@ -1076,33 +1068,8 @@ function InhandPlaneOperator:showTingSelectCards(playerType,plane, cardDatas, ti
 		table.insert(newCardsSeq, v)
 	end
 
-	
-
-	-- --组合听牌数据到总数据中
-	-- for i,v in ipairs(newTingSeq) do
-	-- 	table.insert(newCardsSeq, 1, v)
-	-- end
-
-	--挑出听牌可丢弃牌---进行放大效果
-	-- for k,v in pairs(newCardsSeq) do
-	-- 	for m,n in pairs(tingSeq) do
-	-- 		if v.m_value == n then
-	-- 			-- table.insert(newTingSeq, v)
-	-- 			newCardsSeq[k], tingSeq[m] = tingSeq[m],newCardsSeq[k]  --交换数据
-	-- 		-- else
-	-- 		-- 	table.insert(daYuCaiShenSeq, v)
-	-- 		end
-
-	-- 	end
-	-- end
-
-
 	--使用3D麻将操作类显示手牌
-	if tingSeq ~= nil then
-		D3_OPERATOR:showCards(playerType, plane, newCardsSeq,nil,nil,nil,nil,tingSeq)
-		isTingFF = nil
-		JS_TING_REMOVE = nil
-	end
+	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
 	
 
 

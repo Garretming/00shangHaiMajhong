@@ -244,6 +244,8 @@ end
 
 function PlayerPlaneOperator:getNewCard(playerType, plane, value,tingSeq)
 	
+
+	dump("显示获取牌---")
 	local inhandPlane = plane:getChildByName(CHILD_NAME_INHANDPLANE)
    
     -- TINGSEQ=tingSeq
@@ -657,7 +659,8 @@ function PlayerPlaneOperator:redrawGameInfo(playerType, plane, data)
 
 			if isCaishen then
 
-				local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+				local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
 				table.insert(caishenSeq, 1, cardData)
 				
 			else

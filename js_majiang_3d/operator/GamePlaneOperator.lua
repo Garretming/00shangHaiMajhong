@@ -575,8 +575,6 @@ function GamePlaneOperator:showTingBtnAndBalcCards( value ,playerType)
 -- 0x01-0x09代表一万到九万，0x11-0x19代表一筒到九筒，0x21-0x29代表一条到九条，0x31、0x32、0x33、0x34分别代表东南西北，0x41、0x42、0x43分别代表白板、红中、发财，0x51、0x52、0x53、0x54、0x55、0x56、0x57、0x58分别代表花牌的春夏秋冬梅兰竹菊
 	local cardSum = value.cardSum  --可能的组合数
 	local  cardValue = value.LiangDate
-
-	-- dump(value,"value1111111111111111111111111")
 	--丢牌
 	local tingSeq = {}
 	--有丢牌数据

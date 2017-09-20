@@ -188,19 +188,19 @@ end
 local LocaArrayByPlayerType = {}
 -- 亮倒（听牌）  数据没有用
 function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
-    -- dump(pack, "----亮倒操作前的数据-  0x3009--  收到消息-tingpai ")
+	dump(pack, "-----广播玩家听牌 3009-----")
 	-- 	--todo 通知界面   当前玩家是指定听牌玩家---显示听牌按钮 显示暗牌
-	-- local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
-	-- local playerType = cardUtils:getPlayerType(seatId)
+	local seatId = ZZMJ_SEAT_TABLE[pack.UserId .. ""]
+	local playerType = cardUtils:getPlayerType(seatId)
 
-	-- -- if playerType  == CARD_PLAYERTYPE_MY then
+	if playerType  == CARD_PLAYERTYPE_MY then
 	-- if pack.UserId == UID then
-	-- 	--构建听牌数据
-	-- 	local showTingBtnType = pack
-	-- 	showTingBtnType["type"] = TING_TYPE_T  --操作类型
-	-- 	gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
+		--构建听牌数据
+		local showTingBtnType = pack
+		showTingBtnType["type"] = TING_TYPE_T  --操作类型
+		gamePlaneOperator:showTingBtnAndBalcCards(showTingBtnType,playerType)
 		
-	--  end
+	 end
 
 end
 
@@ -1156,7 +1156,9 @@ function ZZMJReceiveHandle:SVR_REGET_ROOM(pack)
                 break
             end
         end
-    
+
+
+		dump(myCards,"myCards")
         -- 重绘自己的桌面信息
         gamePlaneOperator:redrawGameInfo(CARD_PLAYERTYPE_MY, pack)
 
@@ -1929,15 +1931,6 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
 			}
 			dump(dd,"相应的操作类型")
 
-			CONTROL_TYPE_GANG = bit.bor(bit.bor(bit.bor(GANG_TYPE_PG, GANG_TYPE_HUA), GANG_TYPE_AN), GANG_TYPE_BU)
-CONTROL_TYPE_PENG = PENG_TYPE_P
-CONTROL_TYPE_CHI = bit.bor(bit.bor(CHI_TYPE_RIGHT, CHI_TYPE_MIDDLE), CHI_TYPE_LEFT)
-
-CONTROL_TYPE_TING = TING_TYPE_T
-
-CONTROL_TYPE_BUHUA = BUHUA_TYPE_B
-CONTROL_TYPE_CAIPIAO = CAIPIAO_TYPE_B
-
             if pack.tingCount > 0 then
              -- --todo
              controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
@@ -2034,7 +2027,6 @@ function ZZMJReceiveHandle:SVR_SEND_MAJIANG_BROADCAST(pack)
 
 	if pack.uid ~= USER_INFO["uid"] then
         --假如不是自己出牌，则显示该牌触发的操作界面
-		print("111111")
 		gamePlaneOperator:showControlPlane(handleResult)
 	else
         --假如是自己出牌，把自己出牌状态重置

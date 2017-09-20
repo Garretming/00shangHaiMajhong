@@ -507,10 +507,10 @@ function RoundEndingLayer:showEndingInfo(player, index)
 		endingInfo = endingInfo .. "接杠x" .. (player.gCount-player.bgCount) .. " "
 	end
 
-	if player.pgCount > 0 then
-		--todo
-		endingInfo = endingInfo .. "接杠x" .. player.pgCount .. " "
-	end
+	-- if player.pgCount > 0 then
+	-- 	--todo
+	-- 	endingInfo = endingInfo .. "接杠x" .. player.pgCount .. " "
+	-- end
 
 	desc_lb:setString(endingInfo)
 

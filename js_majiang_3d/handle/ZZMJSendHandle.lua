@@ -258,8 +258,8 @@ end
 function majiangServer:CLI_REQUEST_LIANG(card)
    
     dump(card,"发消息给服务端")
-    -- local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_REQUEST_LIANG)
-    local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_LIANG_CARD)
+    --  local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_LIANG_CARD)
+    local pack = bm.server:createPacketBuilder(PROTOCOL.CLI_REQUEST_LIANG)
     :setParameter("card", card)
     :build()
     bm.server:send(pack)   

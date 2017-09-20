@@ -104,8 +104,8 @@ function ShowOperator:showCards(playerType, plane, cardDatas, isNoNewCard, tingM
 	local t14thCard = nil
     
 
-	dump(cardDatas,"cardDatas----------显示欧派数据------------")
-	print(ifAutoGetNewCard,tingMode)
+	-- dump(cardDatas,"cardDatas----------显示欧派数据------------")
+	-- print(ifAutoGetNewCard,tingMode)
     if ifAutoGetNewCard  then
 
 	    if not tingMode then

@@ -19,6 +19,7 @@ function GameData:InitData()
     -- UID = 101073 
     -- UID = 101074  
     -- UID = 101075  
+    -- UID = 101089 
     
 
     
