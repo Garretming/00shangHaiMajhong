@@ -15,11 +15,11 @@ function GameData:InitData()
     end
     
     --电脑端测试用户 -- UID = 100845  
-    UID = 101072  
-    -- UID = 101073 
-    -- UID = 101074  
-    -- UID = 101075  
-    -- UID = 101089 
+    -- UID = 101072  
+    UID = 101108 
+    UID = 101109
+    UID = 101110
+    -- UID = 101111 
     
 
     

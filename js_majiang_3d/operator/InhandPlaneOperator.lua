@@ -36,7 +36,8 @@ function InhandPlaneOperator:init(playerType, plane)
 	
 end
 
---显示手牌
+
+--@garret sh 显示手牌
 function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 
 	dump("显示手牌", "-----showCards-----")
@@ -46,110 +47,143 @@ function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
 	table.sort(cardDatas)
 
 	local cardsSeq = {}
-	local laiziSeq = {}
-	local caishenSeq = {}
-	local baibanSeq = {}
 
-	--挑出赖子，财神，白板（白板替身的情况下）
+	--挑出听牌
 	for k,v in pairs(cardDatas) do
-
-        if v == HHMJ_LAIZI then
-
-			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
-
-			table.insert(laiziSeq, 1, cardData)
-
-		else  --非癞子牌
-
-			local isCaishen = false
-			for k1,v1 in pairs(JS_CAISHEN) do
-				
-				if v == v1 then
-					isCaishen = true
-				end
-
+		local hadTing  = false
+		for k1,v1 in pairs(tingSeq) do 
+			if v = v1 then
+				hadTing = true
 			end
-
-			if isCaishen then
-
-				-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
-				local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
-				table.insert(caishenSeq, 1, cardData)
-				
-			else   --非财神牌
-
-				if isbaibantishen == 1 then
-
-					if v == 67 then
-					
-						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
-						table.insert(baibanSeq, cardData)
-
-					else
-
-						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
-						table.insert(cardsSeq, cardData)
-
-					end
-				
-				else
-
-					local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
-					table.insert(cardsSeq, cardData)
-
-				end
-
-			end
-
 		end
-
-	end
-
-	--获取财神牌值
-	local caishenCard = JS_CAISHEN[1]
-
-	--把白板插入到替换牌的位置上
-	local xiaoYuCaiShenSeq = {}
-	local daYuCaiShenSeq = {}
-	local newCardsSeq = {}
-	for k,v in pairs(cardsSeq) do
-		if v.m_value < caishenCard then
-			table.insert(xiaoYuCaiShenSeq, v)
+		if hadTing == true then
+		--todo 
+			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_TING)
+			table.insert(cardsSeq, 1, cardData)
 		else
-			table.insert(daYuCaiShenSeq, v)
+			local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+			table.insert(cardsSeq, 1, cardData)
 		end
-	end
-
-	--插入小于财神的牌到新牌数组
-	for k,v in pairs(xiaoYuCaiShenSeq) do
-		table.insert(newCardsSeq, v)
-	end
-
 	
-	--合拼赖子数组和手牌数组
-	for i,v in ipairs(laiziSeq) do
-		table.insert(newCardsSeq, v)
-	end
-	--合拼财神数组和手牌数组
-	for i,v in ipairs(caishenSeq) do
-		table.insert(newCardsSeq, v)
-	end
-	
-	--插入白板到新牌数组
-	for k,v in pairs(baibanSeq) do
-		table.insert(newCardsSeq, v)
-	end
-
-	
-
-	--插入大于财神的牌到新牌数组
-	for k,v in pairs(daYuCaiShenSeq) do
-		table.insert(newCardsSeq, v)
-	end
 	--使用3D麻将操作类显示手牌
-	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
+	D3_OPERATOR:showCards(playerType, plane, cardsSeq)
 
 end
+
+
+-- --js显示手牌
+-- function InhandPlaneOperator:showCards(playerType, plane, cardDatas,tingSeq)
+
+-- 	dump("显示手牌", "-----showCards-----")
+-- 	-- dump(tingSeq,"手里的听牌数据")
+
+-- 	--对传入牌进行排序
+-- 	table.sort(cardDatas)
+
+-- 	local cardsSeq = {}
+-- 	local laiziSeq = {}
+-- 	local caishenSeq = {}
+-- 	local baibanSeq = {}
+
+-- 	--挑出赖子，财神，白板（白板替身的情况下）
+-- 	for k,v in pairs(cardDatas) do
+
+--         if v == HHMJ_LAIZI then
+
+-- 			local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_LAIZI)
+
+-- 			table.insert(laiziSeq, 1, cardData)
+
+-- 		else  --非癞子牌
+
+-- 			local isCaishen = false
+-- 			for k1,v1 in pairs(JS_CAISHEN) do
+				
+-- 				if v == v1 then
+-- 					isCaishen = true
+-- 				end
+
+-- 			end
+
+-- 			if isCaishen then
+-- 				-- local cardData = D3_CARDDATA:new(v, 0, CARDNODE_TYPE_CAISHEN)
+-- 				local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+-- 				table.insert(caishenSeq, 1, cardData)
+				
+-- 			else   --非财神牌
+
+-- 				if isbaibantishen == 1 then
+
+-- 					if v == 67 then
+					
+-- 						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+-- 						table.insert(baibanSeq, cardData)
+
+-- 					else
+
+-- 						local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+-- 						table.insert(cardsSeq, cardData)
+
+-- 					end
+				
+-- 				else
+
+-- 					local cardData = D3_CARDDATA:new(v, 1, CARDNODE_TYPE_NORMAL)
+-- 					table.insert(cardsSeq, cardData)
+
+-- 				end
+
+-- 			end
+
+-- 		end
+
+-- 	end
+
+-- 	--获取财神牌值
+-- 	local caishenCard = JS_CAISHEN[1]
+
+-- 	--把白板插入到替换牌的位置上
+-- 	local xiaoYuCaiShenSeq = {}
+-- 	local daYuCaiShenSeq = {}
+-- 	local newCardsSeq = {}
+-- 	for k,v in pairs(cardsSeq) do
+-- 		if v.m_value < caishenCard then
+-- 			table.insert(xiaoYuCaiShenSeq, v)
+-- 		else
+-- 			table.insert(daYuCaiShenSeq, v)
+-- 		end
+-- 	end
+
+-- 	--插入小于财神的牌到新牌数组
+-- 	for k,v in pairs(xiaoYuCaiShenSeq) do
+-- 		table.insert(newCardsSeq, v)
+-- 	end
+
+	
+-- 	--合拼赖子数组和手牌数组
+-- 	for i,v in ipairs(laiziSeq) do
+-- 		table.insert(newCardsSeq, v)
+-- 	end
+-- 	--合拼财神数组和手牌数组
+-- 	for i,v in ipairs(caishenSeq) do
+-- 		table.insert(newCardsSeq, v)
+-- 	end
+	
+-- 	--插入白板到新牌数组
+-- 	for k,v in pairs(baibanSeq) do
+-- 		table.insert(newCardsSeq, v)
+-- 	end
+
+	
+
+-- 	--插入大于财神的牌到新牌数组
+-- 	for k,v in pairs(daYuCaiShenSeq) do
+-- 		table.insert(newCardsSeq, v)
+-- 	end
+-- 	--使用3D麻将操作类显示手牌
+-- 	D3_OPERATOR:showCards(playerType, plane, newCardsSeq)
+
+-- end
 
 
 

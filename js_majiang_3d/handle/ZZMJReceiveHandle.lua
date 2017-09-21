@@ -194,6 +194,7 @@ function ZZMJReceiveHandle:SVR_LIANGDAO(pack)
 	local playerType = cardUtils:getPlayerType(seatId)
 
 	if playerType  == CARD_PLAYERTYPE_MY then
+		tingFlag = 1
 	-- if pack.UserId == UID then
 		--构建听牌数据
 		local showTingBtnType = pack
@@ -1901,40 +1902,22 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
             gamePlaneOperator:showRemainCardsCount()
 
             --刷新手牌以显示听牌队列
-            local tingSeq = pack.tingCards
-            TINGSEQ = tingSeq
-
-			dump(pack,"TINGSEQ刷新手牌以显示听牌队列111")
-			dump(JS_TING_REMOVE,"3009数据")
-			dump(TINGSEQ,"3002数据")
-
+			local tingSeq = pack.tingCards
+				TINGSEQ = tingSeq
             local value = bit.band(pack.card, 0xFF)
 
-            -- gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)--刷新手牌
+           
+		
 
             cardUtils:getNewCard(ZZMJ_MY_USERINFO.seat_id, value)
 
             gamePlaneOperator:getNewCard(CARD_PLAYERTYPE_MY,value,tingSeq)
 
             local controlTable = cardUtils:getControlTable(pack.handle, pack.card, 2, pack.cards)
-			dump(controlTable.type,"controlTable.type-----抓后续操作1")
-
-			
-
-			local dd = {
-				CONTROL_TYPE_HU,
-				CONTROL_TYPE_PENG,
-				CONTROL_TYPE_GANG,
-				CONTROL_TYPE_CHI,
-				CONTROL_TYPE_TING,
-				CONTROL_TYPE_CAIPIAO
-			}
-			dump(dd,"相应的操作类型")
-
-            if pack.tingCount > 0 then
+		
+            if CanTing ~= nil and pack.tingCount > 0 then
              -- --todo
              controlTable.type = bit.bor(controlTable.type, CONTROL_TYPE_TING)
-			dump(controlTable.type,"controlTable.type-----抓后续操作1")
              controlTable.tingSeq = pack.tingCards
              controlTable.gangSeq = pack.lgCards
             end
@@ -1964,9 +1947,9 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
         --显示剩余牌数
         ZZMJ_REMAIN_CARDS_COUNT = ZZMJ_REMAIN_CARDS_COUNT - 1
         gamePlaneOperator:showRemainCardsCount()
-		dump(pack,"TINGSEQ刷新手牌以显示听牌队列2221")
-		dump(JS_TING_REMOVE,"3009数据")
-		dump(TINGSEQ,"3002数据")
+		-- dump(pack,"TINGSEQ刷新手牌以显示听牌队列2221")
+		-- dump(JS_TING_REMOVE,"3009数据")
+		-- dump(TINGSEQ,"3002数据")
         --刷新手牌以显示听牌队列
         local tingSeq = pack.tingCards
         TINGSEQ = tingSeq  --全局的听牌数据
@@ -1974,6 +1957,7 @@ function ZZMJReceiveHandle:SVR_OWN_CATCH_BROADCAST(pack)
 
         gamePlaneOperator:showCards(CARD_PLAYERTYPE_MY)
 
+		
         cardUtils:getNewCard(ZZMJ_MY_USERINFO.seat_id, value)
 
         gamePlaneOperator:getNewCard(CARD_PLAYERTYPE_MY,value,tingSeq)
@@ -3087,7 +3071,7 @@ end
 --补花
 function ZZMJReceiveHandle:SERVER_BUHUA(pack)
 
-    dump(pack, "-----补花-----")
+    dump(pack, "-----补花----4002-")
 
     local seatId = pack.seatId
     local playerType = cardUtils:getPlayerType(seatId)
